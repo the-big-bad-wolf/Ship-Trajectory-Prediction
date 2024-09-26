@@ -1,0 +1,1331 @@
+portId|name|portLocation|longitude|latitude|UN_LOCODE|countryName|ISO
+61d36ed80a1807568ff9a064|Port of Algiers|Algiers|3.067222|36.773611|DZALG|Algeria|DZ
+61d36ed80a1807568ff9a065|Port of Annaba|Annaba|7.7725|36.900556|DZAAE|Algeria|DZ
+61d36edf0a1807568ff9a070|Port of Oran|Oran|-0.639722|35.712222|DZORN|Algeria|DZ
+61d36ee00a1807568ff9a072|Port of Skikda|Skikda|6.905833|36.8875|DZSKI|Algeria|DZ
+61d36ee10a1807568ff9a074|Port of Pago-Pago|Pago-Pago|-170.690556|-14.274167|ASPPG|American Samoa|AS
+61d36eec0a1807568ff9a07c|Port of Lobito|Lobito|13.570833|-12.336944|AOLOB|Angola|AO
+61d36eec0a1807568ff9a07d|Porto de Luanda|Luanda|13.251389|-8.783889|AOLAD|Angola|AO
+61d36f100a1807568ff9a0a4|Port of Buenos Aires|Buenos Aires|-58.371389|-34.599167|ARBUE|Argentina|AR
+61d36f150a1807568ff9a0ad|Port of La Plata|La Plata|-57.894167|-34.855278|ARLPG|Argentina|AR
+61d36f170a1807568ff9a0b0|Port of Puerto Deseado|Puerto Deseado|-65.906389|-47.755556|ARPUD|Argentina|AR
+61d36f1c0a1807568ff9a0ba|Port of Rio Grande|Rio Grande|-67.703889|-53.794444|ARRGA|Argentina|AR
+61d36f200a1807568ff9a0c0|Port of Santa Fe|Santa Fe|-60.7|-31.651667|ARSFN|Argentina|AR
+61d36f210a1807568ff9a0c3|Port of Zarate|Zarate|-59.007778|-34.098889|ARZAE|Argentina|AR
+61d36f5d0a1807568ff9a0f7|Fremantle Port|Fremantle|115.740833|-32.0475|AUFRE|Australia|AU
+61d36f5f0a1807568ff9a0fa|Port of Melbourne|Melbourne|144.9175|-37.832778|AUMEL|Australia|AU
+61d36f5f0a1807568ff9a0fb|Port of Newcastle|Newcastle|151.770556|-32.9075|AUNTL|Australia|AU
+61d36f600a1807568ff9a0fd|Port of Adelaide|Adelaide|138.5125|-34.799167|AUADL|Australia|AU
+61d36f630a1807568ff9a102|Port Botany|Botany Bay|151.215|-33.973056|AUBTB|Australia|AU
+61d36f640a1807568ff9a103|Port of Brisbane|Brisbane|153.169444|-27.3825|AUBNE|Australia|AU
+61d36f690a1807568ff9a10d|Port of Darwin|Darwin|130.857778|-12.470278|AUDRW|Australia|AU
+61d36f6d0a1807568ff9a113|Port of Geelong|Geelong|144.389722|-38.126667|AUGEX|Australia|AU
+61d36f6e0a1807568ff9a115|Port of Gladstone|Gladstone|151.252778|-23.83|AUGLT|Australia|AU
+61d36f770a1807568ff9a126|Port of Port Kembla|Port Kembla|150.899444|-34.4625|AUPKL|Australia|AU
+61d36f7d0a1807568ff9a130|Port of Sydney|Sydney|151.1925|-33.862222|AUSYD|Australia|AU
+61d36f820a1807568ff9a13a|Port of Enns|Enns|14.505278|48.230556|ATENA|Austria|AT
+61d36f830a1807568ff9a13b|Port of Krems|Krems|15.646111|48.403333|ATKRE|Austria|AT
+61d36f830a1807568ff9a13c|Port of Linz|Linz|14.329722|48.301389|ATLNZ|Austria|AT
+61d36f840a1807568ff9a13e|Port of Baku|Baku|49.876389|40.347778|AZBAK|Azerbaijan|AZ
+61d36f890a1807568ff9a141|Freeport Container Port|Freeport|-78.766944|26.524444|BSFPO|Bahamas|BS
+61d36f8d0a1807568ff9a147|Port of Mina Salman|Mina Salman|50.611944|26.198611|BHMIN|Bahrain|BH
+61d36f900a1807568ff9a14b|Port of Chittagong|Chittagong|91.831111|22.268889|BDCGP|Bangladesh|BD
+61d36f950a1807568ff9a14f|Port of Liege|Liege|5.606944|50.650833|BELGG|Belgium|BE
+61d36f970a1807568ff9a151|Port of Antwerp|Antwerp|4.299722|51.297778|BEANR|Belgium|BE
+61d36f980a1807568ff9a153|The Port of Ghent|Ghent|3.767778|51.114444|BEGNE|Belgium|BE
+61d36f990a1807568ff9a154|Port of Nieuwpoort|Nieuwpoort|2.744167|51.141111|BENIE|Belgium|BE
+61d36f990a1807568ff9a155|Port Oostende|Oostende|2.935278|51.228611|BEOST|Belgium|BE
+61d36f9a0a1807568ff9a156|Port of Bruges-Zeebrugge|Zeebrugge|3.207222|51.336389|BEZEE|Belgium|BE
+61d36f9c0a1807568ff9a158|Port of Cotonou|Cotonou|2.425556|6.346667|BJCOO|Benin|BJ
+61d36f9e0a1807568ff9a15a|Port of Hamilton|Hamilton|-64.781944|32.291111|BMBDA|Bermuda|BM
+61d36fc50a1807568ff9a186|Admiral Barroso Terminal|Sao Sebastiao|-45.331389|-23.709722|BRSSO|Brazil|BR
+61d36fcc0a1807568ff9a18f|Port of Salvador|Salvador|-38.5075|-12.958611|BRSSA|Brazil|BR
+61d36fd00a1807568ff9a196|Port of Belem|Belem|-48.485556|-1.451667|BRBEL|Brazil|BR
+61d36fd50a1807568ff9a19e|Port of Itajai|Itajai|-48.676944|-26.891111|BRITJ|Brazil|BR
+61d36fd80a1807568ff9a1a3|Port of Manaus|Manaus|-60.016944|-3.143056|BRMAO|Brazil|BR
+61d36fda0a1807568ff9a1a7|Port of Paranagua|Paranagua|-48.515278|-25.496944|BRPNG|Brazil|BR
+61d36fdb0a1807568ff9a1aa|Port of Recife|Recife|-34.870278|-8.053611|BRREC|Brazil|BR
+61d36fdc0a1807568ff9a1ab|Port of Rio de Janeiro|Rio de Janeiro|-43.196667|-22.883056|BRRIO|Brazil|BR
+61d36fdd0a1807568ff9a1ac|Port of Rio Grande|Rio Grande|-52.081667|-32.056111|BRRIG|Brazil|BR
+61d36fdf0a1807568ff9a1b0|Port of Santos|Santos|-46.300833|-23.968889|BRSSZ|Brazil|BR
+61d36fe10a1807568ff9a1b4|Port of Tubarao|Tubarao|-40.247222|-20.289167|BRTUB|Brazil|BR
+61d36fe20a1807568ff9a1b6|Port of Vitoria|Vitoria|-40.336111|-20.323333|BRVIX|Brazil|BR
+61d36fe50a1807568ff9a1b9|Port of Varna|Varna|27.891667|43.194444|BGVAR|Bulgaria|BG
+61d36fe60a1807568ff9a1ba|Port of Phnom Penh|Phnom Penh|104.923333|11.583056|KHPNH|Cambodia|KH
+61d3700d0a1807568ff9a1cd|Fraser River Port|Fraser River|-122.92|49.186667|CAFRR|Canada|CA
+61d3705e0a1807568ff9a1f1|Port of Halifax|Halifax|-63.578889|44.656944|CAHAL|Canada|CA
+61d3705e0a1807568ff9a1f2|Port of Montreal|Montreal|-73.529167|45.543611|CAMTR|Canada|CA
+61d370600a1807568ff9a1f6|Port of Sydney|Sydney|-60.204722|46.141944|CASYD|Canada|CA
+61d370620a1807568ff9a1f8|Port Metro Vancouver|Vancouver|-123.074167|49.297778|CAVAN|Canada|CA
+61d3706a0a1807568ff9a207|Port of Becancour|Becancour|-72.3875|46.402222|CABEC|Canada|CA
+61d3707f0a1807568ff9a22d|Esquimalt Harbor|Esquimalt|-123.4326|48.43596|CAESQ|Canada|CA
+61d370850a1807568ff9a238|Hamilton Port|Hamilton|-79.826111|43.284722|CAHAM|Canada|CA
+61d370a50a1807568ff9a270|Port of Port Hawkesbury|Port Hawkesbury|-61.353611|45.590833|CAPHW|Canada|CA
+61d370aa0a1807568ff9a278|Prince Rupert Port|Prince Rupert|-130.339167|54.309722|CAPRR|Canada|CA
+61d370ac0a1807568ff9a27c|Port of Quebec|Quebec|-71.214167|46.805833|CAQUE|Canada|CA
+61d370b00a1807568ff9a282|Saint John Port|Saint John|-66.056111|45.266389|CASJB|Canada|CA
+61d370b30a1807568ff9a288|Port of Sept-Iles|Sept-Iles|-66.379444|50.196389|CASEI|Canada|CA
+61d370bc0a1807568ff9a299|Port of St. John's|St. John's|-52.6975|47.5625|CASJF|Canada|CA
+61d370c20a1807568ff9a2a4|Thunder Bay Port Authority|Thunder Bay|-89.221944|48.413889|CATHU|Canada|CA
+61d370c60a1807568ff9a2aa|Port of Victoria|Victoria|-123.37211|48.42158|CAVIC|Canada|CA
+61d371c43aeaecc07011a37f|Puerto San Antonio|San Antonio|-71.618889|-33.5875|CLSAI|Chile|CL
+61d371c63aeaecc07011a383|Port of Antofagasta|Antofagasta|-70.405833|-23.650278|CLANF|Chile|CL
+61d371c73aeaecc07011a384|Port of Arica|Arica|-70.325|-18.473056|CLARI|Chile|CL
+61d371cd3aeaecc07011a390|Port of Mejillones|Mejillones|-70.415556|-23.087778|CLMJS|Chile|CL
+61d371d53aeaecc07011a39e|Port of Talcahuano|Talcahuano|-73.103611|-36.705278|CLTAL|Chile|CL
+61d371d73aeaecc07011a3a2|Empresa Portuaria Valparaiso|Valparaiso|-71.620556|-33.035278|CLVAP|Chile|CL
+61d371e43aeaecc07011a3b0|Port of Chiwan|Chiwan|113.873889|22.473889|CNCWN|China|CN
+61d371e73aeaecc07011a3b6|Port of Dalian|Dalian|121.650556|38.933611|CNDLC|China|CN
+61d371f93aeaecc07011a3d5|Port of Huizhou|Huizhou|114.5625|22.697778|CNHUI|China|CN
+61d371fb3aeaecc07011a3d9|Port of Jiangmen|Jiangmen|113.006389|22.474444|CNJMN|China|CN
+61d372003aeaecc07011a3e1|Port of Lanshan|Lanshan|119.3875|35.117778|CNLSN|China|CN
+61d372063aeaecc07011a3ec|Port of Nantong|Nantong|120.829444|31.992222|CNNTG|China|CN
+61d3720c3aeaecc07011a3f5|Port of Rizhao|Rizhao|119.549444|35.373056|CNRZH|China|CN
+61d3720c3aeaecc07011a3f6|Port of Rongqi|Rongqi|113.237778|22.686389|CNROQ|China|CN
+61d372143aeaecc07011a403|Port of Taicang|Taicang|121.185556|31.658333|CNTAG|China|CN
+61d372153aeaecc07011a406|Port of Taizhou|Taizhou|119.436389|32.270556|CNTZO|China|CN
+61d372163aeaecc07011a408|Port of Tianjin|Tianjin|117.460278|39.009444|CNTSN|China|CN
+61d3721a3aeaecc07011a40d|Port of Wenzhou|Wenzhou|120.890556|27.987778|CNWNZ|China|CN
+61d3721a3aeaecc07011a40e|Port of Wuhan|Wuhan|114.304167|30.587778|CNWUH|China|CN
+61d3721c3aeaecc07011a410|Port of Wuzhou|Wuzhou|111.306944|23.471389|CNWUZ|China|CN
+61d372293aeaecc07011a424|Port of Zhangjiagang|Zhangjiagang|120.424722|31.976389|CNZJG|China|CN
+61d372353aeaecc07011a438|Port of Bayuquan|Bayuquan|122.083333|40.281389|CNBAY|China|CN
+61d372353aeaecc07011a439|Port of Beihai|Beihai|109.072778|21.458611|CNBHY|China|CN
+61d372383aeaecc07011a43e|Port of Fuzhou|Fuzhou|119.300833|26.0475|CNFOC|China|CN
+61d372393aeaecc07011a440|Port of Haikou|Haikou|110.279722|20.027778|CNHAK|China|CN
+61d3723a3aeaecc07011a441|Port of Haimen|Haimen|121.446667|28.690278|CNHME|China|CN
+61d3723a3aeaecc07011a442|Port of Huangpu|Huangpu|113.486667|23.061944|CNHUA|China|CN
+61d3723b3aeaecc07011a444|Port of Jinzhou|Jinzhou|121.060833|40.806944|CNJNZ|China|CN
+61d3723c3aeaecc07011a445|Port of Lianyungang|Lianyungang|119.413333|34.745278|CNLYG|China|CN
+61d3723d3aeaecc07011a446|Port of Longkou|Longkou|120.309722|37.6475|CNLKU|China|CN
+61d3723e3aeaecc07011a449|Port of Qinhuangdao|Qinhuangdao|119.629444|39.918333|CNSHP|China|CN
+61d372423aeaecc07011a44f|Port of Wuhu|Wuhu|118.3525|31.329722|CNWHI|China|CN
+61d372443aeaecc07011a454|Port of Yantai|Yantai|121.392222|37.571111|CNYNG|China|CN
+61d372453aeaecc07011a455|Port of Yantian|Yantian|114.267222|22.574167|CNYTN|China|CN
+61d372473aeaecc07011a458|Port of Zhanjiang|Zhanjiang|110.41|21.169722|CNZHA|China|CN
+61d372503aeaecc07011a461|Port of Barranquilla|Barranquilla|-74.759722|10.967222|COBAQ|Colombia|CO
+61d372513aeaecc07011a462|Port of Sociedad Portuaria Regional de Buenaventura|Buenaventura|-77.055|3.8825|COBUN|Colombia|CO
+61d372523aeaecc07011a463|Port of Cartagena|Cartagena|-75.530833|10.403333|COCTG|Colombia|CO
+61d372643aeaecc07011a476|Puerto de Caldera|Caldera|-84.720278|9.913333|CRCAL|Costa Rica|CR
+61d3726a3aeaecc07011a47e|Port of Abidjan|Abidjan|-4.014444|5.280556|CIABJ|Cote D'Ivoire|CI
+61d3727d3aeaecc07011a491|Port of Vukovar|Vukovar|18.989167|45.359167|HRVUK|Croatia|HR
+61d372803aeaecc07011a496|Port of Split|Split|16.430556|43.515|HRSPU|Croatia|HR
+61d372843aeaecc07011a49d|Port of Omisalj|Omisalj|14.543056|45.214444|HROMI|Croatia|HR
+61d372863aeaecc07011a4a2|Port of Rijeka|Rijeka|14.425556|45.3275|HRRJK|Croatia|HR
+61d372a63aeaecc07011a4bc|Port of Cienfuegos|Cienfuegos|-80.455833|22.14|CUCFG|Cuba|CU
+61d372b13aeaecc07011a4d0|Port of Santiago de Cuba|Santiago de Cuba|-75.860556|20.001667|CUSCU|Cuba|CU
+61d372b63aeaecc07011a4d5|Larnaca Port|Larnaca|33.642778|34.924167|CYLCA|Cyprus|CY
+61d372b63aeaecc07011a4d6|Limassol Port|Limassol|33.018333|34.65|CYLMS|Cyprus|CY
+61d373063aeaecc07011a52b|Port of Copenhagen|Copenhagen|12.613333|55.696111|DKCPH|Denmark|DK
+61d373073aeaecc07011a52c|Port of Esbjerg|Esbjerg|8.434167|55.465556|DKEBJ|Denmark|DK
+61d373083aeaecc07011a52e|ADP Nyborg Terminal|Nyborg|10.810833|55.298889|DKNBG|Denmark|DK
+61d3730a3aeaecc07011a531|Port of Aalborg|Aalborg|10.008333|57.061111|DKAAL|Denmark|DK
+61d373123aeaecc07011a541|Faaborg Havn|Faaborg|10.234722|55.095278|DKFAA|Denmark|DK
+61d373353aeaecc07011a57e|Port of Djibouti|Djibouti|43.136944|11.601944|DJJIB|Djibouti|DJ
+61d373433aeaecc07011a58d|Port of Rio Haina|Rio Haina|-70.018889|18.420278|DOHAI|Dominican Republic|DO
+61d373443aeaecc07011a58f|Port of Santo Domingo|Santo Domingo|-69.881111|18.475278|DOSDQ|Dominican Republic|DO
+61d3734a3aeaecc07011a594|Port of Guayaquil|Guayaquil|-79.903889|-2.283611|ECGYE|Ecuador|EC
+61d3734b3aeaecc07011a596|Port of Manta|Manta|-80.723333|-0.935556|ECMEC|Ecuador|EC
+61d3735b3aeaecc07011a5ab|Port of Damietta|Damietta|31.764444|31.466667|EGDAM|Egypt|EG
+61d3735d3aeaecc07011a5ae|Port Said|Port Said|32.309444|31.253333|EGPSD|Egypt|EG
+61d373623aeaecc07011a5b5|Port of Acajutla|Acajutla|-89.836667|13.574444|SVAQJ|El Salvador|SV
+61d3737a3aeaecc07011a5dc|Tallinn Old City Harbor |Tallinn|24.76644|59.44734|EETLL|Estonia|EE
+61d373873aeaecc07011a5ec|Port of Suva|Suva|178.426111|-18.126944|FJSUV|Fiji|FJ
+61d3738f3aeaecc07011a5f1|Port of Joensuu|Joensuu|29.768333|62.599167|FIJOE|Finland|FI
+61d373a73aeaecc07011a60d|Port of Hamina|Hamina|27.165556|60.524722|FIHMN|Finland|FI
+61d373aa3aeaecc07011a612|Port of Rauma|Rauma|21.451667|61.125833|FIRAU|Finland|FI
+61d373ac3aeaecc07011a616|Port of Helsinki|Helsinki|24.923333|60.159444|FIHEL|Finland|FI
+61d373ad3aeaecc07011a617|Port of Jakobstad|Jakobstad|22.693611|63.711111|FIPRS|Finland|FI
+61d373af3aeaecc07011a61a|Port of Kokkola|Kokkola|23.036944|63.860556|FIKOK|Finland|FI
+61d373b83aeaecc07011a62b|Port of Turku|Turku|22.216389|60.437778|FITKU|Finland|FI
+61d374363aeaecc07011a6ef|Port of Strasbourg|Strasbourg|7.795278|48.554444|FRSXB|France|FR
+61d3743d3aeaecc07011a6f9|Port of Bordeaux|Bordeaux|-0.555|44.865278|FRBOD|France|FR
+61d3743d3aeaecc07011a6fa|Port of Brest|Brest|-4.474167|48.380556|FRBES|France|FR
+61d3743e3aeaecc07011a6fb|Port of Dunkerque|Dunkerque|2.290556|51.045|FRDKK|France|FR
+61d374403aeaecc07011a6ff|Port of Marseille|Marseille|5.352222|43.323611|FRMRS|France|FR
+61d374413aeaecc07011a701|Port of Rouen|Rouen|1.053889|49.443333|FRURO|France|FR
+61d374453aeaecc07011a708|Port of Bayonne|Bayonne|-1.499722|43.519722|FRBAY|France|FR
+61d374473aeaecc07011a70c|Port of Boulogne-sur-Mer|Boulogne-sur-Mer|1.580556|50.723611|FRBOL|France|FR
+61d3744b3aeaecc07011a712|Port of Cherbourg|Cherbourg|-1.618056|49.652222|FRCER|France|FR
+61d3744f3aeaecc07011a719|Port of Fos-sur-Mer|Fos-sur-Mer|4.915556|43.424167|FRFOS|France|FR
+61d374533aeaecc07011a720|Port of La Pallice|La Pallice|-1.228056|46.157222|FRLPE|France|FR
+61d374543aeaecc07011a722|Port of Le Havre|Le Havre|0.177778|49.466944|FRLEH|France|FR
+61d374573aeaecc07011a727|Port of Lorient|Lorient|-3.36055|47.73207|FRLRT|France|FR
+61d3745d3aeaecc07011a732|Port St Louis du Rhone|Port St Louis du Rhone|4.827222|43.383056|FRPSL|France|FR
+61d374643aeaecc07011a73f|Port of Sete|Sete|3.716111|43.404722|FRSET|France|FR
+61d374653aeaecc07011a741|Port of Toulon La Seyne|Toulon|5.9075|43.110556|FRTLN|France|FR
+61d375af93c6feb83e5eb38b|Port of Papeete|Papeete|-149.571389|-17.531111|PFPPT|French Polynesia|PF
+61d375b593c6feb83e5eb394|Port of Port Gentil|Port Gentil|8.786389|-0.711944|GAPOG|Gabon|GA
+61d375b993c6feb83e5eb397|Port of Batumi|Batumi|41.650833|41.648889|GEBUS|Georgia|GE
+61d375b993c6feb83e5eb398|Port of Poti|Poti|41.654444|42.155|GEPTI|Georgia|GE
+61d375c593c6feb83e5eb3a9|Port of Duisburg|Duisburg|6.755556|51.449722|DEDUI|Germany|DE
+61d375c593c6feb83e5eb3aa|Port of Dusseldorf|Dusseldorf|6.7425|51.217222|DEDUS|Germany|DE
+61d375ce93c6feb83e5eb3b8|Port of Karlsruhe|Karlsruhe|8.324444|49.014167|DEKAE|Germany|DE
+61d375cf93c6feb83e5eb3ba|Port of Kehl|Kehl|7.813333|48.593611|DEKEH|Germany|DE
+61d375d793c6feb83e5eb3c9|Port of Neuss|Neuss|6.69225|51.21139|DENSS|Germany|DE
+61d375da93c6feb83e5eb3cf|Port of Ostermoor|Ostermoor|9.19772|53.91705|DEOSR|Germany|DE
+61d375e693c6feb83e5eb3e1|Port of Bremen|Bremen|8.751667|53.0975|DEBRE|Germany|DE
+61d375e793c6feb83e5eb3e2|Port of Bremerhaven|Bremerhaven|8.554722|53.563611|DEBRV|Germany|DE
+61d375e793c6feb83e5eb3e3|Port of Brunsbuttel|Brunsbuttel|9.135833|53.895833|DEBRB|Germany|DE
+61d375e893c6feb83e5eb3e4|Port of Emden|Emden|7.198333|53.346111|DEEME|Germany|DE
+61d375e893c6feb83e5eb3e5|Port of Hamburg|Hamburg|9.963333|53.524722|DEHAM|Germany|DE
+61d375f193c6feb83e5eb3f6|Port of Kiel|Kiel|10.160833|54.330833|DEKEL|Germany|DE
+61d375f293c6feb83e5eb3f8|Port of Lubeck|Luebeck|10.725833|53.882778|DELBC|Germany|DE
+61d375f593c6feb83e5eb3fe|Port of Rostock|Rostock|12.118611|54.1525|DERSK|Germany|DE
+61d375f793c6feb83e5eb402|Port of Travemunde|Travemunde|10.869167|53.952222|DETRV|Germany|DE
+61d375f793c6feb83e5eb403|Port of Wilhelmshaven|Wilhelmshaven|8.125278|53.53|DEWVN|Germany|DE
+61d375f893c6feb83e5eb404|Port of Wismar|Wismar|11.4425|53.906389|DEWIS|Germany|DE
+61d375fb93c6feb83e5eb408|Port of Tema|Tema|0.011667|5.631944|GHTEM|Ghana|GH
+61d375fd93c6feb83e5eb40b|Port of Gibraltar|Gibraltar|-5.361389|36.136944|GIGIB|Gibraltar|GI
+61d3760593c6feb83e5eb414|Port of Aspropyrgos|Aspropyrgos|23.579167|38.0375|GRASS|Greece|GR
+61d3762b93c6feb83e5eb443|Port of Thessaloniki|Thessaloniki|22.918333|40.635|GRSKG|Greece|GR
+61d3762c93c6feb83e5eb444|Port of Volos|Volos|22.938611|39.352778|GRVOL|Greece|GR
+61d3763d93c6feb83e5eb467|Port of Patras|Patras|21.7246|38.23787|GRGPA|Greece|GR
+61d3763e93c6feb83e5eb468|Port of Piraeus|Piraeus|23.6104|37.95114|GRPIR|Greece|GR
+61d3765c93c6feb83e5eb493|Jose D. Leon Guerrero Commercial Port|Guam|144.657778|13.442778|GUGUM|Guam|GU
+61d3766093c6feb83e5eb496|Puerto Quetzal|Puerto Quetzal|-90.791944|13.922222|GTPRQ|Guatemala|GT
+61d3766793c6feb83e5eb4a0|Port of Georgetown|Georgetown|-58.1675|6.819444|GYGEO|Guyana|GY
+61d3767493c6feb83e5eb4b1|Port of Puerto Cortes|Puerto Cortes|-87.944167|15.833333|HNPCR|Honduras|HN
+61d3767693c6feb83e5eb4b5|Port of Hong Kong|Hong Kong|114.159722|22.321111|HKHKG|Hong Kong|HK
+61d3767793c6feb83e5eb4b6|Port of Csepel|Budapest|19.061389|47.443611|HUBUD|Hungary|HU
+61d376aa93c6feb83e5eb500|Port of Mundra|Mundra|69.708056|22.736944|INMUN|India|IN
+61d376b393c6feb83e5eb50c|Port of Ennore|Ennore|80.341111|13.263333|INENR|India|IN
+61d376b793c6feb83e5eb512|Port of Kakinada|Kakinada|82.279167|16.977778|INKAK|India|IN
+61d376ba93c6feb83e5eb515|Port of Magdalla|Magdalla|72.740556|21.140833|INMDA|India|IN
+61d376c393c6feb83e5eb520|Port of Salaya|Salaya|69.598611|22.314167|INSAL|India|IN
+61d376ca93c6feb83e5eb52b|Port of Cochin|Cochin (Kochi)|76.257222|9.967778|INCOK|India|IN
+61d376cb93c6feb83e5eb52e|Port of Kolkata|Kolkata (Calcutta)|88.306389|22.536944|INCCU|India|IN
+61d376cd93c6feb83e5eb531|Port of Visakhapatnam|Visakhapatnam|83.289444|17.693333|INVTZ|India|IN
+61d376d093c6feb83e5eb538|Port of Chennai|Chennai|80.300833|13.111111|INMAA|India|IN
+61d376d393c6feb83e5eb53c|Port of Haldia|Haldia|88.098333|22.036944|INHAL|India|IN
+61d376d493c6feb83e5eb53e|Nhava Sheva|Jawaharlal Nehru|72.949722|18.951667|INNSA|India|IN
+61d376d493c6feb83e5eb53f|Port of Kandla|Kandla|70.225556|23.013611|INIXY|India|IN
+61d376d793c6feb83e5eb545|Port of Mormugao|Mormugao|73.800556|15.409722|INMRM|India|IN
+61d376d893c6feb83e5eb546|Port of Mumbai|Mumbai|72.885278|18.941944|INBOM|India|IN
+61d376d993c6feb83e5eb548|Port of Navlakhi|Navlakhi|70.447222|22.958611|INNAV|India|IN
+61d376da93c6feb83e5eb54a|Port of Paradip|Paradip|86.671111|20.270556|INPRT|India|IN
+61d376db93c6feb83e5eb54d|Port of Porbandar|Porbandar|69.591667|21.634722|INPBD|India|IN
+61d376de93c6feb83e5eb552|Port of Tuticorin|Tuticorin|78.189167|8.758333|INTUT|India|IN
+61d376de93c6feb83e5eb553|Port of Veraval|Veraval|70.376111|20.902222|INVVA|India|IN
+61d376e093c6feb83e5eb555|Port of Jakarta|Jakarta|106.860556|-6.105556|IDJKT|Indonesia|ID
+61d376e893c6feb83e5eb55a|Port of Batu Ampar|Batu Ampar|104.02|1.169722|IDBUR|Indonesia|ID
+61d376f593c6feb83e5eb569|Port of Jambi|Jambi|103.664167|1.2975|IDDJB|Indonesia|ID
+61d3771893c6feb83e5eb589|Port of Tanjung Emas|Tanjung Emas|110.431111|-6.946389|IDSRG|Indonesia|ID
+61d3771f93c6feb83e5eb58f|Port of Banjarmasin|Banjarmasin|114.558333|-3.321944|IDBDJ|Indonesia|ID
+61d3772093c6feb83e5eb590|Port of Belawan|Belawan|98.698333|3.786389|IDBLW|Indonesia|ID
+61d3772693c6feb83e5eb59c|Port of Balikpapan|Balikpapan|116.811944|-1.260278|IDBPN|Indonesia|ID
+61d3772e93c6feb83e5eb5ac|Port of Cirebon|Cirebon|108.571667|-6.711944|IDCBN|Indonesia|ID
+61d3773093c6feb83e5eb5af|Port of Dumai|Dumai|101.457222|1.6875|IDDUM|Indonesia|ID
+61d3773193c6feb83e5eb5b2|Port of Gresik|Gresik|112.6675|-7.159444|IDGRE|Indonesia|ID
+61d3773893c6feb83e5eb5bf|Port of Makassar|Makassar|119.414722|-5.128889|IDMAK|Indonesia|ID
+61d3774293c6feb83e5eb5d2|Port of Pontianak|Pontianak|109.345|-0.022778|IDPNK|Indonesia|ID
+61d3774f93c6feb83e5eb5ed|Port of Tanjung Intan|Tanjung Intan|109.002222|-7.717778|IDCXP|Indonesia|ID
+61d3775393c6feb83e5eb5f5|Port of Teluk Bayur|Teluk Bayur|100.374167|-0.998611|IDPDG|Indonesia|ID
+61d3776593c6feb83e5eb61a|Port of Bandar Abbas|Bandar Abbas|56.206667|27.140833|IRBND|Iran|IR
+61d3776993c6feb83e5eb622|Port of Umm Qasr|Umm Qasr|47.951111|30.035278|IQUQR|Iraq|IQ
+61d3777193c6feb83e5eb62b|Drogheda Port|Drogheda|-6.326111|53.717222|IEDRO|Ireland|IE
+61d3777993c6feb83e5eb634|Limerick Dock|Limerick|-8.633333|52.662778|IELMK|Ireland|IE
+61d3778093c6feb83e5eb63d|Bantry Bay Harbour|Bantry|-9.460833|51.680833|IEBYT|Ireland|IE
+61d3778593c6feb83e5eb648|Dublin Port|Dublin|-6.209444|53.344444|IEDUB|Ireland|IE
+61d3778893c6feb83e5eb64d|Port of Galway|Galway|-9.049722|53.27|IEGWY|Ireland|IE
+61d3779093c6feb83e5eb65b|Port of Ashdod|Ashdod|34.647778|31.830556|ILASH|Israel|IL
+61d3779293c6feb83e5eb65e|Port of Haifa|Haifa|35.019167|32.8225|ILHFA|Israel|IL
+61d3781293c6feb83e5eb73b|Port of Civitavecchia|Civitavecchia|11.780833|42.098889|ITCVV|Italy|IT
+61d3781393c6feb83e5eb73c|Port of Genoa|Genoa|8.916389|44.404722|ITGOA|Italy|IT
+61d3781393c6feb83e5eb73d|Gioia Tauro Harbour|Gioia Tauro|15.904444|38.456667|ITGIT|Italy|IT
+61d3781493c6feb83e5eb73f|Port of Napoli|Napoli (Naples)|14.274167|40.836667|ITNAP|Italy|IT
+61d3781593c6feb83e5eb740|Port of Ravenna|Ravenna|12.250556|44.462222|ITRAN|Italy|IT
+61d3781593c6feb83e5eb741|Port of Venice|Venezia (Venice)|12.283056|45.4475|ITVCE|Italy|IT
+61d3781993c6feb83e5eb747|Port of Augusta|Augusta|15.216667|37.235278|ITAUG|Italy|IT
+61d3781b93c6feb83e5eb74c|Port of Brindisi|Brindisi|17.959444|40.646389|ITBDS|Italy|IT
+61d3781b93c6feb83e5eb74d|Port of Cagliari|Cagliari|9.111944|39.204167|ITCAG|Italy|IT
+61d3782593c6feb83e5eb760|Port of La Spezia|La Spezia|9.850556|44.087222|ITSPE|Italy|IT
+61d3782793c6feb83e5eb764|Port of Livorno|Livorno|10.303056|43.555833|ITLIV|Italy|IT
+61d3782b93c6feb83e5eb76b|Port of Messina|Messina|15.564444|38.200278|ITMSN|Italy|IT
+61d3782f93c6feb83e5eb773|Port of Oristano|Oristano|8.554444|39.863333|ITQOS|Italy|IT
+61d3783093c6feb83e5eb776|Port of Palermo|Palermo|13.371667|38.130833|ITPMO|Italy|IT
+61d3783793c6feb83e5eb783|Melilli Oil Terminal|Priolo Gargallo|15.198889|37.180556|ITMLZ|Italy|IT
+61d3783a93c6feb83e5eb789|Port of Salerno|Salerno|14.746389|40.671944|ITSAL|Italy|IT
+61d3783f93c6feb83e5eb793|Port of Taranto|Taranto|17.192222|40.488056|ITTAR|Italy|IT
+61d3784193c6feb83e5eb797|Port of Trieste|Trieste|13.77321|45.63568|ITTRS|Italy|IT
+61d3784c93c6feb83e5eb7a2|Port of Kingston|Kingston|-76.829444|17.981667|JMKIN|Jamaica|JM
+61d379841366c3998241d83e|Port of Fukui|Fukui|136.126667|36.201389|JPFKJ|Japan|JP
+61d379911366c3998241d850|Port of Hitachinaka|Hitachinaka|140.621111|36.425278|JPHIC|Japan|JP
+61d379951366c3998241d853|Ishikariwan Bay New Port|Ishikari|141.288611|43.203056|JPISI|Japan|JP
+61d379a01366c3998241d863|Port of Kasaoka|Kasaoka|133.436667|34.461111|JPKSA|Japan|JP
+61d379a51366c3998241d869|Port of Kitakyushu|Kitakyushu|130.77797|33.94089|JPKKJ|Japan|JP
+61d379bb1366c3998241d886|Port of Mutsuogawara|Mutsuogawara|141.389722|40.945556|JPMUT|Japan|JP
+61d379cb1366c3998241d89f|Port of Onoda|Onoda|131.167222|33.973056|JPOND|Japan|JP
+61d379f51366c3998241d8cf|Port of Osaka|Osaka|135.434167|34.635833|JPOSA|Japan|JP
+61d379f61366c3998241d8d1|Port of Tokyo|Tokyo|139.791389|35.624722|JPTYO|Japan|JP
+61d379f61366c3998241d8d2|Port of Yokohama|Yokohama|139.667778|35.436389|JPYOK|Japan|JP
+61d379f71366c3998241d8d3|Port of Abashiri|Abashiri|144.288056|44.018056|JPABA|Japan|JP
+61d379f71366c3998241d8d4|Port of Aioi|Aioi|134.461944|34.785|JPAIO|Japan|JP
+61d379f81366c3998241d8d5|Port of Akita|Akita|140.043611|39.762222|JPAXT|Japan|JP
+61d379fa1366c3998241d8d9|Port of Chiba|Chiba|140.064444|35.562222|JPCHB|Japan|JP
+61d379fb1366c3998241d8dc|Port of Funabashi|Funabashi|139.981389|35.670278|JPFNB|Japan|JP
+61d379fd1366c3998241d8df|Port of Gamagori|Gamagori|137.238333|34.815556|JPGAM|Japan|JP
+61d379fe1366c3998241d8e1|Port of Hachinohe|Hachinohe|141.5275|40.545833|JPHHE|Japan|JP
+61d379ff1366c3998241d8e3|Port of Hakodate|Hakodate|140.714167|41.787778|JPHKD|Japan|JP
+61d37a001366c3998241d8e5|Port of Hannan|Hannan|135.347222|34.4625|JPHAN|Japan|JP
+61d37a011366c3998241d8e8|Port of Himeji|Himeji|134.67528|34.77858|JPHIM|Japan|JP
+61d37a021366c3998241d8e9|Port of Hirohata|Hirohata|134.61173|34.77642|JPHRH|Japan|JP
+61d37a021366c3998241d8ea|Port of Hiroshima|Hiroshima|132.424167|34.365278|JPHIJ|Japan|JP
+61d37a031366c3998241d8eb|Port of Hitachi|Hitachi|140.622778|36.490833|JPHTC|Japan|JP
+61d37a031366c3998241d8ec|Port of Hososhima|Hososhima|131.661944|32.439722|JPHSM|Japan|JP
+61d37a041366c3998241d8ed|Port of Imabari|Imabari|133.009722|34.068056|JPIMB|Japan|JP
+61d37a041366c3998241d8ee|Port of Imari|Imari|129.823333|33.305278|JPIMI|Japan|JP
+61d37a061366c3998241d8f1|Port of Ishinomaki|Ishinomaki|141.265833|38.413333|JPISM|Japan|JP
+61d37a081366c3998241d8f4|Port of Iwakuni|Iwakuni|132.236389|34.176944|JPIWK|Japan|JP
+61d37a091366c3998241d8f6|Port of Kainan|Kainan|135.191389|34.153056|JPKAI|Japan|JP
+61d37a091366c3998241d8f7|Port of Kakogawa|Kakogawa|134.837778|34.71|JPKGA|Japan|JP
+61d37a0a1366c3998241d8f8|Port of Kamaishi|Kamaishi|141.895278|39.269444|JPKIS|Japan|JP
+61d37a0a1366c3998241d8f9|Port of Kanazawa|Kanazawa|136.610278|36.616944|JPKNZ|Japan|JP
+61d37a0b1366c3998241d8fb|Port of Kanokawa|Kanokawa|132.440833|34.189722|JPKKW|Japan|JP
+61d37a0c1366c3998241d8fc|Port of Karatsu|Karatsu|129.959167|33.470833|JPKAR|Japan|JP
+61d37a0d1366c3998241d8fe|Port of Kawasaki|Kawasaki|139.749722|35.506389|JPKWS|Japan|JP
+61d37a0e1366c3998241d900|Port of Kiire|Kiire|130.548889|31.388889|JPKII|Japan|JP
+61d37a0f1366c3998241d902|Port of Kinuura|Kinuura|136.951111|34.864722|JPKNU|Japan|JP
+61d37a101366c3998241d904|Port of Kisarazu|Kisarazu|139.856111|35.354444|JPKZU|Japan|JP
+61d37a101366c3998241d905|Port of Kobe|Kobe|135.240833|34.684167|JPUKB|Japan|JP
+61d37a111366c3998241d906|Port of Kochi|Kochi|133.561111|33.524167|JPKCZ|Japan|JP
+61d37a111366c3998241d907|Port of Kokura|Kokura|130.87096|33.89991|JPKOK|Japan|JP
+61d37a121366c3998241d909|Port of Kudamatsu|Kudamatsu|131.851667|34.002778|JPKUD|Japan|JP
+61d37a131366c3998241d90b|Port of Kushiro|Kushiro|144.353611|42.988611|JPKUH|Japan|JP
+61d37a141366c3998241d90c|Port of Maizuru|Maizuru|135.386389|35.481667|JPMAI|Japan|JP
+61d37a1a1366c3998241d919|Port of Mizushima|Mizushima|133.736667|34.504167|JPMIZ|Japan|JP
+61d37a1c1366c3998241d91c|Port of Muroran|Muroran|140.956389|42.335833|JPMUR|Japan|JP
+61d37a1c1366c3998241d91d|Port of Nagasaki|Nagasaki|129.865|32.740278|JPNGS|Japan|JP
+61d37a1d1366c3998241d91e|Port of Nagoya|Nagoya|136.848056|35.045|JPNGO|Japan|JP
+61d37a1e1366c3998241d920|Port of Namikata|Namikata|132.907222|34.118889|JPNIT|Japan|JP
+61d37a1e1366c3998241d921|Port of Nanao|Nanao|136.983056|37.058611|JPNNO|Japan|JP
+61d37a1f1366c3998241d922|Port  of Naoetsu|Naoetsu|138.261389|37.199167|JPNAO|Japan|JP
+61d37a201366c3998241d924|Port of Niigata|Niigata|139.129444|37.955|JPKIJ|Japan|JP
+61d37a201366c3998241d925|Port of Niihama|Niihama|133.265|33.970833|JPIHA|Japan|JP
+61d37a211366c3998241d927|Port of Oita|Oita|131.68|33.272222|JPOIT|Japan|JP
+61d37a221366c3998241d928|Port of Omaezaki|Omaezaki|138.216944|34.619444|JPOMZ|Japan|JP
+61d37a241366c3998241d92c|Port of Onahama|Onahama|140.886944|36.928611|JPONA|Japan|JP
+61d37a281366c3998241d935|Port of Sakai|Sakai|135.435278|34.575278|JPSAK|Japan|JP
+61d37a291366c3998241d936|Port of Sakaide|Sakaide|133.841389|34.336111|JPSKD|Japan|JP
+61d37a291366c3998241d937|Port of Sakaiminato|Sakaiminato|133.260278|35.536111|JPSMN|Japan|JP
+61d37a2a1366c3998241d939|Port of Sasebo|Sasebo|129.712222|33.156944|JPSSB|Japan|JP
+61d37a2c1366c3998241d93d|Port of Shimizu|Shimizu|138.515556|35.014444|JPSMZ|Japan|JP
+61d37a2e1366c3998241d93f|Port of Shimonoseki|Shimonoseki|130.901667|33.934444|JPSHS|Japan|JP
+61d37a301366c3998241d943|Port of Susaki|Susaki|133.291389|33.390833|JPSUZ|Japan|JP
+61d37a321366c3998241d947|Port of Takamatsu|Takamatsu|134.055278|34.355278|JPTAK|Japan|JP
+61d37a351366c3998241d94d|Port of Tomakomai|Tomakomai|141.655278|42.6375|JPTMK|Japan|JP
+61d37a361366c3998241d950|Port of Toyohashi|Toyohashi|137.309167|34.721389|JPTHS|Japan|JP
+61d37a381366c3998241d953|Port of Ube|Ube|131.240278|33.938333|JPUBJ|Japan|JP
+61d37a3a1366c3998241d957|Port of Wakayama|Wakayama|135.133056|34.223056|JPWAK|Japan|JP
+61d37a3d1366c3998241d95d|Port of Yokkaichi|Yokkaichi|136.649444|34.957222|JPYKK|Japan|JP
+61d37a3e1366c3998241d95f|Port of Yokosuka|Yokosuka|139.656944|35.304444|JPYOS|Japan|JP
+61d37a441366c3998241d96d|Port of Mombasa|Mombasa|39.635|-4.051111|KEMBA|Kenya|KE
+61d37a4b1366c3998241d973|Port of Chongjin|Chongjin|129.791389|41.761111|KPCHO|North Korea|KP
+61d37a4b1366c3998241d974|Port of Haeju|Haeju|125.703889|38|KPHAE|North Korea|KP
+61d37a4c1366c3998241d975|Port of Hungnam|Hungnam|127.635278|39.826111|KPHGM|North Korea|KP
+61d37a4c1366c3998241d976|Port of Nampo|Nampo|125.395833|38.720278|KPNAM|North Korea|KP
+61d37a4e1366c3998241d979|Port of Wonsan|Wonsan|127.448056|39.168056|KPWON|North Korea|KP
+61d37a501366c3998241d97b|Port of Gwangyang|Gwangyang|127.678611|34.888333|KRKAN|South Korea|KR
+61d37a531366c3998241d97d|Port of Pyeongtaek|Pyeongtaek|126.791944|36.992778|KRPTK|South Korea|KR
+61d37a551366c3998241d97f|Port of Busan|Busan|129.059444|35.109444|KRPUS|South Korea|KR
+61d37a561366c3998241d981|Port of Donghae|Donghae|129.136667|37.493056|KRTGH|South Korea|KR
+61d37a571366c3998241d982|Port of Gunsan (Kunsan)|Gunsan|126.590833|35.959722|KRKUV|South Korea|KR
+61d37a571366c3998241d983|Port of Incheon|Incheon|126.6175|37.474167|KRINC|South Korea|KR
+61d37a581366c3998241d985|Port of Masan|Masan|128.626111|35.164167|KRMAS|South Korea|KR
+61d37a591366c3998241d986|Port of Mokpo|Mokpo|126.383056|34.776111|KRMOK|South Korea|KR
+61d37a591366c3998241d987|Port of Pohang|Pohang|129.404444|36.019722|KRKPO|South Korea|KR
+61d37a5a1366c3998241d989|Port of Ulsan|Ulsan|129.386667|35.499722|KRUSN|South Korea|KR
+61d37a5b1366c3998241d98a|Port of Yeosu|Yeosu|127.756944|34.746667|KRYOS|South Korea|KR
+61d37a5c1366c3998241d98d|Port of Shuaiba|Shuaiba|48.159722|29.044722|KWSAA|Kuwait|KW
+61d37a601366c3998241d992|Freeport of Riga|Riga|24.090833|57.007778|LVRIX|Latvia|LV
+61d37a621366c3998241d994|Port of Beirut|Beirut|35.521111|33.905|LBBEY|Lebanon|LB
+61d37a701366c3998241d9a7|Port of Tripoli|Tripoli|13.199444|32.9075|LYTIP|Libya|LY
+61d37a721366c3998241d9a9|Klaipeda State Seaport|Klaipeda|21.134722|55.687222|LTKLJ|Lithuania|LT
+61d37a7b1366c3998241d9b4|Port of Toamasina|Toamasina|49.425|-18.157222|MGTOA|Madagascar|MG
+61d37a881366c3998241d9bf|Kota Kinabalu Port|Kota Kinabalu|116.076111|5.9875|MYBKI|Malaysia|MY
+61d37a891366c3998241d9c1|Kuching Port|Kuching|110.458333|1.6175|MYKCH|Malaysia|MY
+61d37a8f1366c3998241d9cd|Tanjung Pelepas Port|Tanjung Pelepas|103.544167|1.353611|MYTPP|Malaysia|MY
+61d37a921366c3998241d9d0|Malta Freeport|Marsaxlokk|14.545833|35.826111|MTMAR|Malta|MT
+61d37a921366c3998241d9d1|Port of Valletta|Valletta|14.511944|35.895278|MTMLA|Malta|MT
+61d37a951366c3998241d9d4|Port of Fort-de-France|Fort-de-France|-61.061944|14.599444|MQFDF|Martinique|MQ
+61d37a971366c3998241d9d8|Port of Nouadhibou|Nouadhibou|-17.046667|20.9075|MRNDB|Mauritania|MR
+61d37a981366c3998241d9d9|Port of Port Louis|Port Louis|57.493611|-20.148056|MUPLU|Mauritius|MU
+61d37aae1366c3998241d9e5|Puerto de Guaymas|Guaymas|-110.876389|27.920278|MXGYM|Mexico|MX
+61d37aaf1366c3998241d9e6|Puerto de Lazaro Cardenas|Lazaro Cardenas|-102.180278|17.934167|MXLZC|Mexico|MX
+61d37ab01366c3998241d9e9|Puerto de Tampico|Tampico|-97.833889|22.236944|MXTAM|Mexico|MX
+61d37ab21366c3998241d9ec|Puerto de Altamira|Altamira|-97.874722|22.487222|MXATM|Mexico|MX
+61d37ab41366c3998241d9f1|Puerto de Coatzacoalcos|Coatzacoalcos|-94.420278|18.129722|MXCOA|Mexico|MX
+61d37ab61366c3998241d9f4|Puerto de Ensenada|Ensenada|-116.626389|31.850833|MXESE|Mexico|MX
+61d37ab91366c3998241d9fa|Puerto de Manzanillo|Manzanillo|-104.301389|19.070556|MXZLO|Mexico|MX
+61d37ab91366c3998241d9fb|Puerto de Mazatlan|Mazatlan|-106.399167|23.192222|MXMZT|Mexico|MX
+61d37ac11366c3998241da0a|Puerto de Topolobampo|Topolobampo|-109.054444|25.594167|MXTPB|Mexico|MX
+61d37ac11366c3998241da0b|Puerto de Tuxpan|Tuxpan|-97.372778|20.940556|MXTUX|Mexico|MX
+61d37ac21366c3998241da0c|Port of Veracruz|Veracruz|-96.133889|19.208333|MXVER|Mexico|MX
+61d37ace1366c3998241da18|Port of Agadir|Agadir|-9.635833|30.423889|MAAGA|Morocco|MA
+61d37acf1366c3998241da1a|Port of Casablanca|Casablanca|-7.600278|33.608889|MACAS|Morocco|MA
+61d37ad21366c3998241da20|Port of Nador|Nador|-2.91759|35.27553|MANDR|Morocco|MA
+61d37ad21366c3998241da21|Port of Safi|Safi|-9.248056|32.3075|MASFI|Morocco|MA
+61d37ad51366c3998241da23|Port of Beira|Beira|34.833611|-19.819167|MZBEW|Mozambique|MZ
+61d37ad61366c3998241da24|Port of Maputo|Maputo|32.561111|-25.972778|MZMPM|Mozambique|MZ
+61d37ad91366c3998241da28|Port of Yangon|Yangon|96.17|16.765833|MMRGN|Myanmar|MM
+61d37bdd99db2ccf7339ecba|Port of Moerdijk|Moerdijk|4.589444|51.689444|NLMOE|Netherlands|NL
+61d37be199db2ccf7339ecc0|Port of Amsterdam|Amsterdam|4.828333|52.413056|NLAMS|Netherlands|NL
+61d37be399db2ccf7339ecc3|Port of Dordrecht|Dordrecht|4.652222|51.805833|NLDOR|Netherlands|NL
+61d37be499db2ccf7339ecc5|Port of Rotterdam|Rotterdam|4.298333|51.927222|NLRTM|Netherlands|NL
+61d37be599db2ccf7339ecc7|Zeeland Seaports|Terneuzen/Vlissingen|3.722222|51.396944|NLTNZ|Netherlands|NL
+61d37be699db2ccf7339ecc9|Port of Vlaardingen|Vlaardingen|4.344167|51.902222|NLVLA|Netherlands|NL
+61d37bf199db2ccf7339ecd6|Port of Noumea|Noumea|166.431111|-22.259722|NCNOU|New Caledonia|NC
+61d37bf499db2ccf7339ecd9|Port of Marsden Point|Marsden Point|174.491389|-35.8375|NZMAP|New Zealand|NZ
+61d37bfc99db2ccf7339ecdf|Ports of Auckland|Auckland|174.771111|-36.836389|NZAKL|New Zealand|NZ
+61d37bfe99db2ccf7339ece3|Port of Lyttelton|Lyttelton|172.716111|-43.606111|NZLYT|New Zealand|NZ
+61d37bff99db2ccf7339ece4|Port of Napier|Napier|176.918889|-39.475|NZNPE|New Zealand|NZ
+61d37bff99db2ccf7339ece5|Port Nelson|Nelson|173.275|-41.259722|NZNSN|New Zealand|NZ
+61d37c0199db2ccf7339ece9|Port Chalmers|Port Otago|170.626389|-45.813056|NZPOE|New Zealand|NZ
+61d37c0299db2ccf7339eceb|Port of Tauranga|Tauranga|176.178333|-37.659444|NZTRG|New Zealand|NZ
+61d37c0499db2ccf7339ecee|Port of Wellington|Wellington|174.793611|-41.2775|NZWLG|New Zealand|NZ
+61d37c0499db2ccf7339ecef|Port of Westport|Westport|171.595833|-41.750278|NZWSZ|New Zealand|NZ
+61d37c0999db2ccf7339ecf3|Port of  Corinto|Corinto|-87.170556|12.481944|NICIO|Nicaragua|NI
+61d37c1099db2ccf7339ecfb|Port of Onne|Onne|7.163611|4.685|NGONN|Nigeria|NG
+61d37c1499db2ccf7339ed02|Port of Port Harcourt|Port Harcourt|7.005|4.769167|NGPHC|Nigeria|NG
+61d37cc999db2ccf7339ee7a|Port of Haugesund|Haugesund|5.258889|59.412222|NOHAU|Norway|NO
+61d37cc999db2ccf7339ee7b|Narvik Havn KF|Narvik|17.4175|68.422778|NONVK|Norway|NO
+61d37cca99db2ccf7339ee7c|Port of Oslo|Oslo|10.735278|59.897222|NOOSL|Norway|NO
+61d37cca99db2ccf7339ee7d|Port of Stavanger|Stavanger|5.739444|58.978889|NOSVG|Norway|NO
+61d37ccb99db2ccf7339ee7e|Port of Tromso|Tromso|18.97|69.655833|NOTOS|Norway|NO
+61d37cce99db2ccf7339ee85|Port of Bergen|Bergen|5.321389|60.396944|NOBGO|Norway|NO
+61d37ccf99db2ccf7339ee86|Port of Bodo|Bodo|14.377778|67.288333|NOBOO|Norway|NO
+61d37cd099db2ccf7339ee88|Port of Drammen|Drammen|10.229722|59.736667|NODRM|Norway|NO
+61d37cd599db2ccf7339ee92|Port of Harstad|Harstad|16.546944|68.795|NOHRD|Norway|NO
+61d37ce599db2ccf7339eeb1|Port of Sandnes|Sandnes|5.74269|58.84954|NOSAS|Norway|NO
+61d37ce799db2ccf7339eeb5|Port of Sortland|Sortland|15.419722|68.697778|NOSLX|Norway|NO
+61d37ce999db2ccf7339eeb8|Port of Stokmarknes|Stokmarknes|14.929444|68.568611|NOSKN|Norway|NO
+61d37cf099db2ccf7339eec5|Port of Salalah|Salalah|54.005|16.941667|OMSLL|Oman|OM
+61d37cf299db2ccf7339eec9|Port of Sohar|Sohar|56.740556|24.378333|OMSOH|Oman|OM
+61d37cf999db2ccf7339eed6|Port of Karachi|Karachi|66.977778|24.835|PKKHI|Pakistan|PK
+61d37cff99db2ccf7339eedd|Port of Balboa|Balboa|-79.57|8.955556|PABLB|Panama|PA
+61d37d0199db2ccf7339eee1|Manzanillo International Terminal|Colon|-79.87979|9.37237|PAONX|Panama|PA
+61d37d0299db2ccf7339eee2|Port of Cristobal|Cristobal|-79.91056|9.34824|PACTB|Panama|PA
+61d37d0f99db2ccf7339eeef|Port of Lae|Lae|146.985556|-6.741111|PGLAE|Papua New Guinea|PG
+61d37d1099db2ccf7339eef1|Port of Madang|Madang|145.800833|-5.213333|PGMAG|Papua New Guinea|PG
+61d37d1199db2ccf7339eef3|Port of Port Moresby|Port Moresby|147.151667|-9.467222|PGPOM|Papua New Guinea|PG
+61d37d2599db2ccf7339ef03|Port of Callao|Callao|-77.146667|-12.045278|PECLL|Peru|PE
+61d37d2699db2ccf7339ef05|Port of Iquitos|Iquitos|-73.236667|-3.728333|PEIQT|Peru|PE
+61d37d5599db2ccf7339ef37|Port of Cebu|Cebu|123.926111|10.306389|PHCEB|Philippines|PH
+61d37d5799db2ccf7339ef3b|Port of Subic Bay|Subic Bay|120.279444|14.808333|PHSFS|Philippines|PH
+61d37d6699db2ccf7339ef58|Port of Manila|Manila|120.949167|14.524167|PHMNL|Philippines|PH
+61d37d7799db2ccf7339ef75|Port of Gdansk|Gdansk|18.67|54.393333|PLGDN|Poland|PL
+61d37d7899db2ccf7339ef77|Port of Gdynia|Gdynia|18.541389|54.533333|PLGDY|Poland|PL
+61d37d7899db2ccf7339ef78|Port of Kolobrzeg|Kolobrzeg|15.553333|54.183611|PLKOL|Poland|PL
+61d37d7999db2ccf7339ef79|Port Handlowy Swinoujscie|Swinoujscie|14.269722|53.905|PLSWI|Poland|PL
+61d37d7999db2ccf7339ef7a|Port of Szczecin|Szczecin|14.587222|53.430556|PLSZZ|Poland|PL
+61d37d8799db2ccf7339ef90|Port of Portimao|Portimao|-8.526111|37.126389|PTPRM|Portugal|PT
+61d37d8899db2ccf7339ef91|Port of Douro River|Porto|-8.615833|41.138889|PTOPO|Portugal|PT
+61d37d9499db2ccf7339efa5|Porto de Aveiro|Aveiro|-8.712222|40.6425|PTAVE|Portugal|PT
+61d37d9599db2ccf7339efa8|Port of Figueira Da Foz|Figueira Da Foz|-8.8575|40.145278|PTFDF|Portugal|PT
+61d37d9899db2ccf7339efad|Port of Leixoes|Leixoes|-8.698333|41.185|PTLEI|Portugal|PT
+61d37d9899db2ccf7339efae|Port of Lisbon|Lisbon|-9.158889|38.699167|PTLIS|Portugal|PT
+61d37d9b99db2ccf7339efb4|Port of Setubal|Setubal|-8.835556|38.492778|PTSET|Portugal|PT
+61d37d9c99db2ccf7339efb5|Port of Sines|Sines|-8.8675|37.9425|PTSIE|Portugal|PT
+61d37db099db2ccf7339efce|Port of San Juan|San Juan|-66.102222|18.456389|PRSJU|Puerto Rico|PR
+61d37db399db2ccf7339efd3|Port of Doha|Doha|51.558889|25.298056|QADOH|Qatar|QA
+61d37db499db2ccf7339efd5|Port of Ras Laffan|Ras Laffan|51.603611|25.92|QARLF|Qatar|QA
+61d37db599db2ccf7339efd6|Reunion East Port (New Port)|Reunion|55.319722|-20.930556|REREU|Reunion|RE
+61d37dc699db2ccf7339eff2|Port of Astrakhan|Astrakhan|47.993611|46.333333|RUASF|Russia|RU
+61d37dfe99db2ccf7339f052|Port of Arkhangelsk|Arkhangelsk|40.56|64.5425|RUARH|Russia|RU
+61d37e0199db2ccf7339f059|Port of Vladivostok|Vladivostok|131.890278|43.094444|RUVVO|Russia|RU
+61d37e0799db2ccf7339f063|Port of Kaliningrad|Kaliningrad|20.458611|54.7|RUKGD|Russia|RU
+61d37e0b99db2ccf7339f06b|Port of Murmansk|Murmansk|33.046111|68.9725|RUMMK|Russia|RU
+61d37e0d99db2ccf7339f06f|Port of Nikolaevsk on Amur|Nikolaevsk on Amur|140.715556|53.132222|RUNIA|Russia|RU
+61d37e0d99db2ccf7339f070|Port of Novorossiysk|Novorossiysk|37.806944|44.715|RUNVS|Russia|RU
+61d37e0f99db2ccf7339f073|Port of Petropavlovsk - Kamchatskiy|Petropavlovsk - Kamchatskiy|158.649722|53.007778|RUPKC|Russia|RU
+61d37e1199db2ccf7339f077|Port of Primorsk|Primorsk|28.714167|60.334722|RUPRI|Russia|RU
+61d37e1399db2ccf7339f07c|Port of St. Petersburg|St. Petersburg|30.23|59.927222|RULED|Russia|RU
+61d37e1499db2ccf7339f07d|Port of Taganrog|Taganrog|38.950556|47.2025|RUTAG|Russia|RU
+61d37e1599db2ccf7339f07f|Port of Tiksi|Tiksi|128.876389|71.643056|RUIKS|Russia|RU
+61d37e1599db2ccf7339f080|Port of Tuapse|Tuapse|39.066667|44.091944|RUTUA|Russia|RU
+61d37e1799db2ccf7339f084|Port of Vanino|Vanino|140.271667|49.085|RUVNN|Russia|RU
+61d37ed729b60f6113c89ced|King Abdul Aziz Port|Dammam|50.201111|26.488611|SADMN|Saudi Arabia|SA
+61d37ed829b60f6113c89cee|Jeddah|Jeddah|39.164167|21.458611|SAJED|Saudi Arabia|SA
+61d37ed929b60f6113c89cf0|Jubail Commercial Port|Jubail|49.673333|27.028611|SAJUB|Saudi Arabia|SA
+61d37ede29b60f6113c89cf9|Port of Dakar|Dakar|-17.43|14.682222|SNDKR|Senegal|SN
+61d37ee429b60f6113c89d01|Port of Singapore|Singapore|103.725278|1.292778|SGSIN|Singapore|SG
+61d37ee429b60f6113c89d02|Port of Bratislava|Bratislava|17.145|48.130556|SKBTS|Slovakia|SK
+61d37ee629b60f6113c89d04|Port of Koper|Koper|13.736111|45.556944|SIKOP|Slovenia|SI
+61d37ef929b60f6113c89d1a|Port of Cape Town|Cape Town|18.436389|-33.909167|ZACPT|South Africa|ZA
+61d37ef929b60f6113c89d1b|Port of Durban|Durban|31.027222|-29.881111|ZADUR|South Africa|ZA
+61d37efa29b60f6113c89d1c|Port of East London|East London|27.9075|-33.025278|ZAELS|South Africa|ZA
+61d37efa29b60f6113c89d1d|Port of Port Elizabeth|Port Elizabeth|25.636389|-33.961389|ZAPLZ|South Africa|ZA
+61d37efb29b60f6113c89d1f|Port of Richards Bay|Richards Bay|32.059722|-28.804722|ZARCB|South Africa|ZA
+61d37efc29b60f6113c89d21|Naval Base Simon's Town|Simon's Town|18.436944|-34.19|ZASMN|South Africa|ZA
+61d37f6729b60f6113c89df9|Port of Mallorca|Palma de Mallorca|2.630278|39.551111|ESPMI|Spain|ES
+61d37f9b29b60f6113c89e64|Port of Algeciras Bay|Algeciras|-5.399444|36.148611|ESALG|Spain|ES
+61d37f9c29b60f6113c89e65|Port of Barcelona|Barcelona|2.164722|41.340278|ESBCN|Spain|ES
+61d37f9c29b60f6113c89e66|Port of Bilbao|Bilbao|-3.047222|43.351667|ESBIO|Spain|ES
+61d37f9d29b60f6113c89e67|Puerto de Cartagena|Cartagena|-0.985556|37.595278|ESCAR|Spain|ES
+61d37f9e29b60f6113c89e69|Port of Las Palmas|Las Palmas|-15.418333|28.137222|ESLPA|Spain|ES
+61d37f9f29b60f6113c89e6b|Port of Seville|Seville|-5.992778|37.351944|ESSVQ|Spain|ES
+61d37fa029b60f6113c89e6d|Port of A Coruna|A Coruna|-8.390556|43.363056|ESLCG|Spain|ES
+61d37fa229b60f6113c89e72|Alicante Port|Alicante|-0.489167|38.331944|ESALC|Spain|ES
+61d37fa329b60f6113c89e73|Puerto de Almeria|Almeria|-2.473056|36.830278|ESLEI|Spain|ES
+61d37fa429b60f6113c89e75|Puerto de Aviles|Aviles|-5.921944|43.578611|ESAVS|Spain|ES
+61d37fa729b60f6113c89e7b|Port of the Bay of Cadiz|Cadiz|-6.263889|36.52|ESCAD|Spain|ES
+61d37fa829b60f6113c89e7e|Port of Castellon|Castellon|0.018611|39.9625|ESCAS|Spain|ES
+61d37fab29b60f6113c89e84|Puerto de Ferrol|Ferrol|-8.215833|43.476667|ESFRO|Spain|ES
+61d37fad29b60f6113c89e87|Port of Gijon|Gijon|-5.691944|43.565556|ESGIJ|Spain|ES
+61d37fad29b60f6113c89e88|Port of Huelva|Huelva|-6.9225|37.1775|ESHUV|Spain|ES
+61d37faf29b60f6113c89e8b|Port of Malaga|Malaga|-4.419167|36.709167|ESAGP|Spain|ES
+61d37fb029b60f6113c89e8e|Port of Melilla|Melilla|-2.93074|35.29299|ESMLN|Spain|ES
+61d37fb329b60f6113c89e94|Puerto de Pasajes|Pasajes|-1.917778|43.323611|ESPAS|Spain|ES
+61d37fb629b60f6113c89e99|Port of Sagunto|Sagunto|-0.2125|39.642778|ESSAG|Spain|ES
+61d37fb929b60f6113c89e9f|Puertos de Tenerife|Santa Cruz de Tenerife|-16.232222|28.474722|ESSCT|Spain|ES
+61d37fb929b60f6113c89ea0|Port of Santander|Santander|-3.807778|43.442222|ESSDR|Spain|ES
+61d37fbb29b60f6113c89ea3|Port of Tarragona|Tarragona|1.2225|41.094167|ESTAR|Spain|ES
+61d37fbc29b60f6113c89ea5|Port of Valencia|Valencia|-0.319444|39.444167|ESVLC|Spain|ES
+61d37fbc29b60f6113c89ea6|Port of Vigo|Vigo|-8.731667|42.2425|ESVGO|Spain|ES
+61d37fbd29b60f6113c89ea7|Porto de Villagarcia|Vilagarcia de Arousa|-8.778056|42.596111|ESVIL|Spain|ES
+61d37fc029b60f6113c89eaa|Port of Colombo|Colombo|79.850278|6.951389|LKCMB|Sri Lanka|LK
+61d37fc629b60f6113c89eb3|Port Sudan|Port Sudan|37.224444|19.615833|SDPZU|Sudan|SD
+61d37fc729b60f6113c89eb5|Port of Paramaribo|Paramaribo|-55.142222|5.82|SRPBM|Suriname|SR
+61d37fed29b60f6113c89ed3|Port of Gavle|Gavle|17.198056|60.684444|SEGVX|Sweden|SE
+61d37fee29b60f6113c89ed4|Port of Goteborg|Goteborg|11.871944|57.689167|SEGOT|Sweden|SE
+61d37ff029b60f6113c89ed9|Port of Ahus|Ahus|14.308611|55.925556|SEAHU|Sweden|SE
+61d37ff229b60f6113c89edd|Falkenbergs Terminal|Falkenberg|12.481944|56.889444|SEFAG|Sweden|SE
+61d37ff629b60f6113c89ee4|Port of Helsingborg|Helsingborg|12.69|56.033333|SEHEL|Sweden|SE
+61d37ff829b60f6113c89ee8|Port of Kalmar|Kalmar|16.370556|56.659167|SEKLR|Sweden|SE
+61d37ff929b60f6113c89eeb|Port of Karlskrona|Karlskrona|15.5875|56.16|SEKAA|Sweden|SE
+61d37ffc29b60f6113c89ef0|Copenhagen Malmo Port|Malmo|13.0025|55.625556|SEMMA|Sweden|SE
+61d37ffd29b60f6113c89ef2|Port of Norrkoping|Norrkoping|16.230833|58.610278|SENRK|Sweden|SE
+61d3800129b60f6113c89efb|Port of Ronneby|Ronneby|15.3|56.174722|SERNB|Sweden|SE
+61d3800629b60f6113c89f04|Ports of Stockholm|Stockholm|18.114722|59.335|SESTO|Sweden|SE
+61d3800c29b60f6113c89f0f|Port Wallhamn|Wallhamn|11.7|58.008889|SEWAL|Sweden|SE
+61d3801129b60f6113c89f19|Port of Lattakia|Lattakia|35.763889|35.519167|SYLTK|Syria|SY
+61d3801429b60f6113c89f1d|Hualien Port|Hualien|121.633889|23.987222|TWHUN|Taiwan|TW
+61d3801529b60f6113c89f1e|Port of Kaohsiung|Kaohsiung|120.311111|22.565278|TWKHH|Taiwan|TW
+61d3801529b60f6113c89f1f|Port of Keelung|Keelung|121.755556|25.148333|TWKEL|Taiwan|TW
+61d3801629b60f6113c89f20|Port of Taichung|Taichung|120.506111|24.258333|TWTXG|Taiwan|TW
+61d3801c29b60f6113c89f29|Port of Dar es Salaam|Dar es Salaam|39.299167|-6.834444|TZDAR|Tanzania|TZ
+61d3802629b60f6113c89f35|Sattahip Comercial Port|Sattahip|100.919722|12.624444|THSAT|Thailand|TH
+61d3802829b60f6113c89f37|Port of Bangkok|Bangkok|100.585833|13.695833|THBKK|Thailand|TH
+61d3802b29b60f6113c89f3d|Port of Laem Chabang|Laem Chabang|100.895278|13.073889|THLCH|Thailand|TH
+61d38259b7b7526e1adf3a41|Port of Derince|Derince|29.841944|40.751111|TRDRC|Turkey|TR
+61d38285b7b7526e1adf3a84|Port Zayed|Abu Dhabi|54.376111|24.525|AEAUH|United Arab Emirates|AE
+61d38286b7b7526e1adf3a87|Port of Jebel Ali|Jebel Ali|55.059444|24.995833|AEJEA|United Arab Emirates|AE
+61d38329b7b7526e1adf3b60|Port of Liverpool|Liverpool|-3.011389|53.436389|GBLIV|United Kingdom|GB
+61d3832bb7b7526e1adf3b63|Port of Southampton|Southampton|-1.428889|50.9025|GBSOU|United Kingdom|GB
+61d38338b7b7526e1adf3b7c|Port of Bristol|Bristol|-2.712222|51.498889|GBBRS|United Kingdom|GB
+61d3836fb7b7526e1adf3beb|Portsmouth Continental Ferry Port|Portsmouth|-1.1|50.8075|GBPME|United Kingdom|GB
+61d38382b7b7526e1adf3c11|Port of Tyne|Tyne|-1.445278|54.994444|GBTYN|United Kingdom|GB
+61d383bab7b7526e1adf3c52|Port of Chicago|Chicago|-87.566111|41.689444|USCHI|United States|US
+61d3840cb7b7526e1adf3cb5|Port of Marcus Hook|Marcus Hook|-75.418333|39.811667|USMAH|United States|US
+61d38435b7b7526e1adf3cdb|Port of Philadelphia|Philadelphia|-75.135278|39.895278|USPHL|United States|US
+61d38437b7b7526e1adf3cde|Port of Pittsburgh|Pittsburgh|-80.012222|40.449167|USPIT|United States|US
+61d38437b7b7526e1adf3cdf|Plaquemines Parish Port, Harbor and Terminal District|Plaquemines|-89.802222|29.609167|USPLQ|United States|US
+61d38439b7b7526e1adf3ce1|Point Comfort|Point Comfort|-96.558889|28.650833|USPCR|United States|US
+61d3843cb7b7526e1adf3ce3|Port Fourchon|Port Fourchon|-90.208056|29.128333|USFOC|United States|US
+61d38455b7b7526e1adf3cf8|Port of Sandwich|Sandwich|-70.503333|41.773056|USSWC|United States|US
+61d3847bb7b7526e1adf3d19|Port of Baltimore|Baltimore|-76.558889|39.2325|USBAL|United States|US
+61d3847cb7b7526e1adf3d1a|Port of Boston|Boston|-71.036667|42.363611|USBOS|United States|US
+61d3847cb7b7526e1adf3d1b|Port Charleston|Charleston|-79.9275|32.822222|USCHS|United States|US
+61d3847db7b7526e1adf3d1c|Port of Galveston|Galveston|-94.818611|29.304167|USGLS|United States|US
+61d3847eb7b7526e1adf3d1e|Port of Houston|Houston|-95.203333|29.739167|USHOU|United States|US
+61d3847fb7b7526e1adf3d1f|Port of Long Beach|Long Beach|-118.201111|33.748889|USLGB|United States|US
+61d3847fb7b7526e1adf3d20|Port of Los Angeles|Los Angeles|-118.265278|33.731944|USLAX|United States|US
+61d38480b7b7526e1adf3d21|Port of Mobile|Mobile|-88.040278|30.711389|USMOB|United States|US
+61d38480b7b7526e1adf3d22|Port of New Orleans|New Orleans|-90.090556|29.914167|USMSY|United States|US
+61d38481b7b7526e1adf3d23|Port of New York|New York|-74.028611|40.688333|USNYC|United States|US
+61d38481b7b7526e1adf3d24|Port of Newark|Newark|-74.150827|40.702759|USPNJ|United States|US
+61d38482b7b7526e1adf3d25|Port of Norfolk|Norfolk|-76.297778|36.901944|USORF|United States|US
+61d38482b7b7526e1adf3d26|Port of San Francisco|San Francisco|-122.401389|37.788611|USSFO|United States|US
+61d38483b7b7526e1adf3d27|Port of Savannah|Savannah|-81.125833|32.110833|USSAV|United States|US
+61d38483b7b7526e1adf3d28|Port of Seattle|Seattle|-122.365278|47.602222|USSEA|United States|US
+61d38484b7b7526e1adf3d29|Port of Tacoma|Tacoma|-122.406667|47.267222|USTIW|United States|US
+61d38489b7b7526e1adf3d33|Port of Anchorage|Anchorage|-149.890278|61.235556|USANC|United States|US
+61d38491b7b7526e1adf3d44|Port of Beaumont|Beaumont|-94.083333|30.078056|USBPT|United States|US
+61d38492b7b7526e1adf3d46|Port of Bellingham|Bellingham|-122.500556|48.740556|USBLI|United States|US
+61d38493b7b7526e1adf3d47|Port of Benicia|Benicia|-122.13975|38.0461|USBNC|United States|US
+61d38497b7b7526e1adf3d50|Port of Bremerton|Bremerton|-122.637778|47.557222|USPWT|United States|US
+61d38499b7b7526e1adf3d53|Port of Brownsville|Brownsville|-97.385278|25.957222|USBRO|United States|US
+61d38499b7b7526e1adf3d54|Port of Brunswick|Brunswick|-81.496667|31.140556|USSSI|United States|US
+61d3849ab7b7526e1adf3d56|Port of Buffalo|Buffalo|-78.873056|42.846389|USBUF|United States|US
+61d3849cb7b7526e1adf3d59|Port of Camden|Camden|-75.136111|39.935278|USCDE|United States|US
+61d3849fb7b7526e1adf3d5f|Port of Chester|Chester|-75.360556|39.840278|USCHT|United States|US
+61d384a4b7b7526e1adf3d68|Port of Corpus Christi|Corpus Christi|-97.407222|27.812778|USCRP|United States|US
+61d384a7b7b7526e1adf3d6f|Detroit/Wayne County Port Authority|Detroit|-83.122222|42.2575|USDET|United States|US
+61d384a9b7b7526e1adf3d73|Indiana Harbor|East Chicago|-87.438889|41.673333|USECH|United States|US
+61d384adb7b7526e1adf3d7a|Humboldt Bay Harbor|Eureka|-124.190278|40.794444|USEKA|United States|US
+61d384adb7b7526e1adf3d7b|Port of Everett|Everett|-122.223889|47.982222|USPAE|United States|US
+61d384afb7b7526e1adf3d7e|Port of Fall River|Fall River|-71.166667|41.705|USFAV|United States|US
+61d384b1b7b7526e1adf3d83|Port Freeport|Freeport|-95.319167|28.950556|USFPO|United States|US
+61d384c1b7b7526e1adf3da1|Port of Jacksonville|Jacksonville|-81.564444|30.380833|USJAX|United States|US
+61d384c7b7b7526e1adf3dae|Port of Ketchikan|Ketchikan|-131.673889|55.346944|USKTN|United States|US
+61d384ceb7b7526e1adf3dbc|Port of Lorain|Lorain|-82.178333|41.468056|USLOR|United States|US
+61d384d5b7b7526e1adf3dca|Shell Oil Terminal Martinez|Martinez|-122.12456|38.0313|USMRZ|United States|US
+61d384d9b7b7526e1adf3dd1|Port of Miami|Miami|-80.167222|25.775|USMIA|United States|US
+61d384dab7b7526e1adf3dd3|Port of Milwaukee|Milwaukee|-87.9|43.015556|USMKE|United States|US
+61d384dfb7b7526e1adf3ddd|Muskegon Harbor|Muskegon|-86.295278|43.237222|USMKG|United States|US
+61d384e1b7b7526e1adf3de2|Port of New Bedford|New Bedford|-70.916389|41.6375|USNBD|United States|US
+61d384e2b7b7526e1adf3de4|Port of New Haven|New Haven|-72.915|41.286389|USHVN|United States|US
+61d384ebb7b7526e1adf3df6|Port of Oakland|Oakland|-122.301944|37.799444|USOAK|United States|US
+61d384efb7b7526e1adf3dfe|Port of Palm Beach|Palm Beach|-80.051389|26.7675|USPAB|United States|US
+61d384f0b7b7526e1adf3e00|Port of Pascagoula|Pascagoula|-88.539444|30.351389|USPGL|United States|US
+61d384f3b7b7526e1adf3e05|Port of Pensacola|Pensacola|-87.210833|30.405|USPNS|United States|US
+61d384f3b7b7526e1adf3e06|Port of Perth Amboy|Perth Amboy|-74.273333|40.503611|USPAY|United States|US
+61d384f7b7b7526e1adf3e0d|Port of Port Arthur|Port Arthur|-93.961111|29.843056|USPOA|United States|US
+61d384fab7b7526e1adf3e12|Port of Hueneme|Port Hueneme|-119.207778|34.149167|USNTD|United States|US
+61d384fdb7b7526e1adf3e18|Port Neches|Port Neches|-93.965278|30.006944|USPON|United States|US
+61d38500b7b7526e1adf3e1f|Port of Portland|Portland|-122.783889|45.605833|USPDX|United States|US
+61d38501b7b7526e1adf3e20|Port of Portland|Portland|-70.243056|43.653333|USPWM|United States|US
+61d38501b7b7526e1adf3e21|Port of Portsmouth|Portsmouth|-70.769722|43.0875|USPSM|United States|US
+61d38502b7b7526e1adf3e24|Port of Providence|Providence|-71.390278|41.794167|USPVD|United States|US
+61d38504b7b7526e1adf3e28|Port of Redwood City|Redwood City|-122.210556|37.511389|USRWC|United States|US
+61d38506b7b7526e1adf3e2b|Port of Richmond|Richmond|-122.364167|37.913889|USRCH|United States|US
+61d3850cb7b7526e1adf3e36|Port of San Diego|San Diego|-117.161389|32.684444|USSAN|United States|US
+61d3851bb7b7526e1adf3e54|Port of Stockton|Stockton|-121.326667|37.950556|USSCK|United States|US
+61d3851db7b7526e1adf3e59|Tampa Port Authority|Tampa|-82.437778|27.93|USTPA|United States|US
+61d3851eb7b7526e1adf3e5b|Port of Texas City|Texas City|-94.898333|29.375|USTXT|United States|US
+61d38520b7b7526e1adf3e5f|Port of Toledo|Toledo|-83.456667|41.695278|USTOL|United States|US
+61d38523b7b7526e1adf3e64|Port of Valdez|Valdez|-146.361111|61.103611|USVDZ|United States|US
+61d38523b7b7526e1adf3e65|Port of Vancouver|Vancouver|-122.713056|45.639444|USVAN|United States|US
+61d38528b7b7526e1adf3e6e|Port of Wilmington|Wilmington|-77.954167|34.191944|USILM|United States|US
+61d38528b7b7526e1adf3e6f|The Port of Wilmington|Wilmington|-75.521667|39.716667|USILG|United States|US
+61d38536b7b7526e1adf3e81|Puerto de Montevideo|Montevideo|-56.206667|-34.900556|UYMVD|Uruguay|UY
+61d38539b7b7526e1adf3e87|Port of Port Vila|Port Vila|168.309167|-17.747222|VUVLI|Vanuatu|VU
+61d3854eb7b7526e1adf3e99|Port of La Guaira|La Guaira|-66.944167|10.602778|VELAG|Venezuela|VE
+61d3854fb7b7526e1adf3e9b|Port of Puerto Cabello|Puerto Cabello|-67.998611|10.477222|VEPBL|Venezuela|VE
+61d38553b7b7526e1adf3ea3|Port Sucre|Cumana|-64.190278|10.474167|VECUM|Venezuela|VE
+61d38564b7b7526e1adf3ec0|Da Nang Port|Da Nang|108.226944|16.082222|VNDAD|Vietnam|VN
+61d38564b7b7526e1adf3ec1|Port of Hai Phong|Hai Phong|106.68|20.867222|VNHPH|Vietnam|VN
+61d38565b7b7526e1adf3ec2|Saigon Port|Ho Chi Minh City|106.720833|10.759444|VNSGN|Vietnam|VN
+61d3856db7b7526e1adf3ecf|Port of Hodeidah|Hodeidah|42.936389|14.833611|YEHOD|Yemen|YE
+61d38570b7b7526e1adf3ed3|Port of Aden|Aden|44.993333|12.795556|YEADE|Yemen|YE
+634c4de270937fc01c3a7000|Saint John's|Saint John's|-61.85|17.117|AGSJO|Antigua and Barbuda|AG
+634c4de270937fc01c3a7001|Bahía Blanca|Bahía Blanca|-62.283|-38.717|ARBHI|Argentina|AR
+634c4de270937fc01c3a7002|Caleta Córdoba|Caleta Córdoba|-67.067|-45.733|ARCLC|Argentina|AR
+634c4de270937fc01c3a7005|Puerto Rosales/Bahia Blanca|Puerto Rosales/Bahia Blanca|-62.067|-38.933|ARPRS|Argentina|AR
+634c4de270937fc01c3a7006|Rosario|Rosario|-60.65|-32.95|ARROS|Argentina|AR
+634c4de270937fc01c3a7007|San Nicolás de los Arroyos|San Nicolás de los Arroyos|-60.233|-33.333|ARSNS|Argentina|AR
+634c4de270937fc01c3a700a|Aruba|Aruba|-69.967|12.5|AWAUA|Aruba|AW
+634c4de270937fc01c3a700d|Ashburton|Ashburton|115|-21.683|AUASB|Australia|AU
+634c4de270937fc01c3a7013|Onslow|Onslow|115.1|-21.65|AUONS|Australia|AU
+634c4de270937fc01c3a7014|Perth|Perth|115.85|-31.95|AUPER|Australia|AU
+634c4de270937fc01c3a7015|Welshpool|Welshpool|146.433|-38.667|AUWHL|Australia|AU
+634c4de270937fc01c3a701b|Marsh Harbour|Marsh Harbour|-76.967|26.533|BSMHH|Bahamas|BS
+634c4de270937fc01c3a701c|Rock Sound|Rock Sound|-76.2|24.9|BSRSD|Bahamas|BS
+634c4de270937fc01c3a7022|Al Muharraq|Al Muharraq|50.6|26.25|BHGBQ|Bahrain|BH
+634c4de270937fc01c3a7023|Khalifa Bin Salman Port|Khalifa Bin Salman Port|50.71619|26.19036|BHKBS|Bahrain|BH
+634c4de270937fc01c3a7025|Brussel (Bruxelles)|Brussel (Bruxelles)|4.333|50.833|BEBRU|Belgium|BE
+634c4de270937fc01c3a7026|Charleroi|Charleroi|4.433|50.417|BECRL|Belgium|BE
+634c4de270937fc01c3a7027|Kortrijk|Kortrijk|3.267|50.833|BEKJK|Belgium|BE
+634c4de270937fc01c3a7028|Zelzate|Zelzate|3.817|51.2|BEZEL|Belgium|BE
+634c4de270937fc01c3a702d|Puerto Suárez|Puerto Suárez|-57.8|-18.95|BOPSZ|Bolivia|BO
+634c4de270937fc01c3a7031|Bonaire|Bonaire|-68.267|12.117|BQBON|Bonaire, St Eustatius and Saba|BQ
+634c4de270937fc01c3a7033|Saba|Saba|-63.233|17.633|BQSAB|Bonaire, St Eustatius and Saba|BQ
+634c4de270937fc01c3a7034|Sint Eustatius|Sint Eustatius|-62.967|17.483|BQEUX|Bonaire, St Eustatius and Saba|BQ
+634c4de270937fc01c3a7036|Açu Pt / São João da Barra|Açu Pt / São João da Barra|-41.017|-21.817|BRACX|Brazil|BR
+634c4de270937fc01c3a7039|Aracaju|Aracaju|-37.043|-10.93|BRAJU|Brazil|BR
+634c4de270937fc01c3a703a|Aratu Pt / Candeias|Aratu Pt / Candeias|-13.5|-12.767|BRARB|Brazil|BR
+634c4de270937fc01c3a703b|Areia Branca|Areia Branca|-37.117|-4.95|BRARE|Brazil|BR
+634c4de270937fc01c3a7040|Barra dos Coqueiros|Barra dos Coqueiros|-36.91853|-10.8453|BRBAR|Brazil|BR
+634c4de270937fc01c3a704b|Guamaré|Guamaré|-36.317|-5.1|BRGUA|Brazil|BR
+634c4de270937fc01c3a704d|Ilhabela|Ilhabela|-45.35|-23.783|BRIBE|Brazil|BR
+634c4de270937fc01c3a704f|Itapoá|Itapoá|-48.6|-26|BRIOA|Brazil|BR
+634c4de270937fc01c3a7050|Itaqui Pt / São Luís|Itaqui Pt / São Luís|-44.367|-2.567|BRIQI|Brazil|BR
+634c4de270937fc01c3a7051|Juruti|Juruti|-56.083|-2.15|BRJUR|Brazil|BR
+634c4de270937fc01c3a7053|Macaé|Macaé|-41.767|-22.367|BRMEA|Brazil|BR
+634c4de270937fc01c3a7055|Madre de Deus|Madre de Deus|-38.6|-12.733|BRMDD|Brazil|BR
+634c4de270937fc01c3a7056|Mangaratiba|Mangaratiba|-44.033|-22.95|BRMGT|Brazil|BR
+634c4de270937fc01c3a705a|Navegantes|Navegantes|-48.633|-26.883|BRNVT|Brazil|BR
+634c4de270937fc01c3a705b|Niterói|Niterói|-43.067|-22.883|BRNTR|Brazil|BR
+634c4de270937fc01c3a705c|Paracuru|Paracuru|-39.017|-3.4|BRPRU|Brazil|BR
+634c4de270937fc01c3a705e|Porto Alegre|Porto Alegre|-51.217|-30.017|BRPOA|Brazil|BR
+634c4de270937fc01c3a705f|Porto Belo|Porto Belo|-48.6|-27.133|BRPBO|Brazil|BR
+634c4de270937fc01c3a7062|Santana Pt / Macapá|Santana Pt / Macapá|-51.167|-0.05|BRMCP|Brazil|BR
+634c4de270937fc01c3a7067|Suape Pt / Ipojuca|Suape Pt / Ipojuca|-34.967|-8.4|BRSUA|Brazil|BR
+634c4de270937fc01c3a7068|Tramandaí|Tramandaí|-50.117|-29.983|BRTRM|Brazil|BR
+634c4de270937fc01c3a706a|Ubatuba|Ubatuba|-45.067|-23.433|BRUBT|Brazil|BR
+634c4de270937fc01c3a706d|Ruse|Ruse|25.967|43.85|BGRDU|Bulgaria|BG
+634c4de270937fc01c3a706e|Kâmpóng Saôm|Kâmpóng Saôm|103.517|10.6|KHKOS|Cambodia|KH
+634c4de270937fc01c3a7072|Argentia|Argentia|-54|47.3|CANWP|Canada|CA
+634c4de270937fc01c3a7073|Arviat|Arviat|-94.05|61.1|CAYEK|Canada|CA
+634c4de270937fc01c3a7079|Channel-Port aux Basques|Channel-Port aux Basques|-59.15|47.567|CAPBQ|Canada|CA
+634c4de270937fc01c3a7084|Fortune|Fortune|-55.833|47.067|CAFOR|Canada|CA
+634c4de270937fc01c3a7088|Grand Manan|Grand Manan|-66.8|44.7|CAGMA|Canada|CA
+634c4de270937fc01c3a708e|Kuujjuaq|Kuujjuaq|-68.4|58.1|CAFCM|Canada|CA
+634c4de270937fc01c3a7094|Nanticoke|Nanticoke|-80.067|42.8|CANAN|Canada|CA
+634c4de270937fc01c3a7097|Port McNeill|Port McNeill|-127.1|50.583|CAPMA|Canada|CA
+634c4de270937fc01c3a7098|Port-Alfred|Port-Alfred|-70.883|48.333|CAPAF|Canada|CA
+634c4de270937fc01c3a7099|Port-Menier|Port-Menier|-64.35|49.817|CAPME|Canada|CA
+634c4de270937fc01c3a709a|Ramea|Ramea|-57.417|47.517|CARAM|Canada|CA
+634c4de270937fc01c3a709d|Saguenay|Saguenay|-71.067|48.417|CASAG|Canada|CA
+634c4de270937fc01c3a70a5|Georgetown, Grand Cayman|Georgetown, Grand Cayman|-81.383|19.3|KYGEC|Cayman Islands|KY
+634c4de270937fc01c3a70a6|Ancud|Ancud|-73.833|-41.85|CLZUD|Chile|CL
+634c4de270937fc01c3a70a9|Chaitén|Chaitén|-72.7|-42.917|CLWCH|Chile|CL
+634c4de270937fc01c3a70ac|Coquimbo|Coquimbo|-71.333|-29.967|CLCQQ|Chile|CL
+634c4de270937fc01c3a70ad|Corral|Corral|-73.433|-39.867|CLCRR|Chile|CL
+634c4de270937fc01c3a70b3|Penco|Penco|-72.983|-36.717|CLPEO|Chile|CL
+634c4de270937fc01c3a70b6|Tomé|Tomé|-72.95|-36.6|CLTOM|Chile|CL
+634c4de270937fc01c3a70b8|Aojiang Pt|Aojiang Pt|120.45|27.583|CNAJG|China|CN
+634c4de270937fc01c3a70c2|Caofeidian Pt|Caofeidian Pt|118.533|38.95|CNCFD|China|CN
+634c4de270937fc01c3a70c4|Changsha|Changsha|112.983|28.2|CNCSH|China|CN
+634c4de270937fc01c3a70c7|Chaozhou|Chaozhou|116.633|23.667|CNCOZ|China|CN
+634c4de270937fc01c3a70c8|Chizhou|Chizhou|117.467|30.65|CNCHI|China|CN
+634c4de270937fc01c3a70ca|Chongqing|Chongqing|106.55|29.583|CNCQI|China|CN
+634c4de270937fc01c3a70d6|Dongguan|Dongguan|113.75|23.033|CNDGG|China|CN
+634c4de270937fc01c3a70d8|Dongjiangkou|Dongjiangkou|108.667|33.667|CNDJK|China|CN
+634c4de270937fc01c3a70de|Doumen Pt|Doumen Pt|113.283|22.2|CNDOU|China|CN
+634c4de270937fc01c3a70e2|Gaogang|Gaogang|119.85|32.3|CNGAO|China|CN
+634c4de270937fc01c3a70e3|Gaoming Pt|Gaoming Pt|112.833|22.883|CNGOM|China|CN
+634c4de270937fc01c3a70f3|Huanghua Pt|Huanghua Pt|117.35|38.35|CNHUH|China|CN
+634c4de270937fc01c3a70f9|Humen Pt|Humen Pt|113.667|22.833|CNHMN|China|CN
+634c4de270937fc01c3a7103|Jiujiang|Jiujiang|115.967|29.717|CNJIU|China|CN
+634c4de270937fc01c3a7106|Laizhou Pt|Laizhou Pt|119.95|37.167|CNLZO|China|CN
+634c4de270937fc01c3a7107|Lianhuashan Pt|Lianhuashan Pt|115.267|23.017|CNLIH|China|CN
+634c4de270937fc01c3a710a|Longyan Pt|Longyan Pt|122.633|37.433|CNLGY|China|CN
+634c4de270937fc01c3a710c|Lushun New Pt|Lushun New Pt|121.183|38.683|CNLSH|China|CN
+634c4de270937fc01c3a710e|Luzhou|Luzhou|105.4|28.9|CNLUZ|China|CN
+634c4de270937fc01c3a7115|Nanao Pt|Nanao Pt|117.683|23.433|CNNAN|China|CN
+634c4de270937fc01c3a7116|Nanhai Pt|Nanhai Pt|113.15|23.017|CNNAH|China|CN
+634c4de270937fc01c3a7119|Nanning|Nanning|108.317|22.8|CNNIN|China|CN
+634c4de270937fc01c3a711a|Nansha Pt|Nansha Pt|113.583|22.75|CNNSA|China|CN
+634c4de270937fc01c3a711d|Ningbo Pt|Ningbo Pt|121.667|29.917|CNNBG|China|CN
+634c4de270937fc01c3a712f|Sanya Pt|Sanya Pt|120.25|33.783|CNSYA|China|CN
+634c4de270937fc01c3a7132|Shanghai|Shanghai|121.483|31.233|CNSHG|China|CN
+634c4de270937fc01c3a7133|Shantou|Shantou|116.767|23.417|CNSTG|China|CN
+634c4de270937fc01c3a7137|Shekou Pt|Shekou Pt|113.917|22.483|CNSHK|China|CN
+634c4de270937fc01c3a713b|Shidao Pt|Shidao Pt|122.433|36.867|CNSHD|China|CN
+634c4de270937fc01c3a713c|Shijing|Shijing|118.433|24.617|CNSIJ|China|CN
+634c4de270937fc01c3a713e|Shipu|Shipu|121.85|29.483|CNXSP|China|CN
+634c4de270937fc01c3a7143|Shuidong Pt|Shuidong Pt|111|21.517|CNSDG|China|CN
+634c4de270937fc01c3a7145|Shunde Pt|Shunde Pt|113.25|22.833|CNSUD|China|CN
+634c4de270937fc01c3a7149|Songxia Pt|Songxia Pt|119.583|25.683|CNSON|China|CN
+634c4de270937fc01c3a7151|Tangshan Pt|Tangshan Pt|118.183|39.6|CNTGS|China|CN
+634c4de270937fc01c3a7155|Tianjin Xingang Pt|Tianjin Xingang Pt|117.7|38.983|CNTXG|China|CN
+634c4de270937fc01c3a7159|Weifang|Weifang|119.1|36.717|CNWEF|China|CN
+634c4de270937fc01c3a715a|Weihai|Weihai|122.117|37.517|CNWEI|China|CN
+634c4de270937fc01c3a715e|Wenzhou Pt|Wenzhou Pt|120.65|28.017|CNWZO|China|CN
+634c4de270937fc01c3a7165|Xiamen Pt|Xiamen Pt|118.2|24.35|CNXMG|China|CN
+634c4de270937fc01c3a716c|Xinhui Pt|Xinhui Pt|113.017|22.533|CNXIN|China|CN
+634c4de270937fc01c3a716f|Xiuyu Pt|Xiuyu Pt|118.95|25.233|CNXYG|China|CN
+634c4de270937fc01c3a7171|Yangjiang|Yangjiang|111.967|21.833|CNYJI|China|CN
+634c4de270937fc01c3a7172|Yangkou Pt|Yangkou Pt|121.4|32.55|CNYKG|China|CN
+634c4de270937fc01c3a7174|Yantai Pt|Yantai Pt|121.417|37.55|CNYTG|China|CN
+634c4de270937fc01c3a7176|Yueyang|Yueyang|113.1|29.367|CNYYA|China|CN
+634c4de270937fc01c3a717a|Zhapu Pt|Zhapu Pt|121.083|30.583|CNZPU|China|CN
+634c4de270937fc01c3a717d|Zhongshan|Zhongshan|113.367|22.517|CNZSN|China|CN
+634c4de270937fc01c3a7183|Pointe Noire|Pointe Noire|11.85|-4.8|CGPNR|Congo, Republic of|CG
+634c4de270937fc01c3a7184|Puerto Limón|Puerto Limón|-83.033|10|CRLIO|Costa Rica|CR
+634c4de270937fc01c3a7189|Brbinj/Lucina|Brbinj/Lucina|15|44.083|HRBRB|Croatia|HR
+634c4de270937fc01c3a718a|Donje Celo|Donje Celo|18|42.683|HRDNC|Croatia|HR
+634c4de270937fc01c3a718b|Drvenik|Drvenik|16.25|43.15|HRDRK|Croatia|HR
+634c4de270937fc01c3a718c|Gazenica|Gazenica|15.267|44.1|HRGNA|Croatia|HR
+634c4de270937fc01c3a718d|Jadrija|Jadrija|15.84834|43.72521|HRJDR|Croatia|HR
+634c4de270937fc01c3a718e|Kaprije|Kaprije|15.717|43.683|HRKPR|Croatia|HR
+634c4de270937fc01c3a7192|Lopar|Lopar|14.8|44.833|HRLPR|Croatia|HR
+634c4de270937fc01c3a7193|Lopud|Lopud|17.95|42.683|HRLPD|Croatia|HR
+634c4de270937fc01c3a7194|Mali Losinj|Mali Losinj|14.467|44.533|HRLSZ|Croatia|HR
+634c4de270937fc01c3a7196|Merag|Merag|14.45|44.983|HRMRG|Croatia|HR
+634c4de270937fc01c3a7197|Misnjak|Misnjak|14.867|44.7|HRMNK|Croatia|HR
+634c4de270937fc01c3a7198|Muna na Zirju|Muna na Zirju|15.667|43.667|HRMRJ|Croatia|HR
+634c4de270937fc01c3a719a|Obonjan|Obonjan|15.783|43.683|HRONJ|Croatia|HR
+634c4de270937fc01c3a719b|Orebic|Orebic|17.183|42.967|HRORB|Croatia|HR
+634c4de270937fc01c3a719e|Porozina|Porozina|14.133|45.133|HRPRZ|Croatia|HR
+634c4de270937fc01c3a71a0|Prizna|Prizna|14.967|44.6|HRPRN|Croatia|HR
+634c4de270937fc01c3a71a1|Prvic|Prvic|15.8|43.717|HRPRV|Croatia|HR
+634c4de270937fc01c3a71a2|Prvic Sepurine|Prvic Sepurine|15.783|43.733|HRPRS|Croatia|HR
+634c4de270937fc01c3a71a7|Sobra|Sobra|17.617|42.75|HRSBR|Croatia|HR
+634c4de270937fc01c3a71a9|Sudurad|Sudurad|17.917|42.717|HRSDR|Croatia|HR
+634c4de270937fc01c3a71ab|Tkon|Tkon|15.45|43.917|HRTKN|Croatia|HR
+634c4de270937fc01c3a71ad|Ubli|Ubli|16.833|42.75|HRUBL|Croatia|HR
+634c4de270937fc01c3a71ae|Unije|Unije|14.233|44.633|HRUNJ|Croatia|HR
+634c4de270937fc01c3a71af|Valbiska|Valbiska|14.5|45.033|HRVLB|Croatia|HR
+634c4de270937fc01c3a71b5|Vrgada|Vrgada|15.5|43.867|HRVRG|Croatia|HR
+634c4de270937fc01c3a71b6|Vrsar|Vrsar|13.6|45.15|HRVRR|Croatia|HR
+634c4de270937fc01c3a71b7|Zadar|Zadar|15.233|44.117|HRZAD|Croatia|HR
+634c4de270937fc01c3a71b8|Zigljen|Zigljen|14.95|44.583|HRZGL|Croatia|HR
+634c4de270937fc01c3a71b9|Zlarin|Zlarin|15.833|43.7|HRZLR|Croatia|HR
+634c4de270937fc01c3a71bb|La Habana|La Habana|-82.35|23.117|CUHAV|Cuba|CU
+634c4de270937fc01c3a71bc|Caracas Baai|Caracas Baai|-68.85|12.067|CWCRB|Curaçao|CW
+634c4de270937fc01c3a71bf|Willemstad|Willemstad|-68.917|12.1|CWWIL|Curaçao|CW
+634c4de270937fc01c3a71c0|Akrotiri|Akrotiri|32.95|34.6|CYAKT|Cyprus|CY
+634c4de270937fc01c3a71c3|Kyrenia|Kyrenia|33.333|35.333|CYKYR|Cyprus|CY
+634c4de270937fc01c3a71c7|Paphos|Paphos|32.417|34.767|CYPFO|Cyprus|CY
+634c4de270937fc01c3a71c8|Vasilikos|Vasilikos|33.317|34.717|CYVAS|Cyprus|CY
+634c4de270937fc01c3a71c9|Zyyi|Zyyi|33.33921|34.727|CYZYY|Cyprus|CY
+634c4de270937fc01c3a71ca|Decín|Decín|14.217|50.783|CZDCB|Czech Republic|CZ
+634c4de270937fc01c3a71cf|Bogo By|Bogo By|12.05|54.933|DKBOG|Denmark|DK
+634c4de270937fc01c3a71d1|Fynshav|Fynshav|9.967|54.967|DKFYH|Denmark|DK
+634c4de270937fc01c3a71d5|Kolby Kås|Kolby Kås|10.55|55.8|DKKOK|Denmark|DK
+634c4de270937fc01c3a71e0|Puerto Baquerizo Moreno|Puerto Baquerizo Moreno|-89.6|-0.9|ECBAQ|Ecuador|EC
+634c4de270937fc01c3a71e1|Puerto Villamil, Isla Isabela|Puerto Villamil, Isla Isabela|-91.017|-0.933|ECVIL|Ecuador|EC
+634c4de270937fc01c3a71e4|El Iskandariya (Alexandria)|El Iskandariya (Alexandria)|29.917|31.183|EGALY|Egypt|EG
+634c4de270937fc01c3a71e6|Nuwaiba|Nuwaiba|34.65|28.967|EGNUW|Egypt|EG
+634c4de270937fc01c3a71e9|Assab|Assab|42.733|13|ERASA|Eritrea|ER
+634c4de270937fc01c3a71ea|Massawa (Mitsiwa)|Massawa (Mitsiwa)|39.45|15.6|ERMSW|Eritrea|ER
+634c4de270937fc01c3a71ec|Abruka|Abruka|22.533|58.167|EEABR|Estonia|EE
+634c4de270937fc01c3a71ee|Aegna|Aegna|24.75776|59.57131|EEAEN|Estonia|EE
+634c4de270937fc01c3a71f9|Hundipea|Hundipea|24.72802|59.45586|EEHUN|Estonia|EE
+634c4de270937fc01c3a7211|Kelnase|Kelnase|25.017|59.633|EEKLN|Estonia|EE
+634c4de270937fc01c3a7214|Kihnu|Kihnu|24.017|58.133|EEKHN|Estonia|EE
+634c4de270937fc01c3a721a|Kunda|Kunda|26.533|59.517|EEKND|Estonia|EE
+634c4de270937fc01c3a7227|Leppneeme|Leppneeme|24.85|59.533|EELEP|Estonia|EE
+634c4de270937fc01c3a722c|Loksa|Loksa|25.7|59.583|EELSA|Estonia|EE
+634c4de270937fc01c3a7231|Manilaiu|Manilaiu|24.133|59.217|EEMAN|Estonia|EE
+634c4de270937fc01c3a7237|Miiduranna|Miiduranna|24.817|59.5|EEMDR|Estonia|EE
+634c4de270937fc01c3a7239|Munalaiu|Munalaiu|24.117|58.233|EEMUN|Estonia|EE
+634c4de270937fc01c3a723c|Muuga|Muuga|24.967|59.5|EEMUG|Estonia|EE
+634c4de270937fc01c3a723f|Narva-Jõesuu Sadam|Narva-Jõesuu Sadam|28.05|59.467|EENJS|Estonia|EE
+634c4de270937fc01c3a724f|Paldiski Sothern Port|Paldiski South|24.083|59.333|EEPLS|Estonia|EE
+634c4de270937fc01c3a7250|Paldiski Northern Port|Paldiski North|24.05|59.35|EEPLN|Estonia|EE
+634c4de270937fc01c3a7251|Paljassaare|Paljassaare|24.70446|59.46184|EEPAS|Estonia|EE
+634c4de270937fc01c3a725a|Pirita|Pirita|24.8186|59.4689|EEPIR|Estonia|EE
+634c4de270937fc01c3a726a|Rohuneeme|Rohuneeme|24.79304|59.56089|EERON|Estonia|EE
+634c4de270937fc01c3a7270|Saaremaa sadam|Saaremaa sadam|22.233|58.533|EESMA|Estonia|EE
+634c4de270937fc01c3a727a|Sillamäe|Sillamäe|27.733|59.417|EESLM|Estonia|EE
+634c4de270937fc01c3a7281|Suursadam|Suursadam|22.917|58.967|EESUS|Estonia|EE
+634c4de270937fc01c3a729b|Veere|Veere|22.05|58.467|EEVEE|Estonia|EE
+634c4de270937fc01c3a729d|Vene-Balti|Vene-Balti|24.65538|59.46138|EEVEB|Estonia|EE
+634c4de270937fc01c3a72aa|Brahestad (Raahe)|Brahestad (Raahe)|24.483|64.683|FIRAA|Finland|FI
+634c4de270937fc01c3a72ab|Dalsbruk (Taalintehdas)|Dalsbruk (Taalintehdas)|22.517|60.017|FIDLS|Finland|FI
+634c4de270937fc01c3a72b2|Idensalmi (Iisalmi)|Idensalmi (Iisalmi)|27.183|63.55|FIIIS|Finland|FI
+634c4de270937fc01c3a72bd|Oulu (Uleåborg)|Oulu (Uleåborg)|25.467|65.017|FIOUL|Finland|FI
+634c4de270937fc01c3a72c2|Vaasa (Vasa)|Vaasa (Vasa)|21.6|63.1|FIVAA|Finland|FI
+634c4de270937fc01c3a72c8|Bénodet|Bénodet|-4.117|47.867|FRDBE|France|FR
+634c4de270937fc01c3a72cb|Binic|Binic|-2.833|48.6|FRBN2|France|FR
+634c4de270937fc01c3a72d1|Chausey|Chausey|-1.6|48.833|FRC2H|France|FR
+634c4de270937fc01c3a72da|Grandcamp-Maisy|Grandcamp-Maisy|0.967|49.383|FRGCP|France|FR
+634c4de270937fc01c3a72dd|Groix|Groix|-3.467|47.633|FRG2X|France|FR
+634c4de270937fc01c3a72e2|Hoedic|Hoedic|-2.883|47.333|FRHDO|France|FR
+634c4de270937fc01c3a72e9|Île-Molène|Île-Molène|3.05|48.4|FRME5|France|FR
+634c4de270937fc01c3a72ea|Île-Tudy|Île-Tudy|-4.167|47.833|FRTTU|France|FR
+634c4de270937fc01c3a72f8|Le Grau-du-Roi|Le Grau-du-Roi|4.133|43.533|FRLGR|France|FR
+634c4de270937fc01c3a730c|Port-Louis|Port-Louis|-3.35379|47.71133|FRPPL|France|FR
+634c4de270937fc01c3a7317|Saint-Nazaire-sur-Charente|Saint-Nazaire-sur-Charente|-1.05|45.95|FRSZI|France|FR
+634c4de270937fc01c3a731a|Saint-Wandrille-Rançon|Saint-Wandrille-Rançon|0.767|49.533|FRSWD|France|FR
+634c4de270937fc01c3a7328|Baltrum|Baltrum|7.367|53.733|DEBMR|Germany|DE
+634c4de270937fc01c3a732a|Blumenthal/Bremen|Blumenthal/Bremen|8.583|53.183|DEBLM|Germany|DE
+634c4de270937fc01c3a732f|Peenemünde|Peenemünde|13.783|54.133|DEPEF|Germany|DE
+634c4de270937fc01c3a7338|Ágios Efstrátios|Ágios Efstrátios|24.983|39.533|GRAGO|Greece|GR
+634c4de270937fc01c3a7339|Agios Georgios|Agios Georgios|22.883|38.833|GRAGE|Greece|GR
+634c4de270937fc01c3a733a|Agios Kírykos|Agios Kírykos|26.3|37.617|GRAKI|Greece|GR
+634c4de270937fc01c3a733b|Agios Konstantínos|Agios Konstantínos|22.867|38.75|GRAKO|Greece|GR
+634c4de270937fc01c3a733c|Agios Stefanos Corfu|Agios Stefanos Corfu|19.95|39.767|GRASF|Greece|GR
+634c4de270937fc01c3a733d|Agistri Aiginas|Agistri Aiginas|23.35|37.717|GRAGG|Greece|GR
+634c4de270937fc01c3a733e|Agnontas Skopelos|Agnontas Skopelos|23.7|39.083|GRANL|Greece|GR
+634c4de270937fc01c3a733f|Aígion|Aígion|22.083|38.25|GRAEN|Greece|GR
+634c4de270937fc01c3a7342|Alónnisos|Alónnisos|23.867|39.15|GRALO|Greece|GR
+634c4de270937fc01c3a7343|Altsi|Altsi|25.883|35.167|GRATS|Greece|GR
+634c4de270937fc01c3a7344|Amolianí|Amolianí|23.917|40.333|GRAMI|Greece|GR
+634c4de270937fc01c3a7345|Anáfi|Anáfi|25.767|36.35|GRANA|Greece|GR
+634c4de270937fc01c3a7346|Andírrion|Andírrion|21.767|38.333|GRANT|Greece|GR
+634c4de270937fc01c3a7349|Antiparos|Antiparos|25.083|37.033|GRANP|Greece|GR
+634c4de270937fc01c3a734a|Arkioi Dodekanissou|Arkioi Dodekanissou|26.733|37.383|GRARD|Greece|GR
+634c4de270937fc01c3a734b|Arkítsa|Arkítsa|23.033|38.75|GRARK|Greece|GR
+634c4de270937fc01c3a734e|Astypálaia|Astypálaia|26.35|36.55|GRJTY|Greece|GR
+634c4de270937fc01c3a7353|Dáfni|Dáfni|24.217|40.217|GRDAF|Greece|GR
+634c4de270937fc01c3a7355|Diafánion|Diafánion|27.217|35.75|GRDIA|Greece|GR
+634c4de270937fc01c3a7356|Donousa Kykladon|Donousa Kykladon|25.8|37.1|GRDON|Greece|GR
+634c4de270937fc01c3a735a|Eleftheres|Eleftheres|24.317|40.85|GRELT|Greece|GR
+634c4de270937fc01c3a735b|Eleusina|Eleusina|23.533|38.033|GREEU|Greece|GR
+634c4de270937fc01c3a735c|Erétria|Erétria|23.8|38.4|GRERE|Greece|GR
+634c4de270937fc01c3a735d|Ermióni|Ermióni|23.25|37.383|GRERM|Greece|GR
+634c4de270937fc01c3a735e|Eydilos|Eydilos|26.183|37.633|GREYD|Greece|GR
+634c4de270937fc01c3a735f|Fiskárdo|Fiskárdo|20.567|38.45|GRFIS|Greece|GR
+634c4de270937fc01c3a7360|Folégandros|Folégandros|24.95|36.617|GRFOL|Greece|GR
+634c4de270937fc01c3a7362|Gavdos Chanea|Gavdos Chanea|24.117|34.85|GRGAD|Greece|GR
+634c4de270937fc01c3a7363|Gávrion|Gávrion|24.733|37.883|GRGAV|Greece|GR
+634c4de270937fc01c3a7364|Glossa|Glossa|23.617|39.167|GRGLO|Greece|GR
+634c4de270937fc01c3a7367|Halki Dodekanison|Halki Dodekanison|27.6|36.217|GRHAL|Greece|GR
+634c4de270937fc01c3a7368|Herakleia Kykladon|Herakleia Kykladon|25.467|36.867|GRHRK|Greece|GR
+634c4de270937fc01c3a7369|Heraklion (Iraklion)|Heraklion (Iraklion)|25.167|35.333|GRHER|Greece|GR
+634c4de270937fc01c3a736a|Hydra (Idhra)|Hydra (Idhra)|23.467|37.35|GRHYD|Greece|GR
+634c4de270937fc01c3a736b|Inousses|Inousses|26.217|38.517|GRINO|Greece|GR
+634c4de270937fc01c3a736c|Ios|Ios|25.267|36.717|GRIOS|Greece|GR
+634c4de270937fc01c3a736d|Isthmía|Isthmía|23|37.917|GRITM|Greece|GR
+634c4de270937fc01c3a736e|Ithaki (Ithaca)|Ithaki (Ithaca)|20.717|38.367|GRITH|Greece|GR
+634c4de270937fc01c3a7371|Kalilimenes|Kalilimenes|24.8|34.933|GRKLL|Greece|GR
+634c4de270937fc01c3a7372|Kamiros Skala|Kamiros Skala|27.817|36.267|GRKSK|Greece|GR
+634c4de270937fc01c3a7374|Kardamaina Kos|Kardamaina Kos|27.15|36.783|GRKRM|Greece|GR
+634c4de270937fc01c3a7377|Kárpathos|Kárpathos|27.233|35.5|GRAOK|Greece|GR
+634c4de270937fc01c3a7378|Karystos|Karystos|24.417|38.017|GRKST|Greece|GR
+634c4de270937fc01c3a7379|Kassos|Kassos|26.917|35.417|GRKSJ|Greece|GR
+634c4de270937fc01c3a737a|Kastelli Kissamou|Kastelli Kissamou|23.633|35.517|GRKIS|Greece|GR
+634c4de270937fc01c3a737b|Kastellorizou (ex Megísti)|Kastellorizou (ex Megísti)|29.6|36.15|GRKAS|Greece|GR
+634c4de270937fc01c3a737c|Kastos Island|Kastos Island|20.917|38.567|GRKSI|Greece|GR
+634c4de270937fc01c3a737e|Kéa (Tzia)|Kéa (Tzia)|24.317|37.65|GRKEA|Greece|GR
+634c4de270937fc01c3a737f|Kefalos Ko|Kefalos Ko|26.967|36.733|GRKEF|Greece|GR
+634c4de270937fc01c3a7380|Keramoti|Keramoti|24.7|40.867|GRKER|Greece|GR
+634c4de270937fc01c3a7381|Khóra Sfakíon|Khóra Sfakíon|24.133|35.2|GRCSF|Greece|GR
+634c4de270937fc01c3a7382|Kiato|Kiato|22.75|38|GRKIO|Greece|GR
+634c4de270937fc01c3a7383|Kimi (Kými)|Kimi (Kými)|24.1|38.633|GRKIM|Greece|GR
+634c4de270937fc01c3a7384|Kímolos|Kímolos|24.583|36.783|GRKMS|Greece|GR
+634c4de270937fc01c3a7385|Klima|Klima|23.65|39.133|GRKLI|Greece|GR
+634c4de270937fc01c3a7387|Kosta Ermionidas|Kosta Ermionidas|23.167|37.3|GRKEM|Greece|GR
+634c4de270937fc01c3a7388|Koufonissia Kykladon|Koufonissia Kykladon|25.6|36.933|GRKOF|Greece|GR
+634c4de270937fc01c3a7389|Kyllíni|Kyllíni|21.15|37.933|GRKYL|Greece|GR
+634c4de270937fc01c3a738a|Kythnos|Kythnos|24.4|37.383|GRKYT|Greece|GR
+634c4de270937fc01c3a738b|Lágos (Pórto-Lágo)|Lágos (Pórto-Lágo)|25.117|41.017|GRPTL|Greece|GR
+634c4de270937fc01c3a738d|Larymna|Larymna|23.283|38.567|GRLRY|Greece|GR
+634c4de270937fc01c3a738e|Lefkímmi|Lefkímmi|20.1|39.417|GRLFK|Greece|GR
+634c4de270937fc01c3a7392|Lindos Rodou|Lindos Rodou|28.083|36.1|GRLDR|Greece|GR
+634c4de270937fc01c3a7394|Lipsoí|Lipsoí|26.767|37.283|GRLIP|Greece|GR
+634c4de270937fc01c3a7397|Marmari|Marmari|24.317|38.05|GRMRM|Greece|GR
+634c4de270937fc01c3a7398|Mathraki Diapontioi Island|Mathraki Diapontioi Island|19.517|39.783|GRMTR|Greece|GR
+634c4de270937fc01c3a7399|Meganísi|Meganísi|20.75|38.667|GRMGN|Greece|GR
+634c4de270937fc01c3a739b|Mesta Hiou|Mesta Hiou|25.933|38.283|GRMHI|Greece|GR
+634c4de270937fc01c3a739e|Mírina|Mírina|25.067|39.867|GRMYR|Greece|GR
+634c4de270937fc01c3a73a0|Moúdhros|Moúdhros|25.267|39.867|GRMDR|Greece|GR
+634c4de270937fc01c3a73a2|Mykonos|Mykonos|25.333|37.45|GRJMK|Greece|GR
+634c4de270937fc01c3a73a3|Mylaki|Mylaki|24.067|38.383|GRMYL|Greece|GR
+634c4de270937fc01c3a73a4|Náfplion|Náfplion|22.8|37.567|GRNAF|Greece|GR
+634c4de270937fc01c3a73a5|Náxos|Náxos|25.383|37.1|GRJNX|Greece|GR
+634c4de270937fc01c3a73a6|Néa Moudhaniá|Néa Moudhaniá|23.283|40.233|GRNMA|Greece|GR
+634c4de270937fc01c3a73a7|Néa Stíra|Néa Stíra|24.2|38.183|GRNST|Greece|GR
+634c4de270937fc01c3a73a8|Neapolis|Neapolis|23.067|36.5|GRNEA|Greece|GR
+634c4de270937fc01c3a73a9|Nidhríon|Nidhríon|20.717|38.7|GRNID|Greece|GR
+634c4de270937fc01c3a73aa|Nisiros|Nisiros|27.133|36.617|GRNIS|Greece|GR
+634c4de270937fc01c3a73ad|Oropos|Oropos|23.783|38.317|GRORO|Greece|GR
+634c4de270937fc01c3a73ae|Othonoí|Othonoí|19.4|39.85|GROTH|Greece|GR
+634c4de270937fc01c3a73af|Ouranópolis|Ouranópolis|23.983|40.317|GROUR|Greece|GR
+634c4de270937fc01c3a73b2|Paloúkia|Paloúkia|23.533|37.967|GRPAO|Greece|GR
+634c4de270937fc01c3a73b3|Paxi|Paxi|20.183|39.2|GRPAX|Greece|GR
+634c4de270937fc01c3a73bb|Psará|Psará|25.567|38.533|GRPAA|Greece|GR
+634c4de270937fc01c3a73bc|Réthymnon|Réthymnon|24.467|35.367|GRRET|Greece|GR
+634c4de270937fc01c3a73bd|Samothráki|Samothráki|25.517|40.483|GRSAM|Greece|GR
+634c4de270937fc01c3a73be|Sikinos|Sikinos|25.117|36.7|GRSII|Greece|GR
+634c4de270937fc01c3a73bf|Siteía|Siteía|26.117|35.2|GRJSH|Greece|GR
+634c4de270937fc01c3a73c0|Skíathos|Skíathos|23.483|39.167|GRJSI|Greece|GR
+634c4de270937fc01c3a73c1|Skíros|Skíros|24.567|38.9|GRSKU|Greece|GR
+634c4de270937fc01c3a73c3|Soúda|Soúda|24.133|35.517|GRSDH|Greece|GR
+634c4de270937fc01c3a73c4|Soussaki|Soussaki|23.05|37.917|GRSOU|Greece|GR
+634c4de270937fc01c3a73c5|Spétsai|Spétsai|23.15|37.267|GRSPE|Greece|GR
+634c4de270937fc01c3a73c6|Symi|Symi|27.833|36.6|GRSYM|Greece|GR
+634c4de270937fc01c3a73c8|Thíra|Thíra|25.433|36.417|GRJTR|Greece|GR
+634c4de270937fc01c3a73c9|Thirasía|Thirasía|25.35|36.433|GRTRS|Greece|GR
+634c4de270937fc01c3a73cb|Tilos|Tilos|27.367|36.417|GRTIL|Greece|GR
+634c4de270937fc01c3a73cd|Zákynthos|Zákynthos|20.9|37.783|GRZTH|Greece|GR
+634c4de270937fc01c3a73d3|Puerto Santo Tomás de Castilla|Puerto Santo Tomás de Castilla|-88.617|15.7|GTSTC|Guatemala|GT
+634c4de270937fc01c3a73d5|Boffa|Boffa|-14.033|10.183|GNBFA|Guinea|GN
+634c4de270937fc01c3a73d7|Dougoula|Dougoula|-14.55|10.75|GNPMT|Guinea|GN
+634c4de270937fc01c3a73d9|Kamsar|Kamsar|-14.622|10.6425|GNKMC|Guinea|GN
+634c4de270937fc01c3a73da|Katougouma|Katougouma|-14.45|0.05|GNKTG|Guinea|GN
+634c4de270937fc01c3a73dc|Cap-Haïtien|Cap-Haïtien|-72.2|19.75|HTCAP|Haiti|HT
+634c4de270937fc01c3a73dd|Lafiteau|Lafiteau|-72.35|18.683|HTLFF|Haiti|HT
+634c4de270937fc01c3a73de|Roatán|Roatán|-86.55|16.3|HNRTB|Honduras|HN
+634c4de270937fc01c3a73df|Arskogssandur|Arskogssandur|-18.367|65.933|ISASS|Iceland|IS
+634c4de270937fc01c3a73e0|Bakkafjördur|Bakkafjördur|-14.8|66.033|ISBAK|Iceland|IS
+634c4de270937fc01c3a73e1|Bolungarvik|Bolungarvik|-23.25|66.133|ISBOL|Iceland|IS
+634c4de270937fc01c3a73e2|Brjánslækur|Brjánslækur|-23.2|65.533|ISBRJ|Iceland|IS
+634c4de270937fc01c3a73e7|Höfn, Hornafjørdur|Höfn, Hornafjørdur|-15.217|64.25|ISHFN|Iceland|IS
+634c4de270937fc01c3a73e8|Hofsós|Hofsós|-19.433|65.9|ISHOF|Iceland|IS
+634c4de270937fc01c3a73e9|Kópavogur|Kópavogur|-21.917|64.1|ISKOV|Iceland|IS
+634c4de270937fc01c3a73ea|Landeyjahöfn|Landeyjahöfn|-20.117|61.517|ISLAN|Iceland|IS
+634c4de270937fc01c3a73eb|Olafsvík|Olafsvík|-23.717|64.883|ISOLV|Iceland|IS
+634c4de270937fc01c3a73ed|Reykhólar|Reykhólar|-22.2|65.45|ISRHA|Iceland|IS
+634c4de270937fc01c3a73ee|Vogar|Vogar|-22.383|63.983|ISVOG|Iceland|IS
+634c4de270937fc01c3a73ef|Dighi (Pune)|Dighi (Pune)|72.967|18.25|INDIG|India|IN
+634c4de270937fc01c3a73f0|Jafarabad|Jafarabad|71.367|20.85|INJBD|India|IN
+634c4de270937fc01c3a73f5|Mahe|Mahe|75.533|11.7|INMAH|India|IN
+634c4de270937fc01c3a73f6|Mul Dwårka|Mul Dwårka|70.667|20.75|INMDK|India|IN
+634c4de270937fc01c3a73f7|Pipavav (Victor) Port|Pipavav (Victor) Port|71.55|20.967|INPAV|India|IN
+634c4de270937fc01c3a73f8|Sika|Sika|69.833|22.433|INSIK|India|IN
+634c4de270937fc01c3a73fc|Batulicin|Batulicin|115.983|-3.45|IDBTW|Indonesia|ID
+634c4de270937fc01c3a73fd|Labuha, Molucas|Labuha, Molucas|127.483|-0.617|IDLAH|Indonesia|ID
+634c4de270937fc01c3a73fe|Lubuk Tutung|Lubuk Tutung|117.733|0.767|IDLTT|Indonesia|ID
+634c4de270937fc01c3a7401|Dayyer|Dayyer|51.933|27.833|IRDAY|Iran|IR
+634c4de270937fc01c3a7417|Waterford City Quays|Waterford City Quays|-7.1|52.25|IEWCQ|Ireland|IE
+634c4de270937fc01c3a741c|Tel Aviv-Yafo|Tel Aviv-Yafo|34.75|32.05|ILTLV|Israel|IL
+634c4de270937fc01c3a7420|Agropoli|Agropoli|14.983|40.35|ITAGP|Italy|IT
+634c4de270937fc01c3a7424|Andora|Andora|8.15|43.95|ITADA|Italy|IT
+634c4de270937fc01c3a7425|Arenzano|Arenzano|8.683|44.4|ITAZA|Italy|IT
+634c4de270937fc01c3a742f|Calasetta|Calasetta|8.367|39.05|ITCLS|Italy|IT
+634c4de270937fc01c3a7433|Capri|Capri|14.233|40.55|ITPRJ|Italy|IT
+634c4de270937fc01c3a7438|Castelsardo|Castelsardo|8.717|40.917|ITCTK|Italy|IT
+634c4de270937fc01c3a7442|Favignana|Favignana|12.333|37.933|ITFAV|Italy|IT
+634c4de270937fc01c3a7443|Finale Ligure|Finale Ligure|8.333|44.167|ITFNL|Italy|IT
+634c4de270937fc01c3a744c|Isola del Giglio|Isola del Giglio|10.9|42.367|ITIDG|Italy|IT
+634c4de270937fc01c3a744f|Lacco Ameno|Lacco Ameno|13.9|40.75|ITLAE|Italy|IT
+634c4de270937fc01c3a7450|Lavagna|Lavagna|9.333|44.3|ITLAW|Italy|IT
+634c4de270937fc01c3a7455|Levanzo|Levanzo|12.333|37.983|ITLEV|Italy|IT
+634c4de270937fc01c3a745e|Marina di Campo|Marina di Campo|10.233|42.733|ITMRP|Italy|IT
+634c4de270937fc01c3a746b|Muggia|Muggia|13.76204|45.60463|ITUGG|Italy|IT
+634c4de270937fc01c3a746c|Noli|Noli|8.433|44.2|ITNLI|Italy|IT
+634c4de270937fc01c3a7470|Palinuro|Palinuro|15.283|40.033|ITPLN|Italy|IT
+634c4de270937fc01c3a7476|Ponza|Ponza|12.967|40.9|ITPNZ|Italy|IT
+634c4de270937fc01c3a747a|Porto Foxi (Sarroch)|Porto Foxi (Sarroch)|9|39.05|ITPFX|Italy|IT
+634c4de270937fc01c3a747b|Porto Levante|Porto Levante|12.367|45.05|ITPVT|Italy|IT
+634c4de270937fc01c3a747e|Porto Tolle|Porto Tolle|12.367|44.933|ITPPT|Italy|IT
+634c4de270937fc01c3a747f|Portopalo|Portopalo|15.133|36.683|ITPPL|Italy|IT
+634c4de270937fc01c3a7480|Portovenere|Portovenere|9.85|44.05|ITPRW|Italy|IT
+634c4de270937fc01c3a7484|Rimini|Rimini|12.583|44.067|ITRMI|Italy|IT
+634c4de270937fc01c3a7487|Riva Trigoso|Riva Trigoso|9.417|44.267|ITRTS|Italy|IT
+634c4de270937fc01c3a748e|Santa Marina Salina|Santa Marina Salina|14.867|38.567|ITSLA|Italy|IT
+634c4de270937fc01c3a748f|Santa Teresa di Gallura|Santa Teresa di Gallura|9.183|41.233|ITSTE|Italy|IT
+634c4de270937fc01c3a7491|Santo Stefano al Mare|Santo Stefano al Mare|7.883|43.833|ITSSF|Italy|IT
+634c4de270937fc01c3a7495|Scario|Scario|15.483|40.05|ITSRH|Italy|IT
+634c4de270937fc01c3a749f|Stintino|Stintino|8.217|40.933|ITTTN|Italy|IT
+634c4de270937fc01c3a74a0|Termini Imerese|Termini Imerese|13.7|37.983|ITTRI|Italy|IT
+634c4de270937fc01c3a74a1|Terrasini|Terrasini|13.083|38.15|ITSNR|Italy|IT
+634c4de270937fc01c3a74a9|Ventimiglia|Ventimiglia|7.6|43.783|ITVEN|Italy|IT
+634c4de270937fc01c3a74ab|Villa San Giovanni, Calabria|Villa San Giovanni, Calabria|15.633|38.217|ITVSG|Italy|IT
+634c4de270937fc01c3a74b3|Rajin (Najin)|Rajin (Najin)|130.283|42.217|KPRJN|North Korea|KP
+634c4de270937fc01c3a74b6|Sinpo|Sinpo|128.267|40.067|KPSIN|North Korea|KP
+634c4de270937fc01c3a74b7|Songnim|Songnim|125.583|38.767|KPSGN|North Korea|KP
+634c4de270937fc01c3a74b9|Jinhae|Jinhae|128.65|35.133|KRCHF|South Korea|KR
+634c4de270937fc01c3a74ba|Liepaja|Liepaja|21.017|56.517|LVLPX|Latvia|LV
+634c4de270937fc01c3a74bb|Mersrags|Mersrags|23.1|57.333|LVMRX|Latvia|LV
+634c4de270937fc01c3a74c0|Macau|Macau|113.533|22.2|MOMFM|Macau|MO
+634c4de270937fc01c3a74c1|Nosy-Be|Nosy-Be|48.25|-13.333|MGNOS|Madagascar|MG
+634c4de270937fc01c3a74c2|Langkawi|Langkawi|99.8|6.367|MYLGK|Malaysia|MY
+634c4de270937fc01c3a74c4|Penang (Georgetown)|Penang (Georgetown)|100.317|5.417|MYPEN|Malaysia|MY
+634c4de270937fc01c3a74c6|Samalaju|Samalaju|113.533|3.95|MYSIP|Malaysia|MY
+634c4de270937fc01c3a74e2|Dzaoudzi-Pamandzi Apt|Dzaoudzi-Pamandzi Apt|45.283|-12.8|YTDZA|Mayotte|YT
+634c4de270937fc01c3a74e4|Longoni|Longoni|45.167|-12.717|YTLON|Mayotte|YT
+634c4de270937fc01c3a74e5|Mamoudzou|Mamoudzou|45.233|-12.783|YTMAM|Mayotte|YT
+634c4de270937fc01c3a74e6|Dos Bocas Terminal|Dos Bocas Terminal|-93.183|18.5|MXDBT|Mexico|MX
+634c4de270937fc01c3a74e8|Ixtapa/Zihuatanejo|Ixtapa/Zihuatanejo|-101.65|17.667|MXZIH|Mexico|MX
+634c4de270937fc01c3a74e9|Loreto|Loreto|-112.617|26.017|MXLTO|Mexico|MX
+634c4de270937fc01c3a74ec|Zihuatanejo|Zihuatanejo|-101.55|17.633|MXXIH|Mexico|MX
+634c4de270937fc01c3a74ef|Boujdour|Boujdour|-14.483|26.133|MABUJ|Morocco|MA
+634c4de270937fc01c3a74f3|Tangier|Tangier|-5.817|35.783|MATNG|Morocco|MA
+634c4de270937fc01c3a74f5|Nauru Island|Nauru Island|166.917|-0.55|NRINU|Nauru|NR
+634c4de270937fc01c3a74f6|Paagoumène|Paagoumène|164.2|-20.483|NCPAA|New Caledonia|NC
+634c4de270937fc01c3a74f8|Chelsea|Chelsea|174.717|-36.817|NZCSA|New Zealand|NZ
+634c4de270937fc01c3a74fb|Kaikoura|Kaikoura|173.7|-42.417|NZKBZ|New Zealand|NZ
+634c4de270937fc01c3a7500|Taharoa|Taharoa|174.733|-38.15|NZTHH|New Zealand|NZ
+634c4de270937fc01c3a7501|Tamaki|Tamaki|174.9|-36.883|NZHMB|New Zealand|NZ
+634c4de270937fc01c3a7502|Tryphena|Tryphena|175.483|-36.3|NZTRY|New Zealand|NZ
+634c4de270937fc01c3a7506|Abelnes|Abelnes|6.667|58.233|NOABE|Norway|NO
+634c4de270937fc01c3a7507|Abelvær|Abelvær|11.183|64.733|NOABV|Norway|NO
+634c4de270937fc01c3a750f|Ansnes|Ansnes|9|63.633|NOANS|Norway|NO
+634c4de270937fc01c3a7515|Aukra|Aukra|6.9|62.817|NOAUK|Norway|NO
+634c4de270937fc01c3a7517|Austevoll|Austevoll|5.15|60.1|NOASV|Norway|NO
+634c4de270937fc01c3a7519|Averøy|Averøy|7.667|63.05|NOAVE|Norway|NO
+634c4de270937fc01c3a751b|Ballangen|Ballangen|16.833|68.333|NOBLL|Norway|NO
+634c4de270937fc01c3a7520|Berlevåg|Berlevåg|29.1|70.85|NOBVG|Norway|NO
+634c4de270937fc01c3a7527|Bognes|Bognes|16.067|68.217|NOBON|Norway|NO
+634c4de270937fc01c3a7529|Bokn|Bokn|5.433|59.217|NOBOK|Norway|NO
+634c4de270937fc01c3a7531|Brattvåg|Brattvåg|6.433|62.6|NOBRV|Norway|NO
+634c4de270937fc01c3a7532|Breiviga|Breiviga|5.9|59.083|NOBVR|Norway|NO
+634c4de270937fc01c3a7534|Brevik|Brevik|9.7|59.05489|NOBVK|Norway|NO
+634c4de270937fc01c3a7535|Burfjord|Burfjord|22.05|69.933|NOBUF|Norway|NO
+634c4de270937fc01c3a7537|Byrknesøy|Byrknesøy|4.833|60.9|NOBYR|Norway|NO
+634c4de270937fc01c3a753a|Dirdal|Dirdal|6.167|58.833|NODIR|Norway|NO
+634c4de270937fc01c3a753c|Drag|Drag|16.067|68.033|NODRG|Norway|NO
+634c4de270937fc01c3a753d|Drøbak|Drøbak|10.617|59.65|NODRK|Norway|NO
+634c4de270937fc01c3a753f|Eggesbønes|Eggesbønes|5.6522|62.3221|NOEGG|Norway|NO
+634c4de270937fc01c3a7541|Eide|Eide|7.45|62.9|NOEDE|Norway|NO
+634c4de270937fc01c3a7544|Eidfjord|Eidfjord|7.067|60.467|NOEDF|Norway|NO
+634c4de270937fc01c3a7545|Eidsdal|Eidsdal|7.167|62.267|NOEDD|Norway|NO
+634c4de270937fc01c3a7546|Eikefet|Eikefet|5.55|60.7|NOEKF|Norway|NO
+634c4de270937fc01c3a7547|Ellingsøy|Ellingsøy|6.333|62.5|NOELL|Norway|NO
+634c4de270937fc01c3a754a|Etne|Etne|5.917|59.65|NOETN|Norway|NO
+634c4de270937fc01c3a754c|Eydehavn|Eydehavn|8.867|58.483|NOEYD|Norway|NO
+634c4de270937fc01c3a754d|Fauske|Fauske|15.383|67.25|NOFAU|Norway|NO
+634c4de270937fc01c3a754e|Fedje|Fedje|4.7|60.767|NOFED|Norway|NO
+634c4de270937fc01c3a754f|Festvåg|Festvåg|14.767|67.433|NOFSV|Norway|NO
+634c4de270937fc01c3a7553|Finnsnes|Finnsnes|17.967|69.217|NOFNE|Norway|NO
+634c4de270937fc01c3a7556|Fiskebøl|Fiskebøl|14.817|68.433|NOFBL|Norway|NO
+634c4de270937fc01c3a7557|Fitjar|Fitjar|5.317|59.917|NOFIT|Norway|NO
+634c4de270937fc01c3a755e|Fornes|Fornes|17.467|68.867|NOFNS|Norway|NO
+634c4de270937fc01c3a7560|Forsand|Forsand|6.083|58.9|NOFOR|Norway|NO
+634c4de270937fc01c3a7562|Forus|Forus|5.74633|58.87116|NOFRS|Norway|NO
+634c4de270937fc01c3a7563|Fosnavåg|Fosnavåg|5.63622|62.34266|NOFOS|Norway|NO
+634c4de270937fc01c3a7565|Fredrikstad|Fredrikstad|10.917|59.2|NOFRK|Norway|NO
+634c4de270937fc01c3a7567|Fusa|Fusa|5.617|60.2|NOFUS|Norway|NO
+634c4de270937fc01c3a7568|Gamvik|Gamvik|28.25|71.05|NOGAM|Norway|NO
+634c4de270937fc01c3a756c|Glomfjord|Glomfjord|13.933|66.8|NOGLO|Norway|NO
+634c4de270937fc01c3a756d|Godøya|Godøya|6.017|62.467|NOGOO|Norway|NO
+634c4de270937fc01c3a7570|Grovfjord|Grovfjord|17.117|68.683|NOGRF|Norway|NO
+634c4de270937fc01c3a7571|Gryllefjord|Gryllefjord|17.083|69.367|NOGRY|Norway|NO
+634c4de270937fc01c3a7574|Gutvik|Gutvik|11.817|65.083|NOGUT|Norway|NO
+634c4de270937fc01c3a7575|Halsa|Halsa|8.217|63.05|NOHLS|Norway|NO
+634c4de270937fc01c3a7576|Halsa Meløy|Halsa Meløy|13.517|66.733|NOHSA|Norway|NO
+634c4de270937fc01c3a757b|Hanøytangen|Hanøytangen|5.1|60.433|NOHOT|Norway|NO
+634c4de270937fc01c3a757d|Hareid|Hareid|6.033|62.367|NOHRI|Norway|NO
+634c4de270937fc01c3a757f|Hausvikstrand|Hausvikstrand|6.983|58.033|NOHSV|Norway|NO
+634c4de270937fc01c3a7580|Håvik|Håvik|5.317|59.3|NOHVI|Norway|NO
+634c4de270937fc01c3a7581|Hekkelstrand|Hekkelstrand|16.833|68.4|NOHEK|Norway|NO
+634c4de270937fc01c3a7582|Helle - Forsand|Helle - Forsand|6.15|58.867|NOHLE|Norway|NO
+634c4de270937fc01c3a7589|Hjelmeland|Hjelmeland|6.183|59.233|NOHJL|Norway|NO
+634c4de270937fc01c3a758c|Høgset|Høgset|15.017|67.133|NOHOG|Norway|NO
+634c4de270937fc01c3a758e|Honningsvåg|Honningsvåg|25.967|70.967|NOHVG|Norway|NO
+634c4de270937fc01c3a7592|Hufthammar|Hufthammar|5.2|60.117|NOHHA|Norway|NO
+634c4de270937fc01c3a7594|Hundeidvika|Hundeidvika|6.417|62.367|NOHUD|Norway|NO
+634c4de270937fc01c3a7595|Husøy - Karmøy|Husøy - Karmøy|5.3|59.333|NOHSO|Norway|NO
+634c4de270937fc01c3a7597|Husøy - Tønsberg|Husøy - Tønsberg|10.45|59.233|NOHOY|Norway|NO
+634c4de270937fc01c3a759a|Igerøy|Igerøy|12.133|65.683|NOIGE|Norway|NO
+634c4de270937fc01c3a759c|Ikornnes|Ikornnes|6.55|62.383|NOIKR|Norway|NO
+634c4de270937fc01c3a759e|Inndyr|Inndyr|14.017|67.033|NOIDR|Norway|NO
+634c4de270937fc01c3a75a2|Jondal|Jondal|6.233|60.267|NOJON|Norway|NO
+634c4de270937fc01c3a75a3|Jøssingfjord|Jøssingfjord|6.35|58.317|NOJOS|Norway|NO
+634c4de270937fc01c3a75a5|Kabelvåg|Kabelvåg|14.48223|68.21|NOKAB|Norway|NO
+634c4de270937fc01c3a75a7|Kalvåg|Kalvåg|4.883|61.767|NOKVG|Norway|NO
+634c4de270937fc01c3a75a9|Kambo|Kambo|10.683|59.467|NOKMO|Norway|NO
+634c4de270937fc01c3a75ac|Kaupanger|Kaupanger|7.233|61.167|NOKPG|Norway|NO
+634c4de270937fc01c3a75ae|Kinsarvik|Kinsarvik|6.717|60.367|NOKIV|Norway|NO
+634c4de270937fc01c3a75b1|Kjøpsvik|Kjøpsvik|16.35|68.083|NOKJK|Norway|NO
+634c4de270937fc01c3a75b4|Kolvereid|Kolvereid|10.417|63.45|NOKLD|Norway|NO
+634c4de270937fc01c3a75b5|Kongsfjord|Kongsfjord|29.317|70.717|NOKGF|Norway|NO
+634c4de270937fc01c3a75b8|Kvalsund|Kvalsund|23.967|70.5|NOKVS|Norway|NO
+634c4de270937fc01c3a75be|Langesund|Langesund|9.733|59|NOLAD|Norway|NO
+634c4de270937fc01c3a75bf|Langevåg|Langevåg|5.25|59.617|NOLAG|Norway|NO
+634c4de270937fc01c3a75c0|Langevåg - Sula|Langevåg - Sula|6.217|62.433|NOLAN|Norway|NO
+634c4de270937fc01c3a75c4|Larsnes|Larsnes|5.6|62.217|NONZC|Norway|NO
+634c4de270937fc01c3a75c8|Leirvik|Leirvik|5.5|59.767|NOLRI|Norway|NO
+634c4de270937fc01c3a75c9|Leirvik i Hyllestad|Leirvik i Hyllestad|5.333|61.117|NOLEA|Norway|NO
+634c4de270937fc01c3a75ca|Leknes|Leknes|13.6|68.15|NOLKN|Norway|NO
+634c4de270937fc01c3a75ce|Lessremman|Lessremman|12.483|65.367|NOLRE|Norway|NO
+634c4de270937fc01c3a75d6|Lutelandet|Lutelandet|4.967|61.25|NOLUL|Norway|NO
+634c4de270937fc01c3a75d9|Maurholen|Maurholen|5.917|58.467|NOMAH|Norway|NO
+634c4de270937fc01c3a75db|Mehamn|Mehamn|27.833|71.033|NOMEH|Norway|NO
+634c4de270937fc01c3a75dc|Melbu|Melbu|14.8|68.483|NOMEL|Norway|NO
+634c4de270937fc01c3a75df|Misten|Misten|14.733|67.45|NOMIT|Norway|NO
+634c4de270937fc01c3a75e2|Mongstad|Mongstad|5.017|60.817|NOMON|Norway|NO
+634c4de270937fc01c3a75e5|Moskenes|Moskenes|13.033|67.883|NOMSK|Norway|NO
+634c4de270937fc01c3a75e8|Nesna|Nesna|13.017|66.2|NONSN|Norway|NO
+634c4de270937fc01c3a75ea|Nordfjordeid|Nordfjordeid|5.983|61.9|NONFD|Norway|NO
+634c4de270937fc01c3a75ee|Nordmela|Nordmela|15.683|69.133|NONOM|Norway|NO
+634c4de270937fc01c3a75ef|Nordskaget - Frøya|Nordskaget - Frøya|8.567|63.717|NONSF|Norway|NO
+634c4de270937fc01c3a75f0|Norheimsund|Norheimsund|6.133|60.367|NONHS|Norway|NO
+634c4de270937fc01c3a75f1|Nusfjord|Nusfjord|13.35|68.033|NOZNJ|Norway|NO
+634c4de270937fc01c3a75f3|Olden|Olden|6.8|61.833|NOOLD|Norway|NO
+634c4de270937fc01c3a75f6|Ølen|Ølen|5.8|59.6|NOOLN|Norway|NO
+634c4de270937fc01c3a75f7|Omastranda|Omastranda|5.967|60.217|NOOMA|Norway|NO
+634c4de270937fc01c3a75f8|Ombo|Ombo|6.017|59.233|NOOMB|Norway|NO
+634c4de270937fc01c3a75f9|Os|Os|5.467|60.167|NOOOS|Norway|NO
+634c4de270937fc01c3a75fc|Porsgrunn|Porsgrunn|9.633|59.133|NOPOR|Norway|NO
+634c4de270937fc01c3a75fd|Rafnes|Rafnes|9.567|59.1|NORAF|Norway|NO
+634c4de270937fc01c3a75fe|Ramberg|Ramberg|13.217|68.083|NORMB|Norway|NO
+634c4de270937fc01c3a7600|Randaberg|Randaberg|5.633|59|NORDB|Norway|NO
+634c4de270937fc01c3a7605|Rekefjord|Rekefjord|6.25|58.333|NOREK|Norway|NO
+634c4de270937fc01c3a7609|Røst|Røst|12.133|67.517|NORET|Norway|NO
+634c4de270937fc01c3a7610|Salten|Salten|15.583|67.367|NOSAT|Norway|NO
+634c4de270937fc01c3a7614|Sandøya|Sandøya|16.667|68.95|NOSAY|Norway|NO
+634c4de270937fc01c3a7615|Sandvika|Sandvika|10.517|59.883|NOSDI|Norway|NO
+634c4de270937fc01c3a7617|Sarpsborg|Sarpsborg|11.1|59.267|NOSPG|Norway|NO
+634c4de270937fc01c3a761b|Senjahopen|Senjahopen|17.483|69.5|NOSJH|Norway|NO
+634c4de270937fc01c3a761d|Sirevåg|Sirevåg|5.783|58.5|NOSRV|Norway|NO
+634c4de270937fc01c3a7623|Skien|Skien|9.6|59.2|NOSKE|Norway|NO
+634c4de270937fc01c3a7626|Skipavik - Gulen|Skipavik - Gulen|5.03147|60.8598|NOSIP|Norway|NO
+634c4de270937fc01c3a762a|Skogn|Skogn|11.15|63.7|NOSKX|Norway|NO
+634c4de270937fc01c3a762c|Skudeneshavn|Skudeneshavn|5.267|59.133|NOSKU|Norway|NO
+634c4de270937fc01c3a762d|Slagentangen|Slagentangen|10.5|59.317|NOSLG|Norway|NO
+634c4de270937fc01c3a762e|Slemmestad|Slemmestad|10.483|59.767|NOSLM|Norway|NO
+634c4de270937fc01c3a762f|Sløvåg|Sløvåg|5.07269|60.84415|NOSLV|Norway|NO
+634c4de270937fc01c3a7633|Sogndal|Sogndal|7.1|61.217|NOSOG|Norway|NO
+634c4de270937fc01c3a7636|Sørarnoy|Sørarnoy|13.983|67.133|NOSOR|Norway|NO
+634c4de270937fc01c3a7639|Spjelkavik|Spjelkavik|6.333|62.45|NOSPV|Norway|NO
+634c4de270937fc01c3a763c|Stamsund|Stamsund|13.833|68.117|NOSUZ|Norway|NO
+634c4de270937fc01c3a763d|Standal|Standal|6.433|62.267|NOSNL|Norway|NO
+634c4de270937fc01c3a763f|Stathelle|Stathelle|9.69937|59.04481|NOSTA|Norway|NO
+634c4de270937fc01c3a7640|Stavern|Stavern|10.033|58.983|NOSTV|Norway|NO
+634c4de270937fc01c3a7646|Stokkvågen|Stokkvågen|13|66.333|NOSTO|Norway|NO
+634c4de270937fc01c3a7649|Storebø|Storebø|5.217|60.1|NOSTB|Norway|NO
+634c4de270937fc01c3a764b|Stranda|Stranda|6.933|62.3|NOSRN|Norway|NO
+634c4de270937fc01c3a7650|Stura|Stura|4.867|60.617|NOSTU|Norway|NO
+634c4de270937fc01c3a7656|Svolvær|Svolvær|14.56776|68.23366|NOSVJ|Norway|NO
+634c4de270937fc01c3a7658|Sykkylven|Sykkylven|6.567|62.4|NOSYK|Norway|NO
+634c4de270937fc01c3a765a|Tananger|Tananger|5.583|58.917|NOTAE|Norway|NO
+634c4de270937fc01c3a765b|Tjeldbergodden|Tjeldbergodden|9|63.467|NOTBO|Norway|NO
+634c4de270937fc01c3a765d|Tjøtta|Tjøtta|12.433|65.817|NOTJL|Norway|NO
+634c4de270937fc01c3a765f|Tomrefjord|Tomrefjord|6.917|62.583|NOTOM|Norway|NO
+634c4de270937fc01c3a7667|Tyssedal|Tyssedal|6.55|60.117|NOTSX|Norway|NO
+634c4de270937fc01c3a766b|Ulsteinvik|Ulsteinvik|5.833|62.333|NOULS|Norway|NO
+634c4de270937fc01c3a7671|Værøy|Værøy|12.7|67.65|NOVEY|Norway|NO
+634c4de270937fc01c3a7674|Valldal|Valldal|7.267|62.3|NOVAD|Norway|NO
+634c4de270937fc01c3a7676|Valsneset|Valsneset|9.633|63.817|NOVAE|Norway|NO
+634c4de270937fc01c3a7678|Vartdal|Vartdal|6.067|62.3|NOVTL|Norway|NO
+634c4de270937fc01c3a767c|Vestnes|Vestnes|7.067|62.633|NOVST|Norway|NO
+634c4de270937fc01c3a767d|Vik - Sogn|Vik - Sogn|6.583|61.083|NOVIS|Norway|NO
+634c4de270937fc01c3a767f|Vikan - Smøla|Vikan - Smøla|8.2|63.383|NOVSM|Norway|NO
+634c4de270937fc01c3a7680|Vikedal|Vikedal|5.917|59.5|NOVIL|Norway|NO
+634c4de270937fc01c3a7685|Volda|Volda|6.05|62.133|NOVDA|Norway|NO
+634c4de270937fc01c3a7687|Al-Suwaiq|Al-Suwaiq|57.433|23.85|OMSUW|Oman|OM
+634c4de270937fc01c3a7689|Panamá, Ciudad de|Panamá, Ciudad de|-79.533|8.967|PAPTY|Panama|PA
+634c4de270937fc01c3a768e|Batangas/Luzon|Batangas/Luzon|121.05|13.75|PHBTG|Philippines|PH
+634c4de270937fc01c3a7697|Hel|Hel|18.8|54.6|PLHEL|Poland|PL
+634c4de270937fc01c3a769f|Cais do Pico|Cais do Pico|-28.317|38.517|PTCDP|Portugal|PT
+634c4de270937fc01c3a76a0|Calheta, Island São Jorge|Calheta, Island São Jorge|-28.017|38.6|PTCAL|Portugal|PT
+634c4de270937fc01c3a76a1|Cascais|Cascais|-9.417|38.7|PTCAS|Portugal|PT
+634c4de270937fc01c3a76a2|Funchal, Madeira|Funchal, Madeira|-16.9|32.633|PTFNC|Portugal|PT
+634c4de270937fc01c3a76a3|Lajes|Lajes|-28.267|38.383|PTLDP|Portugal|PT
+634c4de270937fc01c3a76a4|Madalena (Madalena do Pico)|Madalena (Madalena do Pico)|-28.533|38.533|PTMAD|Portugal|PT
+634c4de270937fc01c3a76a5|Porto Santo Island|Porto Santo Island|-16.333|33.067|PTPXO|Portugal|PT
+634c4de270937fc01c3a76a6|Praia da Graciosa|Praia da Graciosa|-27.967|39.05|PTPRG|Portugal|PT
+634c4de270937fc01c3a76aa|Velas|Velas|-28.217|38.683|PTVEL|Portugal|PT
+634c4de270937fc01c3a76ab|Vila Nova do Corvo|Vila Nova do Corvo|-31.1|39.667|PTVNC|Portugal|PT
+634c4de270937fc01c3a76ae|Umm Sa'id (Mesaieed)|Umm Sa'id (Mesaieed)|51.533|24.983|QAUMS|Qatar|QA
+634c4de270937fc01c3a76b1|Constanta|Constanta|28.65|44.183|ROCND|Romania|RO
+634c4de270937fc01c3a76b3|Mangalia|Mangalia|28.583|43.833|ROMAG|Romania|RO
+634c4de270937fc01c3a76b4|Midia|Midia|28.617|44.333|ROMID|Romania|RO
+634c4de270937fc01c3a76b5|Oltenita|Oltenita|26.65|44.083|ROOLT|Romania|RO
+634c4de270937fc01c3a76b6|Sulina (Port et Zone Franche)|Sulina (Port et Zone Franche)|29.667|45.15|ROSUL|Romania|RO
+634c4de270937fc01c3a76ba|Moskva|Moskva|37.6|55.75|RUMOW|Russia|RU
+634c4de270937fc01c3a76bc|Provideniya, Bukhta|Provideniya, Bukhta|-173.3|64.383|RUPVS|Russia|RU
+634c4de270937fc01c3a76bd|Samara|Samara|50.167|53.217|RUKUF|Russia|RU
+634c4de270937fc01c3a76bf|Taman'|Taman'|36.717|45.217|RUTAM|Russia|RU
+634c4de270937fc01c3a76c0|Volgograd|Volgograd|44.583|48.8|RUVOG|Russia|RU
+634c4de270937fc01c3a76c1|Yuzhno-Kuril'sk|Yuzhno-Kuril'sk|145.85|44.033|RUDEE|Russia|RU
+634c4de270937fc01c3a76c4|Port Elizabeth, Bequia|Port Elizabeth, Bequia|-61.217|13|VCBQU|Saint Vincent and The Grenadines|VC
+634c4de270937fc01c3a76c5|Jazan Economic City|Jazan Economic City|42.333|17.283|SAJEC|Saudi Arabia|SA
+634c4de270937fc01c3a76c7|Yanbu commercial city|Yanbu commercial city|38.05|24.067|SAYNB|Saudi Arabia|SA
+634c4de270937fc01c3a76c9|Kissy|Kissy|-13.183|8.467|SLKSY|Sierra Leone|SL
+634c4de270937fc01c3a76cf|Agaete|Agaete|-15.7|28.117|ESAGA|Spain|ES
+634c4de270937fc01c3a76d3|Cadaqués|Cadaqués|3.283|42.283|ESOOP|Spain|ES
+634c4de270937fc01c3a76d5|Camariñas|Camariñas|-9.167|43.117|ESIAS|Spain|ES
+634c4de270937fc01c3a76d6|Cariño|Cariño|-7.867|43.75|ESCNO|Spain|ES
+634c4de270937fc01c3a76d9|Fuenterrabía|Fuenterrabía|-1.783|43.367|ESEWE|Spain|ES
+634c4de270937fc01c3a76da|La Ametlla de Mar|La Ametlla de Mar|0.8|40.9|ESKLL|Spain|ES
+634c4de270937fc01c3a76db|La Escala (L'Escala)|La Escala (L'Escala)|3.133|42.117|ESGLE|Spain|ES
+634c4de270937fc01c3a76dc|Lanzarote|Lanzarote|-13.533|28.967|ESACE|Spain|ES
+634c4de270937fc01c3a76e0|Moaña|Moaña|-8.733|42.283|ESMOA|Spain|ES
+634c4de270937fc01c3a76e2|Ondárroa|Ondárroa|-2.417|43.317|ESOND|Spain|ES
+634c4de270937fc01c3a76e7|San Carlos de la Rápita|San Carlos de la Rápita|0.6|40.617|ESSCR|Spain|ES
+634c4de270937fc01c3a76e8|San Vicente de la Barquera|San Vicente de la Barquera|-4.383|43.383|ESSVB|Spain|ES
+634c4de270937fc01c3a76e9|Sangenjo|Sangenjo|-8.817|42.4|ESSXX|Spain|ES
+634c4de270937fc01c3a76ea|Santa Cruz de La Palma|Santa Cruz de La Palma|-17.767|28.683|ESSPC|Spain|ES
+634c4de270937fc01c3a76ec|Son (Puerto del Son)|Son (Puerto del Son)|-9.017|42.683|ESPTN|Spain|ES
+634c4de270937fc01c3a76ed|Tossa (Tossa de Mar)|Tossa (Tossa de Mar)|2.933|41.717|ESTKG|Spain|ES
+634c4de270937fc01c3a76f9|Bohus|Bohus|12|57.85|SEBOH|Sweden|SE
+634c4de270937fc01c3a76fb|Bråviken|Bråviken|16.533|58.633|SEBVK|Sweden|SE
+634c4de270937fc01c3a76fc|Brofjorden|Brofjorden|11.383|58.35|SEBRO|Sweden|SE
+634c4de270937fc01c3a76ff|Elleholm|Elleholm|14.75|56.167|SEELL|Sweden|SE
+634c4de270937fc01c3a7709|Haraholmen|Haraholmen|21.65|65.233|SEHAH|Sweden|SE
+634c4de270937fc01c3a770a|Hässelbyverket/Stockholm|Hässelbyverket/Stockholm|17.483|59.35|SEHBV|Sweden|SE
+634c4de270937fc01c3a770c|Husum|Husum|19.167|63.333|SEHUS|Sweden|SE
+634c4de270937fc01c3a770f|Kalvik|Kalvik|11.183|59.067|SEKVK|Sweden|SE
+634c4de270937fc01c3a7710|Kårehamn|Kårehamn|16.9|56.95|SEKRH|Sweden|SE
+634c4de270937fc01c3a7718|Limhamn|Limhamn|12.95|55.583|SELIM|Sweden|SE
+634c4de270937fc01c3a7719|Ljusne|Ljusne|17.133|61.217|SELJU|Sweden|SE
+634c4de270937fc01c3a771f|Muskö|Muskö|18.117|58.967|SEMSK|Sweden|SE
+634c4de270937fc01c3a7720|Nol (ports)|Nol (ports)|12.067|57.917|SENOL|Sweden|SE
+634c4de270937fc01c3a7722|Norrtälje|Norrtälje|18.717|59.75|SENOE|Sweden|SE
+634c4de270937fc01c3a7723|Norvik|Norvik|17.967|58.933|SENRR|Sweden|SE
+634c4de270937fc01c3a7724|Nyköping|Nyköping|17.167|58.917|SENYO|Sweden|SE
+634c4de270937fc01c3a7727|Östrand|Östrand|17.317|62.467|SEOST|Sweden|SE
+634c4de270937fc01c3a7729|Rönnäng|Rönnäng|11.583|57.933|SERNG|Sweden|SE
+634c4de270937fc01c3a7730|Söråker|Söråker|17.5|62.5|SESOR|Sweden|SE
+634c4de270937fc01c3a7733|Storugns|Storugns|18.817|57.75|SESUS|Sweden|SE
+634c4de270937fc01c3a7735|Strömstad|Strömstad|11.183|58.933|SESMD|Sweden|SE
+634c4de270937fc01c3a7736|Studsvik|Studsvik|17.383|58.767|SESDS|Sweden|SE
+634c4de270937fc01c3a773b|Träslövsläge|Träslövsläge|12.267|57.05|SETSL|Sweden|SE
+634c4de270937fc01c3a7744|Taipei|Taipei|121.517|25.033|TWTPE|Taiwan|TW
+634c4de270937fc01c3a7753|Ko Samui|Ko Samui|99.933|9.533|THKSM|Thailand|TH
+634c4de270937fc01c3a7754|Ko Sichang|Ko Sichang|100.817|13.133|THKSI|Thailand|TH
+634c4de270937fc01c3a7758|Mae Klong|Mae Klong|99.983|13.367|THMEK|Thailand|TH
+634c4de270937fc01c3a7759|Map Ta Phut|Map Ta Phut|101.3|12.65|THMAT|Thailand|TH
+634c4de270937fc01c3a775e|Pak Nam|Pak Nam|100.567|13.6|THPKN|Thailand|TH
+634c4de270937fc01c3a7761|Pattani|Pattani|101.267|6.883|THPTN|Thailand|TH
+634c4de270937fc01c3a776c|Surat Thani|Surat Thani|99.133|9.133|THURT|Thailand|TH
+634c4de270937fc01c3a7774|Port-of-Spain|Port-of-Spain|-61.517|10.65|TTPOS|Trinidad and Tobago|TT
+634c4de270937fc01c3a7775|Antalya|Antalya|30.6|36.833|TRAYT|Turkey|TR
+634c4de270937fc01c3a7778|Gerze|Gerze|36.183|41.633|TRGZE|Turkey|TR
+634c4de270937fc01c3a7779|Izmir|Izmir|27.15|38.417|TRIZM|Turkey|TR
+634c4de270937fc01c3a777a|Kefken|Kefken|30.25|41.2|TRKFK|Turkey|TR
+634c4de270937fc01c3a777c|Pazar|Pazar|40.883|41.167|TRPZR|Turkey|TR
+634c4de270937fc01c3a777d|Sile|Sile|29.6|41.167|TRSLE|Turkey|TR
+634c4de270937fc01c3a777f|Turkmenbashi|Turkmenbashi|52.967|40.017|TMKRW|Turkmenistan|TM
+634c4de270937fc01c3a7780|Bilhorod-Dnistrovskyi|Bilhorod-Dnistrovskyi|30.367|46.183|UABGD|Ukraine|UA
+634c4de270937fc01c3a7781|Kiliia|Kiliia|29.267|45.433|UAKIA|Ukraine|UA
+634c4de270937fc01c3a7782|Mariupol|Mariupol|37.5|47.05|UAMPW|Ukraine|UA
+634c4de270937fc01c3a7784|Pivdennyi|Pivdennyi|31.017|46.6|UAYUZ|Ukraine|UA
+634c4de270937fc01c3a7787|Zaporizhzhia|Zaporizhzhia|35.167|47.817|UAZPR|Ukraine|UA
+634c4de270937fc01c3a7788|Al Fujayrah|Al Fujayrah|56.333|25.117|AEFJR|United Arab Emirates|AE
+634c4de270937fc01c3a7789|Hassyan|Hassyan|54.9|24.9|AEHSN|United Arab Emirates|AE
+634c4de270937fc01c3a778a|Ras al Khaimah|Ras al Khaimah|55.95|25.783|AERKT|United Arab Emirates|AE
+634c4de270937fc01c3a778b|Umm al Quwain|Umm al Quwain|55.583|25.583|AEQIW|United Arab Emirates|AE
+634c4de270937fc01c3a778f|Aberdour|Aberdour|-3.283|56.05|GBAYD|United Kingdom|GB
+634c4de270937fc01c3a7792|Achnacroish|Achnacroish|-5.483|56.5|GBAHN|United Kingdom|GB
+634c4de270937fc01c3a7795|Aith|Aith|-1.383|60.283|GBAIT|United Kingdom|GB
+634c4de270937fc01c3a779c|Ardglass|Ardglass|-5.617|54.267|GBAGL|United Kingdom|GB
+634c4de270937fc01c3a77a3|Armadale, Isle of Skye|Armadale, Isle of Skye|-5.9|57.05|GBAMD|United Kingdom|GB
+634c4de270937fc01c3a77a7|Backaland, Eday|Backaland, Eday|-2.75|59.15|GBBKC|United Kingdom|GB
+634c4de270937fc01c3a77ad|Belmont, Unst|Belmont, Unst|-0.967|60.683|GBBMT|United Kingdom|GB
+634c4de270937fc01c3a77bc|Bruray, Out Skerries|Bruray, Out Skerries|-0.75|60.417|GBBRU|United Kingdom|GB
+634c4de270937fc01c3a77c0|Burwick|Burwick|-2.967|58.75|GBBWC|United Kingdom|GB
+634c4de270937fc01c3a77c2|Canna, Inner Hebrides|Canna, Inner Hebrides|-6.5|57.05|GBCNA|United Kingdom|GB
+634c4de270937fc01c3a77c7|Ceann a Gharaidh, Eriskay|Ceann a Gharaidh, Eriskay|-7.283|57.067|GBCAG|United Kingdom|GB
+634c4de270937fc01c3a77cd|Christchurch|Christchurch|-1.75|50.733|GBCCH|United Kingdom|GB
+634c4de270937fc01c3a77d0|Clacton-on-Sea|Clacton-on-Sea|1.15|51.8|GBCLS|United Kingdom|GB
+634c4de270937fc01c3a77d3|Clydebank|Clydebank|-4.4|55.9|GBCLY|United Kingdom|GB
+634c4de270937fc01c3a77d9|Craighouse, Isle of Jura|Craighouse, Isle of Jura|-5.95|55.833|GBCGJ|United Kingdom|GB
+634c4de270937fc01c3a77e3|Cullivoe, Yell|Cullivoe, Yell|-1.017|60.7|GBCUV|United Kingdom|GB
+634c4de270937fc01c3a77e4|Cumbrae Slip, Great Cumbrae|Cumbrae Slip, Great Cumbrae|-4.9|55.783|GBCMS|United Kingdom|GB
+634c4de270937fc01c3a77ef|Eastbourne|Eastbourne|0.283|50.767|GBEBO|United Kingdom|GB
+634c4de270937fc01c3a77f0|Egilsay|Egilsay|-2.94489|59.155|GBEGI|United Kingdom|GB
+634c4de270937fc01c3a77f4|Erith|Erith|0.183|51.483|GBERI|United Kingdom|GB
+634c4de270937fc01c3a77f5|Evanton|Evanton|-4.283|57.65|GBEVT|United Kingdom|GB
+634c4de270937fc01c3a77f6|Eyemouth|Eyemouth|-2.1|55.867|GBEYM|United Kingdom|GB
+634c4de270937fc01c3a77fc|Fishbourne|Fishbourne|-1.167|50.733|GBFBU|United Kingdom|GB
+634c4de270937fc01c3a77fe|Fishnish, Isle of Mull|Fishnish, Isle of Mull|-5.8|56.5|GBFNH|United Kingdom|GB
+634c4de270937fc01c3a7800|Fort William|Fort William|-5.117|56.817|GBFWM|United Kingdom|GB
+634c4de270937fc01c3a7804|Galmisdale, Eigg|Galmisdale, Eigg|-6.133|56.883|GBGAS|United Kingdom|GB
+634c4de270937fc01c3a7809|Graemsay|Graemsay|-3.267|58.917|GBGAE|United Kingdom|GB
+634c4de270937fc01c3a7810|Ham Voe, Foula|Ham Voe, Foula|-2.033|60.133|GBHVO|United Kingdom|GB
+634c4de270937fc01c3a7811|Hamars Ness, Fetlar|Hamars Ness, Fetlar|-0.933|60.617|GBHNS|United Kingdom|GB
+634c4de270937fc01c3a7818|Holy Loch|Holy Loch|-4.933|55.983|GBHLO|United Kingdom|GB
+634c4de270937fc01c3a781b|Housa Voe, Papa Stour|Housa Voe, Papa Stour|-1.667|60.333|GBHOV|United Kingdom|GB
+634c4de270937fc01c3a781c|Houton|Houton|-3.183|58.917|GBHUT|United Kingdom|GB
+634c4de270937fc01c3a782e|Kinloch, Rum|Kinloch, Rum|-6.283|57|GBKOH|United Kingdom|GB
+634c4de270937fc01c3a7832|Kyleakin|Kyleakin|-5.733|57.267|GBKYN|United Kingdom|GB
+634c4de270937fc01c3a7834|Langstone|Langstone|-0.983|50.833|GBLSH|United Kingdom|GB
+634c4de270937fc01c3a7838|Leverburgh, Harris|Leverburgh, Harris|-7.017|57.767|GBLVR|United Kingdom|GB
+634c4de270937fc01c3a783d|Lochboisdale (Loch Baghasdail), South Uist|Lochboisdale (Loch Baghasdail), South Uist|-7.317|57.15|GBLBD|United Kingdom|GB
+634c4de270937fc01c3a783f|Lochinver|Lochinver|-5.25|58.15|GBLOV|United Kingdom|GB
+634c4de270937fc01c3a7840|Lochranza, Isle of Arran|Lochranza, Isle of Arran|-5.3|55.7|GBLRZ|United Kingdom|GB
+634c4de270937fc01c3a7843|Loth, Sanday|Loth, Sanday|-2.7|59.2|GBLTS|United Kingdom|GB
+634c4de270937fc01c3a784a|Manchester Ship Canal, Salford|Manchester Ship Canal, Salford|-2.317|53.483|GBMSC|United Kingdom|GB
+634c4de270937fc01c3a784e|Mevagissey|Mevagissey|-4.783|50.267|GBMVG|United Kingdom|GB
+634c4de270937fc01c3a784f|Mid Yell|Mid Yell|-1.067|60.6|GBMYE|United Kingdom|GB
+634c4de270937fc01c3a7852|Moaness, Hoy|Moaness, Hoy|-3.317|58.917|GBMNS|United Kingdom|GB
+634c4de270937fc01c3a785e|North Queensferry|North Queensferry|-3.4|56.017|GBNOQ|United Kingdom|GB
+634c4de270937fc01c3a7865|Papa Westray|Papa Westray|-2.883|59.333|GBPPW|United Kingdom|GB
+634c4de270937fc01c3a7867|Penarth|Penarth|-3.167|51.433|GBPNH|United Kingdom|GB
+634c4de270937fc01c3a7872|Port Isaac|Port Isaac|-4.817|50.583|GBISA|United Kingdom|GB
+634c4de270937fc01c3a7873|Port Mor, Muck|Port Mor, Muck|-6.233|56.833|GBPMR|United Kingdom|GB
+634c4de270937fc01c3a7878|Portavogie|Portavogie|-5.45|54.45|GBPVG|United Kingdom|GB
+634c4de270937fc01c3a787b|Porthleven|Porthleven|-5.317|50.083|GBPLV|United Kingdom|GB
+634c4de270937fc01c3a7881|Portreath|Portreath|-5.3|50.267|GBPRJ|United Kingdom|GB
+634c4de270937fc01c3a7887|Rapness, Westray|Rapness, Westray|-2.867|59.267|GBRAP|United Kingdom|GB
+634c4de270937fc01c3a788b|Rhu|Rhu|-4.767|56.017|GBRHU|United Kingdom|GB
+634c4de270937fc01c3a7893|Saint Mawes|Saint Mawes|-5.017|50.15|GBSMV|United Kingdom|GB
+634c4de270937fc01c3a789a|Scalasaig, Colonsay|Scalasaig, Colonsay|-6.167|56.067|GBSCG|United Kingdom|GB
+634c4de270937fc01c3a789c|Scapa|Scapa|-2.983|58.967|GBSCF|United Kingdom|GB
+634c4de270937fc01c3a789d|Scarinish, Tiree|Scarinish, Tiree|-6.817|56.517|GBSCN|United Kingdom|GB
+634c4de270937fc01c3a78a4|Shapinsay|Shapinsay|-2.85|59.05|GBSPY|United Kingdom|GB
+634c4de270937fc01c3a78b1|Swanage|Swanage|-1.967|50.617|GBSWE|United Kingdom|GB
+634c4de270937fc01c3a78b8|Tingwall|Tingwall|-3.05|59.083|GBTNG|United Kingdom|GB
+634c4de270937fc01c3a78b9|Toft|Toft|-1.217|60.467|GBTFT|United Kingdom|GB
+634c4de270937fc01c3a78be|Ulsta, Yell|Ulsta, Yell|-1.167|60.5|GBULS|United Kingdom|GB
+634c4de270937fc01c3a78c2|Vidlin|Vidlin|-1.133|60.367|GBVID|United Kingdom|GB
+634c4de270937fc01c3a78ca|Wells-next-the-Sea|Wells-next-the-Sea|-0.833|52.95|GBWNS|United Kingdom|GB
+634c4de270937fc01c3a78cb|West Burrafirth|West Burrafirth|-1.533|60.3|GBWBF|United Kingdom|GB
+634c4de270937fc01c3a78d1|Wyre|Wyre|-2.967|59.133|GBWYR|United Kingdom|GB
+634c4de270937fc01c3a78d3|Dunkirk|Dunkirk|-79.267|42.483|USDKK|United States|US
+634c4de270937fc01c3a78d4|Evansville|Evansville|-87.55|37.967|USEVV|United States|US
+634c4de270937fc01c3a78d5|Fort Lauderdale|Fort Lauderdale|-80.133|26.117|USFLL|United States|US
+634c4de270937fc01c3a78d7|Holland|Holland|-86.1|42.783|USHLM|United States|US
+634c4de270937fc01c3a78d9|Kansas City|Kansas City|-94.567|39.1|USMKC|United States|US
+634c4de270937fc01c3a78db|Newport Beach|Newport Beach|-117.917|33.617|USJNP|United States|US
+634c4de270937fc01c3a78dc|Paducah|Paducah|-88.617|37.083|USPAH|United States|US
+634c4de270937fc01c3a78de|Saint Louis|Saint Louis|-90.183|38.617|USSTL|United States|US
+634c4de270937fc01c3a78e4|Cai Mep International Terminal|Cai Mep International Terminal|107|10.517|VNCMT|Vietnam|VN
+634c4de270937fc01c3a78e5|Can Tho|Can Tho|105.783|10.033|VNVCA|Vietnam|VN
+634c4de270937fc01c3a78e8|Qui Nhon|Qui Nhon|109.217|13.767|VNUIH|Vietnam|VN
+634c4de270937fc01c3a78e9|Vung Áng|Vung Áng|106.433|18.067|VNVAG|Vietnam|VN
+634c4de270937fc01c3a78ea|Christiansted, Saint Croix|Christiansted, Saint Croix|-64.75|17.75|VICTD|US Virgin Islands|VI
+634c4de270937fc01c3a78eb|Saint Thomas|Saint Thomas|-64.933|18.35|VISTT|US Virgin Islands|VI
+635e8f24bef885201a5e0fc9|Pointe a Pierre|Pointe a Pierre|-61.4735|10.3265|TTPTP|Trinidad and Tobago|TT
+635e90cfbef885201a5e0fca|Necochea|Necochea|-58.71471|-38.5736|ARNEC|Argentina|AR
+635e920cbef885201a5e0fcb|Itaguai Pt.|Itaguai|-43.85781|-22.92535|BRSPB|Brazil|BR
+635e9424bef885201a5e0fcc|Puerto Chacabuco|Puerto Chacabuco|-72.82175|-45.46635|CLPCH|Chile|CL
+635e9658bef885201a5e0fcd|Qingdao Pt.|Qingdao|120.32|36.05661|CNQDG|China|CN
+635edab5bef885201a5e0fd4|Tokuyamakudamatsu |Tokuyamakudamatsu |131.7741|34.04864|JPTXD|Japan|JP
+635ee688bef885201a5e0fd9|Kuwait|Kuwait|48.00172|29.3663|KWKWI|Kuwait|KW
+635eeb6cbef885201a5e0fdf|Jättersön|Jatterson|16.5575|57.0975|SEJAT|Sweden|SE
+6367c622aa0cd188707a1eae|Hamad|Hamad|25.02946|51.6245|QAHMD|Qatar|QA
+6367cb14aa0cd188707a1eaf|Al Hidd|Al Hidd|50.66789|26.2012|BHAHD|Bahrain|BH
+6367d9afaa0cd188707a1eb3|Aquaba|Aquaba|34.99279|29.51988|JOAQJ|Jordan|JO
+663cb287244f580d97afce53|Port of Portbury|Portbury|-2.648735|51.4713459|GBPRU|United Kingdom|GB
+663cb48be894e2f07d1c69b2|Bahrain Port|Bahrain|50.6166673|26.2055456|BHBAH|Bahrain|BH
+
