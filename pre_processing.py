@@ -1,50 +1,70 @@
 import pandas as pd
 
 
-def pre_process(data: pd.DataFrame) -> pd.DataFrame:
+def pre_process(training_data: pd.DataFrame) -> pd.DataFrame:
     """
     Pre-processing of the data
     :param data: data to be pre-processed
     :return: pre-processed data
     """
-    data.sort_values(by=["vesselId", "time"], inplace=True)
+    training_data.drop("etaRaw", axis=1, inplace=True)
+    training_data.drop("portId", axis=1, inplace=True)
 
-    data.drop("etaRaw", axis=1, inplace=True)
-    data.drop("portId", axis=1, inplace=True)
+    navstat_dummies = pd.get_dummies(training_data["navstat"], prefix="navstat")
+    training_data = pd.concat([training_data, navstat_dummies], axis=1)
+    training_data.drop("navstat", axis=1, inplace=True)
 
-    navstat_dummies = pd.get_dummies(data["navstat"], prefix="navstat")
-    data = pd.concat([data, navstat_dummies], axis=1)
-    data.drop("navstat", axis=1, inplace=True)
-
-    data["time"] = pd.to_datetime(data["time"])
+    training_data["time"] = pd.to_datetime(training_data["time"])
     # Calculate time difference to the next row
-    data["time_diff"] = data.groupby("vesselId")["time"].diff(-1).dt.total_seconds()
+    training_data["time_diff"] = (
+        -training_data.groupby("vesselId")["time"].diff(-1).dt.total_seconds()
+    )
 
-    # data.set_index("time", inplace=True)
-    return data
+    # Reorder columns to place latitude and longitude after time
+    columns = list(training_data.columns)
+    time_index = columns.index("time")
+    lat_lon_columns = ["latitude", "longitude"]
+    for col in lat_lon_columns:
+        columns.remove(col)
+    for i, col in enumerate(lat_lon_columns):
+        columns.insert(time_index + 1 + i, col)
+    training_data = training_data[columns]
+
+    return training_data
 
 
-def features_and_labels(data: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+def features_and_labels(
+    training_data: pd.DataFrame,
+) -> tuple[pd.DataFrame, pd.DataFrame]:
     """
-    Extract features and labels from the data
+    Extract features and labels from the training data
     :param data: data to extract features and labels from
     :return: features and labels
     """
     features = (
-        data.groupby("vesselId").apply(lambda x: x.iloc[:-1]).reset_index(drop=True)
+        training_data.groupby("vesselId")
+        .apply(lambda x: x.iloc[:-1])
+        .reset_index(drop=True)
     )
     features.drop("vesselId", axis=1, inplace=True)
     features.drop("time", axis=1, inplace=True)
 
-    labels = data.groupby("vesselId").apply(lambda x: x.iloc[1:]).reset_index(drop=True)
-    labels = labels[["latitude", "longitude"]]
+    labels = (
+        training_data.groupby("vesselId")
+        .apply(lambda x: x.iloc[1:])
+        .reset_index(drop=True)
+    )
+    labels.drop("vesselId", axis=1, inplace=True)
+    labels.drop("time", axis=1, inplace=True)
+    labels.drop("time_diff", axis=1, inplace=True)
+
     return features, labels
 
 
 if __name__ == "__main__":
-    data = pd.read_csv("task/ais_train.csv", delimiter="|")
-    data = pre_process(data)
-    data.to_csv("data_preprocessed.csv", index=False)
-    features, labels = features_and_labels(data)
+    training_data = pd.read_csv("task/ais_train.csv", delimiter="|")
+    training_data = pre_process(training_data)
+    training_data.to_csv("training_data_preprocessed.csv", index=False)
+    features, labels = features_and_labels(training_data)
     features.to_csv("features.csv", index=False)
     labels.to_csv("labels.csv", index=False)
