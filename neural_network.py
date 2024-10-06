@@ -3,7 +3,6 @@ import torch.optim as optim
 import torch
 from torch.utils.data import DataLoader, TensorDataset
 import pandas as pd
-from geopy.distance import geodesic
 
 
 class ShipTrajectoryMLP(nn.Module):
@@ -35,22 +34,31 @@ class GeodesicLoss(nn.Module):
         super(GeodesicLoss, self).__init__()
 
     def forward(self, outputs: torch.Tensor, targets: torch.Tensor):
-        square_geodesic_distance = torch.tensor(
-            [
-                geodesic(
-                    (outputs[i, 0].item(), outputs[i, 1].item()),
-                    (targets[i, 0].item(), targets[i, 1].item()),
-                ).meters
-                for i in range(outputs.size(0))
-            ],
-            dtype=torch.float32,
-        ).square()
+        # Compute geodesic distance using vectorized operations
+        lat1, lon1 = outputs[:, 0], outputs[:, 1]
+        lat2, lon2 = targets[:, 0], targets[:, 1]
+
+        # Convert degrees to radians
+        lat1, lon1, lat2, lon2 = map(torch.deg2rad, (lat1, lon1, lat2, lon2))
+
+        # Haversine formula
+        dlat = lat2 - lat1
+        dlon = lon2 - lon1
+        a = (
+            torch.sin(dlat / 2) ** 2
+            + torch.cos(lat1) * torch.cos(lat2) * torch.sin(dlon / 2) ** 2
+        )
+        c = 2 * torch.atan2(torch.sqrt(a), torch.sqrt(1 - a))
+        R = 6371000  # Radius of Earth in meters
+        geodesic_distance = R * c
+
+        square_geodesic_distance = geodesic_distance.square()
 
         mse_loss = nn.functional.mse_loss(
             outputs[:, 2:], targets[:, 2:], reduction="none"
         ).mean(dim=1)
 
-        total_loss = square_geodesic_distance * 10 + mse_loss
+        total_loss = square_geodesic_distance + mse_loss
         return total_loss.mean()
 
 
@@ -88,6 +96,8 @@ if __name__ == "__main__":
             loss.backward()
             optimizer.step()
         print(f"Epoch {epoch+1}/{num_epochs}, Loss: {loss.item()}")
+        if (epoch + 1) % 25 == 0:
+            torch.save(model.state_dict(), f"mlp_model_epoch_{epoch+1}.pth")
 
     # Save the model
     torch.save(model.state_dict(), "mlp_model.pth")
