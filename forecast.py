@@ -1,6 +1,7 @@
 import pandas as pd
 import torch
-from neural_network import LSTMModel
+from neural_network import LSTMModel, ShipTrajectoryMLP
+import test
 
 
 def create_test_features(train_df: pd.DataFrame, test_df: pd.DataFrame) -> pd.DataFrame:
@@ -32,13 +33,8 @@ def create_test_features(train_df: pd.DataFrame, test_df: pd.DataFrame) -> pd.Da
     return test_df
 
 
-# Load the model
-model = LSTMModel(input_size=22, hidden_size=16, num_layers=2, output_size=21)
-model.load_state_dict(torch.load("lstm_model.pth"))
-model.eval()
-
 # Load the training data
-train_df = pd.read_csv("data_preprocessed.csv")
+train_df = pd.read_csv("training_data_preprocessed.csv")
 
 # Load the test data
 test_df = pd.read_csv("task/ais_test.csv")
@@ -50,6 +46,11 @@ test_features.to_csv("test_features.csv", index=False)
 # Predict the next location for each vessel
 vessel_groups = test_features.groupby("vesselId")
 predictions = []
+
+# Load the model
+model = ShipTrajectoryMLP(test_features.shape[1] - 4, 16, test_features.shape[1] - 5)
+model.load_state_dict(torch.load("mlp_model.pth"))
+model.eval()
 
 for vesselId, group in vessel_groups:
     features = torch.tensor(

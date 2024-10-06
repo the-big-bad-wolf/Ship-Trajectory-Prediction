@@ -84,11 +84,11 @@ if __name__ == "__main__":
     for epoch in range(num_epochs):
         for features_batch, labels_batch in dataloader:
             optimizer.zero_grad()
-            outputs = model(features_batch.unsqueeze(1))
+            outputs = model(features_batch)
             loss = loss_fn(outputs, labels_batch)
             loss.backward()
             optimizer.step()
         print(f"Epoch {epoch+1}/{num_epochs}, Loss: {loss.item()}")
 
     # Save the model
-    torch.save(model.state_dict(), "lstm_model.pth")
+    torch.save(model.state_dict(), "mlp_model.pth")
