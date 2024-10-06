@@ -1,7 +1,6 @@
 import pandas as pd
 import torch
 from neural_network import LSTMModel, ShipTrajectoryMLP
-import test
 
 
 def create_test_features(train_df: pd.DataFrame, test_df: pd.DataFrame) -> pd.DataFrame:
@@ -49,7 +48,7 @@ predictions = []
 
 # Load the model
 model = ShipTrajectoryMLP(test_features.shape[1] - 4, 16, test_features.shape[1] - 5)
-model.load_state_dict(torch.load("mlp_model.pth"))
+model.load_state_dict(torch.load("lstm_model.pth"))
 model.eval()
 
 for vesselId, group in vessel_groups:
@@ -67,18 +66,17 @@ for vesselId, group in vessel_groups:
         .astype("float32")
     )
     for i in range(0, features.shape[0]):
-        prediction = model(features[i].unsqueeze(0).unsqueeze(0))
+        prediction = model(features[i])
         predictions.append(
             {
                 "ID": group.iloc[i]["ID"],
-                "longitude": prediction[0, 1].item(),
-                "latitude": prediction[0, 0].item(),
+                "longitude": prediction[1].item(),
+                "latitude": prediction[0].item(),
             }
         )
         if i < features.shape[0] - 1:
-            features[i + 1, :-1] = prediction[0, :]
+            features[i + 1, :-1] = prediction[:]
 
-    model.hidden = model.init_hidden()
 
 # Save the predictions
 predictions_df = pd.DataFrame(predictions, columns=["ID", "longitude", "latitude"])

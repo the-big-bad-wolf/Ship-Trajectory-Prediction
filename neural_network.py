@@ -6,22 +6,6 @@ import pandas as pd
 from geopy.distance import geodesic
 
 
-class LSTMModel(nn.Module):
-    def __init__(self, input_size, hidden_size, output_size, num_layers):
-        super(LSTMModel, self).__init__()
-        self.hidden_size = hidden_size
-        self.num_layers = num_layers
-        self.lstm = nn.LSTM(input_size, hidden_size, num_layers, batch_first=True)
-        self.fc = nn.Linear(hidden_size, output_size)
-
-    def forward(self, x):
-        h0 = torch.zeros(self.num_layers, x.size(0), self.hidden_size).to(x.device)
-        c0 = torch.zeros(self.num_layers, x.size(0), self.hidden_size).to(x.device)
-        out, _ = self.lstm(x, (h0, c0))
-        out = self.fc(out[:, -1, :])
-        return out
-
-
 class ShipTrajectoryMLP(nn.Module):
     def __init__(self, input_size, hidden_size, output_size):
         super(ShipTrajectoryMLP, self).__init__()
@@ -30,12 +14,19 @@ class ShipTrajectoryMLP(nn.Module):
         self.fc2 = nn.Linear(hidden_size, hidden_size)
         self.fc3 = nn.Linear(hidden_size, output_size)
 
-    def forward(self, x):
+        self.uppers = torch.tensor([90, 180], dtype=torch.float32)
+        self.lowers = torch.tensor([-90, -180], dtype=torch.float32)
+
+    def forward(self, x: torch.Tensor):
         out = self.fc1(x)
         out = self.relu(out)
         out = self.fc2(out)
         out = self.relu(out)
         out = self.fc3(out)
+
+        # Clip the latitude and longitude
+        out[:, 0] = torch.clamp(out[:, 0].clone(), self.lowers[0], self.uppers[0])
+        out[:, 1] = torch.clamp(out[:, 1].clone(), self.lowers[1], self.uppers[1])
         return out
 
 
@@ -43,16 +34,24 @@ class GeodesicLoss(nn.Module):
     def __init__(self):
         super(GeodesicLoss, self).__init__()
 
-    def forward(self, inputs: torch.Tensor, targets: torch.Tensor):
-        inputs = inputs[:, :2]
-        targets = targets[:, :2]
-        loss = torch.tensor(
+    def forward(self, outputs: torch.Tensor, targets: torch.Tensor):
+        square_geodesic_distance = torch.tensor(
             [
-                geodesic((lat1, lon1), (lat2, lon2)).m
-                for (lat1, lon1), (lat2, lon2) in zip(inputs, targets)
-            ]
-        )
-        return loss.mean().requires_grad_()
+                geodesic(
+                    (outputs[i, 0].item(), outputs[i, 1].item()),
+                    (targets[i, 0].item(), targets[i, 1].item()),
+                ).meters
+                for i in range(outputs.size(0))
+            ],
+            dtype=torch.float32,
+        ).square()
+
+        mse_loss = nn.functional.mse_loss(
+            outputs[:, 2:], targets[:, 2:], reduction="none"
+        ).mean(dim=1)
+
+        total_loss = square_geodesic_distance * 10 + mse_loss
+        return total_loss.mean()
 
 
 if __name__ == "__main__":
@@ -72,10 +71,10 @@ if __name__ == "__main__":
     input_size = features.shape[1]
     hidden_size = 16
     output_size = labels.shape[1]
-    num_layers = 3
 
     model = ShipTrajectoryMLP(input_size, hidden_size, output_size)
-    loss_fn = nn.MSELoss()
+    model.load_state_dict(torch.load("mlp_model_200.pth"))
+    loss_fn = GeodesicLoss()
     optimizer = optim.Adam(model.parameters(), lr=0.001)
 
     # Training loop
