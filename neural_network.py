@@ -22,6 +22,23 @@ class LSTMModel(nn.Module):
         return out
 
 
+class ShipTrajectoryMLP(nn.Module):
+    def __init__(self, input_size, hidden_size, output_size):
+        super(ShipTrajectoryMLP, self).__init__()
+        self.relu = nn.ReLU()
+        self.fc1 = nn.Linear(input_size, hidden_size)
+        self.fc2 = nn.Linear(hidden_size, hidden_size)
+        self.fc3 = nn.Linear(hidden_size, output_size)
+
+    def forward(self, x):
+        out = self.fc1(x)
+        out = self.relu(out)
+        out = self.fc2(out)
+        out = self.relu(out)
+        out = self.fc3(out)
+        return out
+
+
 class GeodesicLoss(nn.Module):
     def __init__(self):
         super(GeodesicLoss, self).__init__()
@@ -43,12 +60,6 @@ if __name__ == "__main__":
     features = pd.read_csv("features.csv").astype("float32")
     labels = pd.read_csv("labels.csv").astype("float32")
 
-    # Print datatypes of features and labels
-    print("Features data type:", features.dtypes)
-    print("Labels data type:", labels.dtypes)
-
-    print("Features:", features.head())
-
     # Convert to PyTorch tensors
     features_tensor = torch.tensor(features.values, dtype=torch.float32)
     labels_tensor = torch.tensor(labels.values, dtype=torch.float32)
@@ -61,10 +72,10 @@ if __name__ == "__main__":
     input_size = features.shape[1]
     hidden_size = 16
     output_size = labels.shape[1]
-    num_layers = 2
+    num_layers = 3
 
-    model = LSTMModel(input_size, hidden_size, output_size, num_layers)
-    loss_fn = GeodesicLoss()
+    model = ShipTrajectoryMLP(input_size, hidden_size, output_size)
+    loss_fn = nn.MSELoss()
     optimizer = optim.Adam(model.parameters(), lr=0.001)
 
     # Training loop

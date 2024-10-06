@@ -10,12 +10,18 @@ def pre_process(training_data: pd.DataFrame) -> pd.DataFrame:
     training_data.drop("etaRaw", axis=1, inplace=True)
     training_data.drop("portId", axis=1, inplace=True)
 
-    navstat_dummies = pd.get_dummies(training_data["navstat"], prefix="navstat")
-    training_data = pd.concat([training_data, navstat_dummies], axis=1)
-    training_data.drop("navstat", axis=1, inplace=True)
+    # Convert navstat to binary anchor feature
+    training_data["navstat"] = training_data["navstat"].apply(
+        lambda x: 1 if (x == 1 or x == 5 or x == 6) else 0
+    )
+    training_data.rename(columns={"navstat": "anchored"}, inplace=True)
 
-    training_data["time"] = pd.to_datetime(training_data["time"])
+    # Scale the heading and COG feature
+    training_data["heading"] = training_data["heading"] / 360
+    training_data["cog"] = training_data["cog"] / 360
+
     # Calculate time difference to the next row
+    training_data["time"] = pd.to_datetime(training_data["time"])
     training_data["time_diff"] = (
         -training_data.groupby("vesselId")["time"].diff(-1).dt.total_seconds()
     )
