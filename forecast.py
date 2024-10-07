@@ -1,6 +1,6 @@
 import pandas as pd
 import torch
-from neural_network import LSTMModel, ShipTrajectoryMLP
+from neural_network import ShipTrajectoryMLP
 
 
 def create_test_features(train_df: pd.DataFrame, test_df: pd.DataFrame) -> pd.DataFrame:
@@ -33,14 +33,14 @@ def create_test_features(train_df: pd.DataFrame, test_df: pd.DataFrame) -> pd.Da
 
 
 # Load the training data
-train_df = pd.read_csv("training_data_preprocessed.csv")
+train_df = pd.read_csv("data/training_data_preprocessed.csv")
 
 # Load the test data
 test_df = pd.read_csv("task/ais_test.csv")
 
 # Create the test features
 test_features = create_test_features(train_df, test_df)
-test_features.to_csv("test_features.csv", index=False)
+test_features.to_csv("data/test_features.csv", index=False)
 
 # Predict the next location for each vessel
 vessel_groups = test_features.groupby("vesselId")
@@ -48,7 +48,7 @@ predictions = []
 
 # Load the model
 model = ShipTrajectoryMLP(test_features.shape[1] - 4, 16, test_features.shape[1] - 5)
-model.load_state_dict(torch.load("lstm_model.pth"))
+model.load_state_dict(torch.load("mlp_model_epoch_200.pth"))
 model.eval()
 
 for vesselId, group in vessel_groups:
@@ -66,7 +66,8 @@ for vesselId, group in vessel_groups:
         .astype("float32")
     )
     for i in range(0, features.shape[0]):
-        prediction = model(features[i])
+        prediction = model(features[i].unsqueeze(0))
+        prediction = prediction[0]
         predictions.append(
             {
                 "ID": group.iloc[i]["ID"],

@@ -12,13 +12,62 @@ def pre_process(training_data: pd.DataFrame) -> pd.DataFrame:
 
     # Convert navstat to binary anchor feature
     training_data["navstat"] = training_data["navstat"].apply(
-        lambda x: 1 if (x == 1 or x == 5 or x == 6) else 0
+        lambda x: 1 if (x in [1, 5, 6]) else 0
     )
     training_data.rename(columns={"navstat": "anchored"}, inplace=True)
 
-    # Scale the heading and COG feature
-    training_data["heading"] = training_data["heading"] / 360
+    # Set sog to 0 if it is 102.3 and the vessel is anchored, otherwise interpolate
+    training_data["sog"] = training_data.apply(
+        lambda row: 0 if row["sog"] == 102.3 and row["anchored"] == 1 else row["sog"],
+        axis=1,
+    )
+    training_data["sog"] = (
+        training_data["sog"]
+        .mask((training_data["sog"] == 102.3) & (training_data["anchored"] == 0))
+        .interpolate(limit_area="inside", limit=1)
+    )
+
+    # Normalize the SOG feature
+    training_data["sog"] = training_data["sog"] / 102.2
+
+    # Replace heading with COG if heading is out of bounds and vice versa
+    training_data["heading"] = training_data.apply(
+        lambda row: row["cog"] if row["heading"] >= 360 else row["heading"], axis=1
+    )
+    training_data["cog"] = training_data.apply(
+        lambda row: row["heading"] if row["cog"] >= 360 else row["cog"], axis=1
+    )
+
+    # Fill in COG and heading with the previous or next row if both are over 360
+    training_data["cog"] = (
+        training_data["cog"]
+        .mask(training_data["cog"] >= 360)
+        .ffill(limit=1)
+        .bfill(limit=1)
+    )
+    training_data["heading"] = (
+        training_data["heading"]
+        .mask(training_data["heading"] >= 360)
+        .ffill(limit=1)
+        .bfill(limit=1)
+    )
+
+    # Normalize the heading and COG feature
     training_data["cog"] = training_data["cog"] / 360
+    training_data["heading"] = training_data["heading"] / 360
+
+    # Set ROT to 0 if out of no ROT sensor is available
+    training_data["rot"] = training_data["rot"].apply(lambda x: 0 if x == 128 else x)
+
+    # Interpolate ROT for values at -127 or 127
+    training_data["rot"] = (
+        training_data["rot"]
+        .mask(training_data["rot"].isin([-127, 127]))
+        .interpolate(limit_area="inside", limit=3)
+    )
+
+    # Normalize the ROT feature
+    training_data["rot"] = training_data["rot"] / 126
 
     # Calculate time difference to the next row
     training_data["time"] = pd.to_datetime(training_data["time"])
@@ -70,7 +119,7 @@ def features_and_labels(
 if __name__ == "__main__":
     training_data = pd.read_csv("task/ais_train.csv", delimiter="|")
     training_data = pre_process(training_data)
-    training_data.to_csv("training_data_preprocessed.csv", index=False)
+    training_data.to_csv("data/training_data_preprocessed.csv", index=False)
     features, labels = features_and_labels(training_data)
-    features.to_csv("features.csv", index=False)
-    labels.to_csv("labels.csv", index=False)
+    features.to_csv("data/features.csv", index=False)
+    labels.to_csv("data/labels.csv", index=False)

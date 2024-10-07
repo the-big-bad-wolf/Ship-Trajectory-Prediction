@@ -97,7 +97,7 @@ if __name__ == "__main__":
             optimizer.step()
         print(f"Epoch {epoch+1}/{num_epochs}, Loss: {loss.item()}")
         if (epoch + 1) % 25 == 0:
-            torch.save(model.state_dict(), f"mlp_model_epoch_{epoch+1}.pth")
+            torch.save(model.state_dict(), f"models/mlp_model_epoch_{epoch+1}.pth")
 
     # Save the model
     torch.save(model.state_dict(), "mlp_model.pth")
