@@ -58,14 +58,14 @@ class GeodesicLoss(nn.Module):
             outputs[:, 2:], targets[:, 2:], reduction="none"
         ).mean(dim=1)
 
-        total_loss = square_geodesic_distance + mse_loss
+        total_loss = square_geodesic_distance * 1000 + mse_loss
         return total_loss.mean()
 
 
 if __name__ == "__main__":
     # Load preprocessed data
-    features = pd.read_csv("features.csv").astype("float32")
-    labels = pd.read_csv("labels.csv").astype("float32")
+    features = pd.read_csv("data/features.csv").astype("float32")
+    labels = pd.read_csv("data/labels.csv").astype("float32")
 
     # Convert to PyTorch tensors
     features_tensor = torch.tensor(features.values, dtype=torch.float32)
@@ -77,16 +77,16 @@ if __name__ == "__main__":
 
     # Define model, loss function, and optimizer
     input_size = features.shape[1]
-    hidden_size = 16
+    hidden_size = 12
     output_size = labels.shape[1]
 
     model = ShipTrajectoryMLP(input_size, hidden_size, output_size)
-    model.load_state_dict(torch.load("mlp_model_200.pth"))
+    # model.load_state_dict(torch.load("mlp_final.pth"))
     loss_fn = GeodesicLoss()
     optimizer = optim.Adam(model.parameters(), lr=0.001)
 
     # Training loop
-    num_epochs = 200
+    num_epochs = 1000
     model.train()
     for epoch in range(num_epochs):
         for features_batch, labels_batch in dataloader:
@@ -96,8 +96,8 @@ if __name__ == "__main__":
             loss.backward()
             optimizer.step()
         print(f"Epoch {epoch+1}/{num_epochs}, Loss: {loss.item()}")
-        if (epoch + 1) % 25 == 0:
+        if (epoch + 1) % 50 == 0:
             torch.save(model.state_dict(), f"models/mlp_model_epoch_{epoch+1}.pth")
 
     # Save the model
-    torch.save(model.state_dict(), "mlp_model.pth")
+    torch.save(model.state_dict(), "models/mlp_final.pth")
