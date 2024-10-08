@@ -47,8 +47,8 @@ vessel_groups = test_features.groupby("vesselId")
 predictions = []
 
 # Load the model
-model = ShipTrajectoryMLP(test_features.shape[1] - 4, 16, test_features.shape[1] - 5)
-model.load_state_dict(torch.load("mlp_model_epoch_200.pth"))
+model = ShipTrajectoryMLP(test_features.shape[1] - 4, 12, test_features.shape[1] - 5)
+model.load_state_dict(torch.load("models/mlp_model_epoch_100.pth"))
 model.eval()
 
 for vesselId, group in vessel_groups:

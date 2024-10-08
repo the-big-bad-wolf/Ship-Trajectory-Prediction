@@ -1,5 +1,7 @@
 from calendar import c
 import pandas as pd
+import geopandas as gpd
+from shapely.geometry import Point, LineString
 
 labels = pd.read_csv("data/labels.csv")
 
@@ -45,6 +47,50 @@ count_max_rot = (labels["rot"] == max_rot).sum()
 print(f"Number of ROTs at min: {count_min_rot}")
 print(f"Number of ROTs at max: {count_max_rot}")
 
+max_latitude = labels["latitude"].max()
+print(f"The maximum value for latitude is: {max_latitude}")
+
+min_latitude = labels["latitude"].min()
+print(f"The minimum value for latitude is: {min_latitude}")
+
+max_longitude = labels["longitude"].max()
+print(f"The maximum value for longitude is: {max_longitude}")
+
+min_longitude = labels["longitude"].min()
+print(f"The minimum value for longitude is: {min_longitude}")
+
 nan_values = labels.isna().sum()
 print("Number of NaN values in each column:")
 print(nan_values)
+
+
+import matplotlib.pyplot as plt
+
+world_map = gpd.read_file("task/map/ne_110m_admin_0_countries.shp")
+data = pd.read_csv("task/ais_train.csv", delimiter="|")
+
+# Group by vesselId and plot the path of 5 vessels
+vessel_groups = data.groupby("vesselId")
+
+# Select 5 vessels to plot
+vessel_ids = vessel_groups.groups.keys()
+selected_vessel_ids = list(vessel_ids)[:5]
+
+# Plot the paths
+fig, ax = plt.subplots(figsize=(15, 10))
+world_map.plot(ax=ax, color="lightgrey")
+
+for vessel_id in selected_vessel_ids:
+    vessel_data = vessel_groups.get_group(vessel_id)
+    vessel_data = vessel_data.sort_values(by="time")
+    points = [
+        Point(xy) for xy in zip(vessel_data["longitude"], vessel_data["latitude"])
+    ]
+    line = LineString(points)
+    gpd.GeoSeries([line]).plot(ax=ax, label=f"Vessel {vessel_id}")
+
+plt.legend()
+plt.xlabel("Longitude")
+plt.ylabel("Latitude")
+plt.title("Paths of 5 Vessels")
+plt.show()

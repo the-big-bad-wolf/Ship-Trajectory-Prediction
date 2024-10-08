@@ -16,16 +16,21 @@ class ShipTrajectoryMLP(nn.Module):
         self.uppers = torch.tensor([90, 180], dtype=torch.float32)
         self.lowers = torch.tensor([-90, -180], dtype=torch.float32)
 
-    def forward(self, x: torch.Tensor):
-        out = self.fc1(x)
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        out: torch.Tensor = self.fc1(x)
         out = self.relu(out)
         out = self.fc2(out)
         out = self.relu(out)
         out = self.fc3(out)
 
-        # Clip the latitude and longitude
-        out[:, 0] = torch.clamp(out[:, 0].clone(), self.lowers[0], self.uppers[0])
-        out[:, 1] = torch.clamp(out[:, 1].clone(), self.lowers[1], self.uppers[1])
+        # Wrap the latitude and flip the longitude when hitting the limit
+        out[:, 1] = torch.where(
+            (out[:, 0] > 90) | (out[:, 0] < -90), out[:, 1] + 180, out[:, 1]
+        )
+        out[:, 0] = torch.where(out[:, 0] > 90, 180 - out[:, 0], out[:, 0])
+        out[:, 0] = torch.where(out[:, 0] < -90, -180 - out[:, 0], out[:, 0])
+        # Wrap the longitude
+        out[:, 1] = torch.remainder(out[:, 1] + 180, 360) - 180
         return out
 
 
@@ -58,7 +63,7 @@ class GeodesicLoss(nn.Module):
             outputs[:, 2:], targets[:, 2:], reduction="none"
         ).mean(dim=1)
 
-        total_loss = square_geodesic_distance * 1000 + mse_loss
+        total_loss = square_geodesic_distance + mse_loss
         return total_loss.mean()
 
 
@@ -73,7 +78,7 @@ if __name__ == "__main__":
 
     # Create DataLoader
     dataset = TensorDataset(features_tensor, labels_tensor)
-    dataloader = DataLoader(dataset, batch_size=1024, shuffle=True)
+    dataloader = DataLoader(dataset, batch_size=16, shuffle=True)
 
     # Define model, loss function, and optimizer
     input_size = features.shape[1]
@@ -81,12 +86,12 @@ if __name__ == "__main__":
     output_size = labels.shape[1]
 
     model = ShipTrajectoryMLP(input_size, hidden_size, output_size)
-    # model.load_state_dict(torch.load("mlp_final.pth"))
+    model.load_state_dict(torch.load("models/good_ones/fine_batch_100.pth"))
     loss_fn = GeodesicLoss()
     optimizer = optim.Adam(model.parameters(), lr=0.001)
 
     # Training loop
-    num_epochs = 1000
+    num_epochs = 10000
     model.train()
     for epoch in range(num_epochs):
         for features_batch, labels_batch in dataloader:
@@ -94,10 +99,9 @@ if __name__ == "__main__":
             outputs = model(features_batch)
             loss = loss_fn(outputs, labels_batch)
             loss.backward()
+            # Clip gradients
+            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
             optimizer.step()
         print(f"Epoch {epoch+1}/{num_epochs}, Loss: {loss.item()}")
         if (epoch + 1) % 50 == 0:
             torch.save(model.state_dict(), f"models/mlp_model_epoch_{epoch+1}.pth")
-
-    # Save the model
-    torch.save(model.state_dict(), "models/mlp_final.pth")
