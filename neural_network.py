@@ -78,7 +78,7 @@ if __name__ == "__main__":
 
     # Create DataLoader
     dataset = TensorDataset(features_tensor, labels_tensor)
-    dataloader = DataLoader(dataset, batch_size=16, shuffle=True)
+    dataloader = DataLoader(dataset, batch_size=32, shuffle=True)
 
     # Define model, loss function, and optimizer
     input_size = features.shape[1]
@@ -86,7 +86,7 @@ if __name__ == "__main__":
     output_size = labels.shape[1]
 
     model = ShipTrajectoryMLP(input_size, hidden_size, output_size)
-    model.load_state_dict(torch.load("models/good_ones/fine_batch_100.pth"))
+    model.load_state_dict(torch.load("models/coord_wrapping/mlp_model_epoch_150.pth"))
     loss_fn = GeodesicLoss()
     optimizer = optim.Adam(model.parameters(), lr=0.001)
 
@@ -100,8 +100,10 @@ if __name__ == "__main__":
             loss = loss_fn(outputs, labels_batch)
             loss.backward()
             # Clip gradients
-            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=3.0)
             optimizer.step()
         print(f"Epoch {epoch+1}/{num_epochs}, Loss: {loss.item()}")
         if (epoch + 1) % 50 == 0:
-            torch.save(model.state_dict(), f"models/mlp_model_epoch_{epoch+1}.pth")
+            torch.save(
+                model.state_dict(), f"models/output/mlp_model_epoch_{epoch+1}.pth"
+            )
