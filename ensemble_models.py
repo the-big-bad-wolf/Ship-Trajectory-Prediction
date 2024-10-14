@@ -3,7 +3,7 @@ import numpy as np
 import feature_engineering as fe
 import validation as val
 
-def prepare_data(training, test, split_train=False):
+def prepare_data(training, test, features, split_train=False):
     # Load the data
     ais_train_df = pd.read_csv('ais_train.csv', sep='|')
     ais_test_df = pd.read_csv('ais_test.csv', sep=',')
@@ -18,14 +18,14 @@ def prepare_data(training, test, split_train=False):
     # Split the data into train and validation sets
     if split_train:
         train_df, validation_df = fe.split_train_validation(features_train_df)
-        X_train, y_train = fe.choose_features(train_df, ['time_diff', 'prev_longitude', 'prev_latitude', 'vesselId', 'prev_cog', 'prev_sog', 'prev_moored'], ['longitude', 'latitude']) 
-        X_val, y_val = fe.choose_features(validation_df, ['time_diff', 'prev_longitude', 'prev_latitude', 'vesselId', 'prev_cog', 'prev_sog', 'prev_moored'], ['longitude', 'latitude'])
-        X_test, y_test = fe.choose_features(features_test_df, ['time_diff', 'prev_longitude', 'prev_latitude', 'vesselId', 'prev_cog', 'prev_sog', 'prev_moored'], ['longitude', 'latitude'])
+        X_train, y_train = fe.choose_features(train_df, features, ['longitude', 'latitude']) 
+        X_val, y_val = fe.choose_features(validation_df, features, ['longitude', 'latitude'])
+        X_test, y_test = fe.choose_features(features_test_df, features, ['longitude', 'latitude'])
         
         return X_train, y_train, X_val, y_val, X_test, y_test
     
-    X_train, y_train = fe.choose_features(train_df, ['time_diff', 'prev_longitude', 'prev_latitude', 'vesselId', 'prev_cog', 'prev_sog', 'prev_moored'], ['longitude', 'latitude']) 
-    X_test, y_test = fe.choose_features(features_test_df, ['time_diff', 'prev_longitude', 'prev_latitude', 'vesselId', 'prev_cog', 'prev_sog', 'prev_moored'], ['longitude', 'latitude'])
+    X_train, y_train = fe.choose_features(train_df, features, ['longitude', 'latitude']) 
+    X_test, y_test = fe.choose_features(features_test_df, features, ['longitude', 'latitude'])
     
     return X_train, y_train, X_test, y_test
 
