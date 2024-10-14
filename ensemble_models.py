@@ -13,19 +13,19 @@ def prepare_data(training, test, features, split_train=False):
 
     # Feature engineering
     features_train_df = fe.feature_engineer_train(ais_train_df)
-    features_test_df = fe.feature_engineer_test(ais_test_df)
+    features_test_df = fe.feature_engineer_test(ais_train_df, ais_test_df)
 
     # Split the data into train and validation sets
     if split_train:
         train_df, validation_df = fe.split_train_validation(features_train_df)
         X_train, y_train = fe.choose_features(train_df, features, ['longitude', 'latitude']) 
         X_val, y_val = fe.choose_features(validation_df, features, ['longitude', 'latitude'])
-        X_test, y_test = fe.choose_features(features_test_df, features, ['longitude', 'latitude'])
+        X_test, y_test = fe.choose_features(features_test_df, features, [])
         
-        return X_train, y_train, X_val, y_val, X_test, y_test
+        return X_train, y_train, X_val, y_val, validation_df, X_test, y_test
     
     X_train, y_train = fe.choose_features(train_df, features, ['longitude', 'latitude']) 
-    X_test, y_test = fe.choose_features(features_test_df, features, ['longitude', 'latitude'])
+    X_test, y_test = fe.choose_features(features_test_df, features, [])
     
     return X_train, y_train, X_test, y_test
 
@@ -53,12 +53,12 @@ def evaluate_model(y_pred, y_true):
     return score
 
 
-def run_ensemble_model(train_csv, test_csv, model, split_train=False, evaluate=False):
+def run_ensemble_model(train_csv, test_csv, model, features, split_train=False, evaluate=False):
     # Prepare the data
     if split_train:
-        X_train, y_train, X_val, y_val, X_test, y_test = prepare_data('ais_train.csv', 'ais_test.csv', split_train=split_train)
+        X_train, y_train, X_val, y_val, validation_df, X_test, y_test = prepare_data('ais_train.csv', 'ais_test.csv', features, split_train=split_train)
     else:
-        X_train, y_train, X_test, y_test = prepare_data('ais_train.csv', 'ais_test.csv', split_train=split_train)
+        X_train, y_train, X_test, y_test = prepare_data('ais_train.csv', 'ais_test.csv', features, split_train=split_train)
 
     # Train the model
     model = train_ensemble_model(model, X_train, y_train)
@@ -68,7 +68,9 @@ def run_ensemble_model(train_csv, test_csv, model, split_train=False, evaluate=F
 
     # Evaluate the model
     if evaluate:
-        score = evaluate_model(y_pred, y_test)
+        y_val_pred = predict(model, X_val)
+        y = val.prepare_output(y_val_pred, validation_df)
+        score = evaluate_model(y)
         return y_pred, score
 
     return y_pred, None
