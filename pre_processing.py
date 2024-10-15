@@ -112,12 +112,8 @@ def features_and_labels(
         .reset_index(drop=True)
     )
 
-    # Haakons old.
-    # features.drop("vesselId", axis=1, inplace=True)
-    # features.drop("time", axis=1, inplace=True)
-
-    # Edvards new.
-    features.drop("time_diff", axis=1, inplace=True)
+    features.drop("vesselId", axis=1, inplace=True)
+    features.drop("time", axis=1, inplace=True)
 
     labels = (
         training_data.groupby("vesselId")
