@@ -1,14 +1,24 @@
 import pandas as pd
 
 
-def pre_process(training_data: pd.DataFrame) -> pd.DataFrame:
+def pre_process(training_data: pd.DataFrame, vessel_data: pd.DataFrame) -> pd.DataFrame:
     """
     Pre-processing of the data
     :param data: data to be pre-processed
     :return: pre-processed data
     """
+    training_data.sort_values(by=["vesselId", "time"], inplace=True)
+
     training_data.drop("etaRaw", axis=1, inplace=True)
     training_data.drop("portId", axis=1, inplace=True)
+
+    vessel_data = vessel_data[["vesselId", "length"]]
+    training_data = training_data.merge(vessel_data, on="vesselId")
+    # Create a new feature indicating whether the ship is longer than 160 meters
+    training_data["deep_sea"] = training_data["length"].apply(
+        lambda x: 1 if x > 160 else 0
+    )
+    training_data["length"] = training_data["length"] / 300
 
     # Convert navstat to binary anchor feature
     training_data["navstat"] = training_data["navstat"].apply(
@@ -101,14 +111,14 @@ def features_and_labels(
         .apply(lambda x: x.iloc[:-1])
         .reset_index(drop=True)
     )
-    
+
     # Haakons old.
     # features.drop("vesselId", axis=1, inplace=True)
     # features.drop("time", axis=1, inplace=True)
-    
+
     # Edvards new.
     features.drop("time_diff", axis=1, inplace=True)
-    
+
     labels = (
         training_data.groupby("vesselId")
         .apply(lambda x: x.iloc[1:])
@@ -122,8 +132,9 @@ def features_and_labels(
 
 
 if __name__ == "__main__":
-    training_data = pd.read_csv("task/ais_train.csv", delimiter="|")
-    training_data = pre_process(training_data)
+    AIS_data = pd.read_csv("task/ais_train.csv", delimiter="|")
+    vessel_data = pd.read_csv("task/vessels.csv", delimiter="|")
+    training_data = pre_process(AIS_data, vessel_data)
     training_data.to_csv("data/training_data_preprocessed.csv", index=False)
     features, labels = features_and_labels(training_data)
     features.to_csv("data/features.csv", index=False)
