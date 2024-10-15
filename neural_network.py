@@ -3,6 +3,7 @@ import torch.optim as optim
 import torch
 from torch.utils.data import DataLoader, TensorDataset
 import pandas as pd
+from geopy.distance import geodesic
 
 
 class ShipTrajectoryMLP(nn.Module):
@@ -13,9 +14,6 @@ class ShipTrajectoryMLP(nn.Module):
         self.fc2 = nn.Linear(hidden_size, hidden_size)
         self.fc3 = nn.Linear(hidden_size, output_size)
 
-        self.uppers = torch.tensor([90, 180], dtype=torch.float32)
-        self.lowers = torch.tensor([-90, -180], dtype=torch.float32)
-
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         out: torch.Tensor = self.fc1(x)
         out = self.relu(out)
@@ -23,14 +21,12 @@ class ShipTrajectoryMLP(nn.Module):
         out = self.relu(out)
         out = self.fc3(out)
 
-        # Wrap the latitude and flip the longitude when hitting the limit
-        out[:, 1] = torch.where(
-            (out[:, 0] > 90) | (out[:, 0] < -90), out[:, 1] + 180, out[:, 1]
-        )
-        out[:, 0] = torch.where(out[:, 0] > 90, 180 - out[:, 0], out[:, 0])
-        out[:, 0] = torch.where(out[:, 0] < -90, -180 - out[:, 0], out[:, 0])
-        # Wrap the longitude
-        out[:, 1] = torch.remainder(out[:, 1] + 180, 360) - 180
+        # Clamp the latitude to the range [-90, 90]
+        out[:, 0] = torch.clamp(out[:, 0].clone(), -90, 90)
+        # Clamp the longitude to the range [-180, 180]
+        out[:, 1] = torch.clamp(out[:, 1].clone(), -180, 180)
+        # Clamp the rest of the variables to the range [0, 1]
+        out[:, 2:] = torch.clamp(out[:, 2:].clone(), 0, 1)
         return out
 
 
@@ -38,7 +34,7 @@ class GeodesicLoss(nn.Module):
     def __init__(self):
         super(GeodesicLoss, self).__init__()
 
-    def forward(self, outputs: torch.Tensor, targets: torch.Tensor):
+    def forward(self, outputs: torch.Tensor, targets: torch.Tensor) -> torch.Tensor:
         # Compute geodesic distance using vectorized operations
         lat1, lon1 = outputs[:, 0], outputs[:, 1]
         lat2, lon2 = targets[:, 0], targets[:, 1]
@@ -54,17 +50,18 @@ class GeodesicLoss(nn.Module):
             + torch.cos(lat1) * torch.cos(lat2) * torch.sin(dlon / 2) ** 2
         )
         c = 2 * torch.atan2(torch.sqrt(a), torch.sqrt(1 - a))
-        R = 6371000  # Radius of Earth in meters
+        R = 6371  # Radius of Earth in kilometers
         geodesic_distance = R * c
 
-        square_geodesic_distance = geodesic_distance.square()
+        # Square geodesic distance
+        geodesic_distance_squared = torch.square(geodesic_distance)
 
-        mse_loss = nn.functional.mse_loss(
-            outputs[:, 2:], targets[:, 2:], reduction="none"
-        ).mean(dim=1)
+        # Mean squared error for the rest of the variables
+        mse = nn.functional.mse_loss(outputs[:, 2:], targets[:, 2:])
 
-        total_loss = square_geodesic_distance + mse_loss
-        return total_loss.mean()
+        # Combine geodesic distance squared with MSE
+        loss = geodesic_distance_squared.mean() * 1000 + mse
+        return loss
 
 
 if __name__ == "__main__":
@@ -86,21 +83,22 @@ if __name__ == "__main__":
     output_size = labels.shape[1]
 
     model = ShipTrajectoryMLP(input_size, hidden_size, output_size)
-    model.load_state_dict(torch.load("models/coord_wrapping/mlp_model_epoch_150.pth"))
+    # model.load_state_dict(torch.load("models/good_ones/fine_batch_100.pth"))
     loss_fn = GeodesicLoss()
     optimizer = optim.Adam(model.parameters(), lr=0.001)
 
     # Training loop
     num_epochs = 10000
     model.train()
+
+    features_batch: torch.Tensor
+    labels_batch: torch.Tensor
     for epoch in range(num_epochs):
         for features_batch, labels_batch in dataloader:
             optimizer.zero_grad()
             outputs = model(features_batch)
-            loss = loss_fn(outputs, labels_batch)
+            loss: torch.Tensor = loss_fn(outputs, labels_batch)
             loss.backward()
-            # Clip gradients
-            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=3.0)
             optimizer.step()
         print(f"Epoch {epoch+1}/{num_epochs}, Loss: {loss.item()}")
         if (epoch + 1) % 50 == 0:

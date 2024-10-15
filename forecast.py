@@ -32,15 +32,19 @@ def create_test_features(train_df: pd.DataFrame, test_df: pd.DataFrame) -> pd.Da
     return test_df
 
 
-# Load the training data
-train_df = pd.read_csv("data/training_data_preprocessed.csv")
+# # Load the training data
+# train_df = pd.read_csv("data/training_data_preprocessed.csv")
 
-# Load the test data
-test_df = pd.read_csv("task/ais_test.csv")
+# # Load the test data
+# test_df = pd.read_csv("task/ais_test.csv")
 
-# Create the test features
-test_features = create_test_features(train_df, test_df)
-test_features.to_csv("data/test_features.csv", index=False)
+# # Create the test features
+# test_features = create_test_features(train_df, test_df)
+# test_features.to_csv("data/test_features.csv", index=False)
+
+
+# Load the test features
+test_features = pd.read_csv("data/test_features.csv")
 
 # Predict the next location for each vessel
 vessel_groups = test_features.groupby("vesselId")
@@ -48,7 +52,7 @@ predictions = []
 
 # Load the model
 model = ShipTrajectoryMLP(test_features.shape[1] - 4, 12, test_features.shape[1] - 5)
-model.load_state_dict(torch.load("models/mlp_model_epoch_100.pth"))
+model.load_state_dict(torch.load("models/output/mlp_model_epoch_100.pth"))
 model.eval()
 
 for vesselId, group in vessel_groups:

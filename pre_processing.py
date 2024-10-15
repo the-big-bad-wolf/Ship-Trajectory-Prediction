@@ -10,6 +10,10 @@ def pre_process(training_data: pd.DataFrame) -> pd.DataFrame:
     training_data.drop("etaRaw", axis=1, inplace=True)
     training_data.drop("portId", axis=1, inplace=True)
 
+    # Sort the training data by vesselId and time
+    training_data.sort_values(by=["vesselId", "time"], inplace=True)
+    training_data.reset_index(drop=True, inplace=True)
+
     # Convert navstat to binary anchor feature
     training_data["navstat"] = training_data["navstat"].apply(
         lambda x: 1 if (x in [1, 5, 6]) else 0
@@ -101,8 +105,8 @@ def features_and_labels(
         .apply(lambda x: x.iloc[:-1])
         .reset_index(drop=True)
     )
-    features.drop("vesselId", axis=1, inplace=True)
     features.drop("time", axis=1, inplace=True)
+    features = pd.get_dummies(features, columns=["vesselId"])
 
     labels = (
         training_data.groupby("vesselId")
