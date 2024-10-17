@@ -21,12 +21,9 @@ class ShipTrajectoryMLP(nn.Module):
         out = self.relu(out)
         out = self.fc3(out)
 
-        # Clamp the latitude to the range [-90, 90]
+        # Clamp the latitude and longitude
         out[:, 0] = torch.clamp(out[:, 0].clone(), -90, 90)
-        # Clamp the longitude to the range [-180, 180]
         out[:, 1] = torch.clamp(out[:, 1].clone(), -180, 180)
-        # Clamp the rest of the variables to the range [0, 1]
-        out[:, 2:] = torch.clamp(out[:, 2:].clone(), 0, 1)
         return out
 
 

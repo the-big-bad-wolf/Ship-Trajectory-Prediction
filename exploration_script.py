@@ -1,16 +1,54 @@
 import pandas as pd
 from shapely.geometry import Point, LineString
 import geopandas as gpd
-import random
 
-df = pd.read_csv("data/training_data_preprocessed.csv")
+original = pd.read_csv("task/ais_train.csv", delimiter="|")
+vessels_df = pd.read_csv("task/vessels.csv", delimiter="|")
+processed_data = pd.read_csv("data/training_data_preprocessed.csv")
+
+# Print the number of unique vesselIds
+unique_vessel_ids = original["vesselId"].nunique()
+print(f"Number of unique vesselIds: {unique_vessel_ids}")
+
+# Print the number of NaN values in each column
+nan_counts = processed_data.isna().sum()
+print("NaN values in each column in pre-processed training file:")
+print(nan_counts)
+
+# Load the vessels.csv file
+
+# Print the number of NaN values in each column
+nan_counts_vessels = vessels_df.isna().sum()
+print("NaN values in each column in vessels file:")
+print(nan_counts_vessels)
+
+# Print the maximum SOG (Speed Over Ground)
+max_sog = processed_data["sog"].max()
+print(f"Maximum SOG: {max_sog}")
+
+# Print the maximum SOG (Speed Over Ground) when anchor is 1
+max_sog_anchor_1 = processed_data[processed_data["anchored"] == 1]["sog"].max()
+print(f"Maximum SOG when anchor is 1: {max_sog_anchor_1}")
+
+# Print the average SOG (Speed Over Ground) when anchor is 1
+average_sog_anchor_1 = processed_data[processed_data["anchored"] == 1]["sog"].mean()
+print(f"Average SOG when anchor is 1: {average_sog_anchor_1}")
+
+# Find the vessels with the 10 fewest data points
+vessel_counts = processed_data["vesselId"].value_counts().nsmallest(10)
+
+
+# Print the vessels and their data point counts
+print("Vessel ID - Data Points")
+for vessel_id, count in vessel_counts.items():
+    print(f"{vessel_id} - {count}")
 
 
 import matplotlib.pyplot as plt
 
 # Filter ships by length
-df_below_193 = df[df["length"] < 160]
-df_above_193 = df[df["length"] >= 160]
+df_below_193 = processed_data[processed_data["length"] < 160 / 300]
+df_above_193 = processed_data[processed_data["length"] >= 160 / 300]
 
 # Select 5 random ships from each group
 random_ships_below_193 = df_below_193["vesselId"].drop_duplicates().sample(5)

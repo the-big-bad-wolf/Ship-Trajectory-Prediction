@@ -106,4 +106,6 @@ if __name__ == "__main__":
 
         print(f"Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}")
         if (epoch + 1) % 50 == 0:
-            torch.save(model.state_dict(), f"lstm_model_epoch_{epoch+1}.pth")
+            torch.save(
+                model.state_dict(), f"models/output/lstm_model_epoch_{epoch+1}.pth"
+            )

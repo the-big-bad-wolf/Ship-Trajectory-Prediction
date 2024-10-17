@@ -1,102 +1,133 @@
 import pandas as pd
 
 
+def impute(data: pd.DataFrame) -> pd.DataFrame:
+    """
+    Impute missing values in the data
+    :param data: data to impute missing values
+    :return: data with imputed missing values
+    """
+    # Set sog to 0 if it is 102.3 and the vessel is anchored, otherwise interpolate
+    data.loc[(data["sog"] == 102.3) & (data["anchored"] == 1), "sog"] = 0
+    data["sog"] = data["sog"].replace(102.3, float("nan"))
+    data["sog"] = (
+        data.groupby("vesselId", as_index=False)
+        .apply(lambda group: group["sog"].interpolate(limit=3))
+        .reset_index(drop=True)
+    )
+
+    # Replace heading with COG if heading is out of bounds and vice versa
+    data["heading"] = data.apply(
+        lambda row: row["cog"] if row["heading"] >= 360 else row["heading"], axis=1
+    )
+    data["cog"] = data.apply(
+        lambda row: row["heading"] if row["cog"] >= 360 else row["cog"], axis=1
+    )
+
+    # Fill in COG and heading with the previous or next row if both are over 360
+    data["cog"] = (
+        data.groupby("vesselId", as_index=False)
+        .apply(lambda group: group["cog"].mask(group["cog"] >= 360).ffill().bfill())
+        .reset_index(drop=True)
+    )
+    data["heading"] = (
+        data.groupby("vesselId", as_index=False)
+        .apply(
+            lambda group: group["heading"].mask(group["heading"] >= 360).ffill().bfill()
+        )
+        .reset_index(drop=True)
+    )
+
+    # Interpolate ROT for values at -127 or 127 or 128
+    data["rot"] = (
+        data.groupby("vesselId", as_index=False)
+        .apply(
+            lambda group: group["rot"]
+            .mask(group["rot"].isin([-127, 127, 128]))
+            .interpolate(limit_area="inside", limit=1)
+            .fillna(0)
+        )
+        .reset_index(drop=True)
+    )
+
+    return data
+
+
+def standardize(data: pd.DataFrame) -> pd.DataFrame:
+    """
+    Standardize the data
+    :param data: data to be standardized
+    :return: standardized data
+    """
+    columns_to_standardize = [
+        col
+        for col in data.columns
+        if col
+        not in [
+            "latitude",
+            "longitude",
+            "time",
+            "vesselId",
+            "deep_sea",
+            "anchored",
+            "restricted",
+        ]
+    ]
+    data[columns_to_standardize] = (
+        data[columns_to_standardize] - data[columns_to_standardize].mean()
+    ) / data[columns_to_standardize].std()
+    return data
+
+
 def pre_process(training_data: pd.DataFrame, vessel_data: pd.DataFrame) -> pd.DataFrame:
     """
     Pre-processing of the data
     :param data: data to be pre-processed
     :return: pre-processed data
     """
+    training_data["time"] = pd.to_datetime(training_data["time"])
     training_data.sort_values(by=["vesselId", "time"], inplace=True)
+    training_data.reset_index(drop=True, inplace=True)
 
     training_data.drop("etaRaw", axis=1, inplace=True)
     training_data.drop("portId", axis=1, inplace=True)
 
-    # Sort the training data by vesselId and time
-    training_data.sort_values(by=["vesselId", "time"], inplace=True)
-    training_data.reset_index(drop=True, inplace=True)
-    vessel_data = vessel_data[["vesselId", "length"]]
-    training_data = training_data.merge(vessel_data, on="vesselId")
+    vessel_data = vessel_data[["vesselId", "length", "CEU", "GT", "yearBuilt"]]
+    training_data = training_data.merge(vessel_data, on="vesselId", how="left")
+
     # Create a new feature indicating whether the ship is longer than 160 meters
     training_data["deep_sea"] = training_data["length"].apply(
-        lambda x: 1 if x > 160 else 0
+        lambda x: 1 if x >= 160 else 0
     )
     training_data["length"] = training_data["length"] / 300
 
-    # Convert navstat to binary anchor feature
-    training_data["navstat"] = training_data["navstat"].apply(
+    # Convert navstat to binary anchor and restricted features
+    training_data["anchored"] = training_data["navstat"].apply(
         lambda x: 1 if (x in [1, 5, 6]) else 0
     )
-    training_data.rename(columns={"navstat": "anchored"}, inplace=True)
-
-    # Set sog to 0 if it is 102.3 and the vessel is anchored, otherwise interpolate
-    training_data["sog"] = training_data.apply(
-        lambda row: 0 if row["sog"] == 102.3 and row["anchored"] == 1 else row["sog"],
-        axis=1,
+    training_data["restricted"] = training_data["navstat"].apply(
+        lambda x: 1 if (x in [2, 3, 4, 7, 14]) else 0
     )
-    training_data["sog"] = (
-        training_data["sog"]
-        .mask((training_data["sog"] == 102.3) & (training_data["anchored"] == 0))
-        .interpolate(limit_area="inside", limit=1)
-    )
-
-    # Normalize the SOG feature
-    training_data["sog"] = training_data["sog"] / 102.2
-
-    # Replace heading with COG if heading is out of bounds and vice versa
-    training_data["heading"] = training_data.apply(
-        lambda row: row["cog"] if row["heading"] >= 360 else row["heading"], axis=1
-    )
-    training_data["cog"] = training_data.apply(
-        lambda row: row["heading"] if row["cog"] >= 360 else row["cog"], axis=1
-    )
-
-    # Fill in COG and heading with the previous or next row if both are over 360
-    training_data["cog"] = (
-        training_data["cog"]
-        .mask(training_data["cog"] >= 360)
-        .ffill(limit=1)
-        .bfill(limit=1)
-    )
-    training_data["heading"] = (
-        training_data["heading"]
-        .mask(training_data["heading"] >= 360)
-        .ffill(limit=1)
-        .bfill(limit=1)
-    )
-
-    # Normalize the heading and COG feature
-    training_data["cog"] = training_data["cog"] / 360
-    training_data["heading"] = training_data["heading"] / 360
-
-    # Set ROT to 0 if out of no ROT sensor is available
-    training_data["rot"] = training_data["rot"].apply(lambda x: 0 if x == 128 else x)
-
-    # Interpolate ROT for values at -127 or 127
-    training_data["rot"] = (
-        training_data["rot"]
-        .mask(training_data["rot"].isin([-127, 127]))
-        .interpolate(limit_area="inside", limit=3)
-    )
-
-    # Normalize the ROT feature
-    training_data["rot"] = training_data["rot"] / 126
+    training_data.drop("navstat", axis=1, inplace=True)
 
     # Calculate time difference to the next row
-    training_data["time"] = pd.to_datetime(training_data["time"])
     training_data["time_diff"] = (
         -training_data.groupby("vesselId")["time"].diff(-1).dt.total_seconds()
     )
 
-    # Reorder columns to place latitude and longitude after time
-    columns = list(training_data.columns)
-    time_index = columns.index("time")
-    lat_lon_columns = ["latitude", "longitude"]
-    for col in lat_lon_columns:
-        columns.remove(col)
-    for i, col in enumerate(lat_lon_columns):
-        columns.insert(time_index + 1 + i, col)
-    training_data = training_data[columns]
+    # Impute missing values
+    training_data = impute(training_data)
+
+    # Standardize the data
+    training_data = standardize(training_data)
+
+    # Reorder columns to make vesselId, time, latitude, longitude the first columns
+    columns_order = ["vesselId", "time", "latitude", "longitude"] + [
+        col
+        for col in training_data.columns
+        if col not in ["vesselId", "time", "latitude", "longitude"]
+    ]
+    training_data = training_data[columns_order]
 
     return training_data
 
@@ -117,7 +148,6 @@ def features_and_labels(
 
     features.drop("vesselId", axis=1, inplace=True)
     features.drop("time", axis=1, inplace=True)
-    features = pd.get_dummies(features, columns=["vesselId"])
 
     labels = (
         training_data.groupby("vesselId")
