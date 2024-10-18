@@ -9,65 +9,11 @@ def pre_process(training_data: pd.DataFrame) -> pd.DataFrame:
     """
     training_data.drop("etaRaw", axis=1, inplace=True)
     training_data.drop("portId", axis=1, inplace=True)
-
-    # Convert navstat to binary anchor feature
-    training_data["navstat"] = training_data["navstat"].apply(
-        lambda x: 1 if (x in [1, 5, 6]) else 0
-    )
-    training_data.rename(columns={"navstat": "anchored"}, inplace=True)
-
-    # Set sog to 0 if it is 102.3 and the vessel is anchored, otherwise interpolate
-    training_data["sog"] = training_data.apply(
-        lambda row: 0 if row["sog"] == 102.3 and row["anchored"] == 1 else row["sog"],
-        axis=1,
-    )
-    training_data["sog"] = (
-        training_data["sog"]
-        .mask((training_data["sog"] == 102.3) & (training_data["anchored"] == 0))
-        .interpolate(limit_area="inside", limit=1)
-    )
-
-    # Normalize the SOG feature
-    training_data["sog"] = training_data["sog"] / 102.2
-
-    # Replace heading with COG if heading is out of bounds and vice versa
-    training_data["heading"] = training_data.apply(
-        lambda row: row["cog"] if row["heading"] >= 360 else row["heading"], axis=1
-    )
-    training_data["cog"] = training_data.apply(
-        lambda row: row["heading"] if row["cog"] >= 360 else row["cog"], axis=1
-    )
-
-    # Fill in COG and heading with the previous or next row if both are over 360
-    training_data["cog"] = (
-        training_data["cog"]
-        .mask(training_data["cog"] >= 360)
-        .ffill(limit=1)
-        .bfill(limit=1)
-    )
-    training_data["heading"] = (
-        training_data["heading"]
-        .mask(training_data["heading"] >= 360)
-        .ffill(limit=1)
-        .bfill(limit=1)
-    )
-
-    # Normalize the heading and COG feature
-    training_data["cog"] = training_data["cog"] / 360
-    training_data["heading"] = training_data["heading"] / 360
-
-    # Set ROT to 0 if out of no ROT sensor is available
-    training_data["rot"] = training_data["rot"].apply(lambda x: 0 if x == 128 else x)
-
-    # Interpolate ROT for values at -127 or 127
-    training_data["rot"] = (
-        training_data["rot"]
-        .mask(training_data["rot"].isin([-127, 127]))
-        .interpolate(limit_area="inside", limit=3)
-    )
-
-    # Normalize the ROT feature
-    training_data["rot"] = training_data["rot"] / 126
+    training_data.drop("navstat", axis=1, inplace=True)
+    training_data.drop("sog", axis=1, inplace=True)
+    training_data.drop("cog", axis=1, inplace=True)
+    training_data.drop("heading", axis=1, inplace=True)
+    training_data.drop("rot", axis=1, inplace=True)
 
     # Calculate time difference to the next row
     training_data["time"] = pd.to_datetime(training_data["time"])
@@ -120,6 +66,24 @@ def features_and_labels(
 
     return features, labels
 
+def pre_process_test_data(test_data: pd.DataFrame) -> pd.DataFrame:
+    """
+    Pre-process the test data to match the format of training features.
+    :param test_data: test data to be pre-processed
+    :return: pre-processed test data
+    """
+    # Convert 'time' column to datetime format
+    test_data['time'] = pd.to_datetime(test_data['time'])
+
+    # Create a new feature 'time_diff' that measures time difference in seconds from the first timestamp
+    reference_time = test_data['time'].min()
+    test_data['time_diff'] = (test_data['time'] - reference_time).dt.total_seconds()
+
+    # Drop 'time' and 'vesselId' columns since they are not needed for prediction
+    test_data = test_data.drop(columns=['vesselId', 'scaling_factor', 'ID'])
+
+    return test_data
+
 
 if __name__ == "__main__":
     training_data = pd.read_csv("task/ais_train.csv", delimiter="|")
@@ -128,3 +92,6 @@ if __name__ == "__main__":
     features, labels = features_and_labels(training_data)
     features.to_csv("data/features.csv", index=False)
     labels.to_csv("data/labels.csv", index=False)
+    test_data = pd.read_csv("task/ais_test.csv")
+    test_data = pre_process_test_data(test_data)
+    test_data.to_csv("data/pre_processed_test_data", index=False)
