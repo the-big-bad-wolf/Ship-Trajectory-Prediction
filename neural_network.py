@@ -12,18 +12,24 @@ class ShipTrajectoryMLP(nn.Module):
         self.relu = nn.ReLU()
         self.fc1 = nn.Linear(input_size, hidden_size)
         self.fc2 = nn.Linear(hidden_size, hidden_size)
-        self.fc3 = nn.Linear(hidden_size, output_size)
+        self.fc3 = nn.Linear(hidden_size, hidden_size)
+        self.fc4 = nn.Linear(hidden_size, output_size)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        out: torch.Tensor = self.fc1(x)
+        out: torch.Tensor
+        out = self.fc1(x)
         out = self.relu(out)
         out = self.fc2(out)
         out = self.relu(out)
         out = self.fc3(out)
+        out = self.relu(out)
+        out = self.fc4(out)
 
-        # Clamp the latitude and longitude
-        out[:, 0] = torch.clamp(out[:, 0].clone(), -90, 90)
-        out[:, 1] = torch.clamp(out[:, 1].clone(), -180, 180)
+        # Clamp the latitude
+        out[:, 0] = torch.clamp(out[:, 0].clone(), -48, 71)
+
+        # Wrap the longitude
+        out[:, 1] = torch.fmod(out[:, 1].clone() + 180, 360) - 180
         return out
 
 
@@ -72,11 +78,11 @@ if __name__ == "__main__":
 
     # Create DataLoader
     dataset = TensorDataset(features_tensor, labels_tensor)
-    dataloader = DataLoader(dataset, batch_size=32, shuffle=True)
+    dataloader = DataLoader(dataset, batch_size=256, shuffle=True)
 
     # Define model, loss function, and optimizer
     input_size = features.shape[1]
-    hidden_size = 12
+    hidden_size = 20
     output_size = labels.shape[1]
 
     model = ShipTrajectoryMLP(input_size, hidden_size, output_size)

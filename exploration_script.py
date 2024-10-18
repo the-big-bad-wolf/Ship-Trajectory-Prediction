@@ -37,6 +37,11 @@ print(f"Average SOG when anchor is 1: {average_sog_anchor_1}")
 # Find the vessels with the 10 fewest data points
 vessel_counts = processed_data["vesselId"].value_counts().nsmallest(10)
 
+# Print the highest and lowest latitude in the dataset
+highest_latitude = processed_data["latitude"].max()
+lowest_latitude = processed_data["latitude"].min()
+print(f"Highest latitude: {highest_latitude}")
+print(f"Lowest latitude: {lowest_latitude}")
 
 # Print the vessels and their data point counts
 print("Vessel ID - Data Points")

@@ -1,6 +1,8 @@
 import pandas as pd
 import torch
 from neural_network import ShipTrajectoryMLP
+import xgboost as xgb
+import pickle
 
 
 def create_test_features(train_df: pd.DataFrame, test_df: pd.DataFrame) -> pd.DataFrame:
@@ -70,12 +72,10 @@ vessel_groups = test_features.groupby("vesselId")
 predictions = []
 
 # Load the model
-model = ShipTrajectoryMLP(test_features.shape[1] - 4, 20, test_features.shape[1] - 5)
-model.load_state_dict(torch.load("models/output/mlp_model_epoch_100.pth"))
-model.eval()
+model = pickle.load(open("xgboost_model.pkl", "rb"))
 
 for vesselId, group in vessel_groups:
-    features = torch.tensor(
+    features = (
         group.drop(
             [
                 "vesselId",
@@ -88,8 +88,9 @@ for vesselId, group in vessel_groups:
         .to_numpy()
         .astype("float32")
     )
+
     for i in range(0, features.shape[0]):
-        prediction = model(features[i].unsqueeze(0))
+        prediction = model.predict(features[i].reshape(1, -1))
         prediction = prediction[0]
         predictions.append(
             {
