@@ -1,0 +1,27 @@
+import pickle
+import pandas as pd
+
+features = pd.read_csv("data/features.csv")
+labels = pd.read_csv("data/labels.csv")
+
+# Load the pickle file
+with open("models/xgboost/xgBEAST.pkl", "rb") as file:
+    model = pickle.load(file)
+
+# Print the XGBoost hyperparameters
+print(model.get_params())
+
+
+# Load the predictions.csv file
+predictions = pd.read_csv("predictions.csv")
+
+# Print the maximum and minimum values for each column
+print(predictions.max())
+print(predictions.min())
+
+
+model.fit(features, labels)
+
+# Save the model
+with open("xgboost.pkl", "wb") as file:
+    pickle.dump(model, file)

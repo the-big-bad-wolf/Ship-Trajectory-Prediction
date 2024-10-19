@@ -145,6 +145,11 @@ def features_and_labels(
         .apply(lambda x: x.iloc[:-1])
         .reset_index(drop=True)
     )
+    features = (
+        features.groupby("vesselId")
+        .apply(lambda x: x.iloc[-2000:])
+        .reset_index(drop=True)
+    )
 
     features.drop("vesselId", axis=1, inplace=True)
     features.drop("time", axis=1, inplace=True)
@@ -152,6 +157,11 @@ def features_and_labels(
     labels = (
         training_data.groupby("vesselId")
         .apply(lambda x: x.iloc[1:])
+        .reset_index(drop=True)
+    )
+    labels = (
+        labels.groupby("vesselId")
+        .apply(lambda x: x.iloc[-2000:])
         .reset_index(drop=True)
     )
     labels.drop("vesselId", axis=1, inplace=True)

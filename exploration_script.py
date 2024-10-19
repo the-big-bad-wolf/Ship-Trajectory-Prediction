@@ -5,6 +5,7 @@ import geopandas as gpd
 original = pd.read_csv("task/ais_train.csv", delimiter="|")
 vessels_df = pd.read_csv("task/vessels.csv", delimiter="|")
 processed_data = pd.read_csv("data/training_data_preprocessed.csv")
+test_data = pd.read_csv("data/test_features.csv")
 
 # Print the number of unique vesselIds
 unique_vessel_ids = original["vesselId"].nunique()
@@ -26,16 +27,21 @@ print(nan_counts_vessels)
 max_sog = processed_data["sog"].max()
 print(f"Maximum SOG: {max_sog}")
 
-# Print the maximum SOG (Speed Over Ground) when anchor is 1
-max_sog_anchor_1 = processed_data[processed_data["anchored"] == 1]["sog"].max()
-print(f"Maximum SOG when anchor is 1: {max_sog_anchor_1}")
+# Print the 10 biggest SOG (Speed Over Ground) when anchor is 1
+max_sog_anchor_1 = processed_data[processed_data["anchored"] == 1]["sog"].nlargest(10)
+print("10 biggest SOG when anchor is 1:")
+
+for i, sog in enumerate(max_sog_anchor_1):
+    print(f"{i + 1}. {sog}")
+
 
 # Print the average SOG (Speed Over Ground) when anchor is 1
 average_sog_anchor_1 = processed_data[processed_data["anchored"] == 1]["sog"].mean()
 print(f"Average SOG when anchor is 1: {average_sog_anchor_1}")
 
 # Find the vessels with the 10 fewest data points
-vessel_counts = processed_data["vesselId"].value_counts().nsmallest(10)
+min_vessel_counts = processed_data["vesselId"].value_counts().nsmallest(10)
+max_vessel_counts = processed_data["vesselId"].value_counts().nlargest(10)
 
 # Print the highest and lowest latitude in the dataset
 highest_latitude = processed_data["latitude"].max()
@@ -45,9 +51,19 @@ print(f"Lowest latitude: {lowest_latitude}")
 
 # Print the vessels and their data point counts
 print("Vessel ID - Data Points")
-for vessel_id, count in vessel_counts.items():
+for vessel_id, count in min_vessel_counts.items():
     print(f"{vessel_id} - {count}")
 
+for vessel_id, count in max_vessel_counts.items():
+    print(f"{vessel_id} - {count}")
+
+print("Average vessel data points:", processed_data["vesselId"].value_counts().mean())
+
+# Print the value counts in the processed data for each vessel found in the test data
+test_vessel_ids = test_data["vesselId"].unique()
+for vessel_id in test_vessel_ids:
+    count = processed_data[processed_data["vesselId"] == vessel_id].shape[0]
+    print(f"Vessel ID {vessel_id} has {count} data points in the processed data.")
 
 import matplotlib.pyplot as plt
 
