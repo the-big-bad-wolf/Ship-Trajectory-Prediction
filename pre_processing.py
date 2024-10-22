@@ -17,9 +17,9 @@ def pre_process(training_data: pd.DataFrame) -> pd.DataFrame:
 
     # Calculate time difference to the next row
     training_data["time"] = pd.to_datetime(training_data["time"])
-    training_data["time_diff"] = (
-        -training_data.groupby("vesselId")["time"].diff(-1).dt.total_seconds()
-    )
+    
+    reference_time = training_data['time'].min()
+    training_data["time_diff"] = (training_data['time'] - reference_time).dt.total_seconds()
 
     # Reorder columns to place latitude and longitude after time
     columns = list(training_data.columns)
@@ -43,24 +43,24 @@ def features_and_labels(
     :return: features and labels
     """
     features = (
-        training_data.groupby("vesselId")
+        training_data.groupby("time_diff")
         .apply(lambda x: x.iloc[:-1])
         .reset_index(drop=True)
     )
     
     # Haakons old.
-    features.drop("vesselId", axis=1, inplace=True)
+    # features.drop("vesselId", axis=1, inplace=True)
     features.drop("time", axis=1, inplace=True)
     
     # Edvards new.
     # features.drop("time_diff", axis=1, inplace=True)
     
     labels = (
-        training_data.groupby("vesselId")
+        training_data.groupby("time_diff")
         .apply(lambda x: x.iloc[1:])
         .reset_index(drop=True)
     )
-    labels.drop("vesselId", axis=1, inplace=True)
+    # labels.drop("vesselId", axis=1, inplace=True)
     labels.drop("time", axis=1, inplace=True)
     labels.drop("time_diff", axis=1, inplace=True)
 
@@ -77,9 +77,7 @@ def pre_process_test_data(test_data: pd.DataFrame) -> pd.DataFrame:
 
     # Create a new feature 'time_diff' that measures time difference in seconds from the first timestamp
     reference_time = test_data['time'].min()
-    test_data["time_diff"] = (
-        -test_data.groupby("vesselId")["time"].diff(-1).dt.total_seconds()
-    )
+    test_data["time_diff"] = (test_data['time'] - reference_time).dt.total_seconds()
 
     # test_data = (
     #     test_data.groupby("vesselId")
