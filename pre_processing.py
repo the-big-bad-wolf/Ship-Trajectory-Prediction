@@ -79,6 +79,12 @@ def pre_process_test_data(test_data: pd.DataFrame) -> pd.DataFrame:
     reference_time = test_data['time'].min()
     test_data['time_diff'] = (test_data['time'] - reference_time).dt.total_seconds()
 
+    test_data = (
+        test_data.groupby("vesselId")
+        .apply(lambda x: x.iloc[:-1])
+        .reset_index(drop=True)
+    )
+    
     # Drop 'time' and 'vesselId' columns since they are not needed for prediction
     test_data = test_data.drop(columns=['vesselId', 'scaling_factor', 'ID'])
 
@@ -94,4 +100,4 @@ if __name__ == "__main__":
     labels.to_csv("data/labels.csv", index=False)
     test_data = pd.read_csv("task/ais_test.csv")
     test_data = pre_process_test_data(test_data)
-    test_data.to_csv("data/pre_processed_test_data", index=False)
+    test_data.to_csv("data/pre_processed_test_data.csv", index=False)
