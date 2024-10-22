@@ -77,13 +77,15 @@ def pre_process_test_data(test_data: pd.DataFrame) -> pd.DataFrame:
 
     # Create a new feature 'time_diff' that measures time difference in seconds from the first timestamp
     reference_time = test_data['time'].min()
-    test_data['time_diff'] = (test_data['time'] - reference_time).dt.total_seconds()
-
-    test_data = (
-        test_data.groupby("vesselId")
-        .apply(lambda x: x.iloc[:-1])
-        .reset_index(drop=True)
+    test_data["time_diff"] = (
+        -test_data.groupby("vesselId")["time"].diff(-1).dt.total_seconds()
     )
+
+    # test_data = (
+    #     test_data.groupby("vesselId")
+    #     .apply(lambda x: x.iloc[:-1])
+    #     .reset_index(drop=True)
+    # )
     
     # Drop 'time' and 'vesselId' columns since they are not needed for prediction
     test_data = test_data.drop(columns=['vesselId', 'scaling_factor', 'ID'])
