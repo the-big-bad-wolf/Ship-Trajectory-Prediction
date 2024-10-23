@@ -99,7 +99,6 @@ def pre_process(training_data: pd.DataFrame, vessel_data: pd.DataFrame) -> pd.Da
     training_data["deep_sea"] = training_data["length"].apply(
         lambda x: 1 if x >= 160 else 0
     )
-    training_data["length"] = training_data["length"] / 300
 
     # Convert navstat to binary anchor and restricted features
     training_data["anchored"] = training_data["navstat"].apply(
@@ -117,6 +116,8 @@ def pre_process(training_data: pd.DataFrame, vessel_data: pd.DataFrame) -> pd.Da
 
     # Impute missing values
     training_data = impute(training_data)
+
+    training_data.drop("heading", axis=1, inplace=True)
 
     # Standardize the data
     training_data = standardize(training_data)
