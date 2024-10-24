@@ -1,40 +1,7 @@
 import pandas as pd
+import numpy as np
 
-
-def pre_process(training_data: pd.DataFrame) -> pd.DataFrame:
-    """
-    Pre-processing of the data
-    :param data: data to be pre-processed
-    :return: pre-processed data
-    """
-    training_data.drop("etaRaw", axis=1, inplace=True)
-    training_data.drop("portId", axis=1, inplace=True)
-    training_data.drop("navstat", axis=1, inplace=True)
-    # training_data.drop("sog", axis=1, inplace=True)
-    # training_data.drop("cog", axis=1, inplace=True)
-    # training_data.drop("heading", axis=1, inplace=True)
-    training_data.drop("rot", axis=1, inplace=True)
-
-    # Calculate time difference to the next row
-    training_data["time"] = pd.to_datetime(training_data["time"])
-    training_data["time_diff"] = (
-        -training_data.groupby("vesselId")["time"].diff(-1).dt.total_seconds()
-    )
-
-    # Reorder columns to place latitude and longitude after time
-    columns = list(training_data.columns)
-    time_index = columns.index("time")
-    lat_lon_columns = ["latitude", "longitude"]
-    for col in lat_lon_columns:
-        columns.remove(col)
-    for i, col in enumerate(lat_lon_columns):
-        columns.insert(time_index + 1 + i, col)
-    training_data = training_data[columns]
-
-    return training_data
-
-
-def features_and_labels(
+def create_features_and_labels_dataFrame(
     training_data: pd.DataFrame,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
     """
@@ -51,7 +18,7 @@ def features_and_labels(
     )
     
     # Remove irrelevant columns from features
-    features.drop(columns=["vesselId", "time"], inplace=True)
+    # features.drop(columns=["vesselId"], inplace=True)
     
     # Extract labels: the target values for prediction, i.e., the next latitude and longitude
     labels = (
@@ -68,7 +35,7 @@ def features_and_labels(
 
 # New as of 22. oktober.
  
-def pre_process_test_data_2(test_data: pd.DataFrame, preprocessed_vessel_data: pd.DataFrame) -> pd.DataFrame:
+def preprocess_AIS_test(test_data: pd.DataFrame, preprocessed_vessel_data: pd.DataFrame) -> pd.DataFrame:
     """
     Pre-process the test data, integrating the previous known lat/long, sog, heading, and cog for each vesselId
     only for the first instance, and sorting the combined dataframe by vesselId and time_diff.
@@ -125,19 +92,15 @@ def pre_process_test_data_2(test_data: pd.DataFrame, preprocessed_vessel_data: p
 
     return test_data
 
-
-
-
-
-
 # New as of 22. okt
 
-def preprocess_vessel_data(data: pd.DataFrame) -> pd.DataFrame:
+def preprocess_AIS_train(data: pd.DataFrame, cutoff: bool) -> pd.DataFrame:
     """
-    Pre-process the vessel data to extract relevant features: time_diff, longitude, latitude, 
-    previous_long, previous_lat.
+    Pre-process the vessel data to extract relevant features, including standardization, interpolation,
+    and cyclical transformations for heading and COG.
     
     :param data: DataFrame containing the vessel data
+    :param cutoff: Boolean indicating whether to apply a cutoff to limit data to the last 2000 measurements for vessels
     :return: Pre-processed DataFrame
     """
     # Step 1: Convert 'time' column to datetime format
@@ -146,71 +109,69 @@ def preprocess_vessel_data(data: pd.DataFrame) -> pd.DataFrame:
     # Step 2: Sort the data by 'vesselId' and 'time' to ensure proper ordering for each vessel
     data = data.sort_values(by=['vesselId', 'time'])
     
-    # Step 3: Group by 'vesselId' to compute time difference and previous positions for each vessel
-    data['time_diff'] = data.groupby('vesselId')['time'].diff().dt.total_seconds()  # Time difference in seconds
+    if cutoff:
+        # Apply cutoff to remove old entries for vessels with more than 2000 rows
+        vessel_counts = data['vesselId'].value_counts()
+        overrepresented_vessels = vessel_counts[vessel_counts > 2000].index
+        data = data.groupby('vesselId').apply(lambda group: group.tail(2000) if group.name in overrepresented_vessels else group).reset_index(drop=True)
     
-    # Set sog to 0 if it is 102.3 and the vessel is anchored, otherwise interpolate
-    data["sog"] = data["sog"].replace(102.3, float("nan"))
-    data["sog"] = (
-        data.groupby("vesselId", as_index=False)
-        .apply(lambda group: group["sog"].interpolate(limit=3))
-        .reset_index(drop=True)
-    )
+    # Step 3: Compute time differences and interpolate missing values
+    data['time_diff'] = data.groupby('vesselId')['time'].diff().dt.total_seconds()
+    data['time_diff'].fillna(0, inplace=True)
 
-    data["heading"] = data.apply(
-        lambda row: row["cog"] if row["heading"] >= 360 else row["heading"], axis=1
-    )
-    data["cog"] = data.apply(
-        lambda row: row["heading"] if row["cog"] >= 360 else row["cog"], axis=1
-    )
+    # Set SOG to NaN where it's invalid (102.3) and interpolate missing values for SOG and COG
+    data["sog"] = data["sog"].replace(102.3, np.nan)
 
-    data["cog"] = (
-        data.groupby("vesselId", as_index=False)
-        .apply(lambda group: group["cog"].mask(group["cog"] >= 360).ffill().bfill())
-        .reset_index(drop=True)
-    )
-    data["heading"] = (
-        data.groupby("vesselId", as_index=False)
-        .apply(
-            lambda group: group["heading"].mask(group["heading"] >= 360).ffill().bfill()
-        )
-        .reset_index(drop=True)
-    )
+    # Use transform instead of apply to maintain the index alignment
+    data['sog'] = data.groupby('vesselId')['sog'].transform(lambda group: group.interpolate(limit=3))
+    data['cog'] = data.groupby('vesselId')['cog'].transform(lambda group: group.mask(group >= 360).ffill().bfill())
+
+    # Fix heading using COG where heading is invalid, and fill missing heading values
+    data["heading"] = data.apply(lambda row: row["cog"] if row["heading"] >= 360 else row["heading"], axis=1)
+    data['heading'] = data.groupby('vesselId')['heading'].transform(lambda group: group.ffill().bfill())
+
+    # Step 4: Drop rows where longitude/latitude are out of bounds
+    data = data[(data['longitude'].between(-180, 180)) & (data['latitude'].between(-90, 90))]
     
-    # Step 4: Extract the previous longitude and latitude for each vessel
+    # Step 5: Apply cos-sin transformation to COG and heading
+    data['cog'] = np.sin(np.deg2rad(data['cog']))
+    # data['cog_cos'] = np.cos(np.deg2rad(data['cog']))
+    data['heading'] = np.sin(np.deg2rad(data['heading']))
+    # data['heading_cos'] = np.cos(np.deg2rad(data['heading']))
+
+    # Step 6: Extract previous states for each vessel
     data['previous_long'] = data.groupby('vesselId')['longitude'].shift(1)
     data['previous_lat'] = data.groupby('vesselId')['latitude'].shift(1)
     data['previous_sog'] = data.groupby('vesselId')['sog'].shift(1)
     data['previous_heading'] = data.groupby('vesselId')['heading'].shift(1)
     data['previous_cog'] = data.groupby('vesselId')['cog'].shift(1)
     
-    # Step 5: Fill missing values in time_diff with 0 (for the first entry of each vessel)
-    data['time_diff'].fillna(0, inplace=True)
-    
-    # Step 6: Drop rows where the previous_lat or previous_long is NaN (first row for each vessel)
-    data = data.dropna(subset=['previous_long', 'previous_lat'])
-    
+    # Step 7: Standardize numeric variables like time_diff, sog, etc.
+    # This did not improve anything.
+    # data['time_diff'] = (data['time_diff'] - data['time_diff'].mean()) / data['time_diff'].std()
+    # data['sog'] = (data['sog'] - data['sog'].mean()) / data['sog'].std()
 
-    # Step 7: Select only the relevant columns for the model
+    # Step 8: Drop any rows with NaNs in the previous positions
+    data = data.dropna(subset=['previous_long', 'previous_lat'])
+
+    # Step 9: Select final features for the model
     data = data[['time', 'time_diff', 'longitude', 'latitude', 'previous_long', 'previous_lat', 
                  'previous_sog', 'previous_heading', 'previous_cog', 'vesselId', 'sog', 'heading', 'cog']]
-    
+
     return data
 
 
+
+
 if __name__ == "__main__":
-    # training_data = pd.read_csv("task/ais_train.csv", delimiter="|")
-    # training_data = pre_process(training_data)
-    # training_data.to_csv("data/training_data_preprocessed.csv", index=False)
-    
     training_data = pd.read_csv("task/ais_train.csv", delimiter="|")
-    training_data = preprocess_vessel_data(training_data)
+    training_data = preprocess_AIS_train(training_data, cutoff = True)
     training_data.to_csv("data/preprocessed_vessel_data.csv", index=False)
-    features, labels = features_and_labels(training_data)
+    features, labels = create_features_and_labels_dataFrame(training_data)
     features.to_csv("data/features.csv", index=False)
     labels.to_csv("data/labels.csv", index=False)
     test_data = pd.read_csv("task/ais_test.csv")
-    test_data = pre_process_test_data_2(test_data, training_data)
+    test_data = preprocess_AIS_test(test_data, training_data)
     test_data.to_csv("data/merged_test_and_train_data.csv", index=False)
 
 
